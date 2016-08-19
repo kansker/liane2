@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<no_conflict>false</no_conflict>
+	<sql_debug>true</sql_debug>
+	<dao_pool>false</dao_pool>
+	<code_pool>false</code_pool>
+	<file_dir></file_dir>
+	<log_dir></log_dir>
+	<title><![CDATA[Lian-e ]]></title>
+	<ui_layout>v3</ui_layout>
+</root>

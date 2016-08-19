@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+	<sql-sources>
+		<sql-source base="true" comment="liane" key="liane" path="dao_liane.xml"/>
+		<sql-source base="true" comment="default" key="default" path="dao_default.xml"/>
+	</sql-sources>
+</struts-config>

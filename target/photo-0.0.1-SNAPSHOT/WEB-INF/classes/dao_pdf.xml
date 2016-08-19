@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dao name="QueryOnlyOrder">
+		<statement><![CDATA[select * from PhotoOrder where status=? and makeStatus=? and memberSeq = 0]]></statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+	</dao>
+	<dao name="QueryOnlyOrder2">
+		<statement><![CDATA[select * from PhotoOrder where status=? and makeStatus=?]]></statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+	</dao>
+	<dao name="QueryOrderByStatusAndMakeStatus">
+		<statement><![CDATA[select a.*,b.userId from PhotoOrder a,member b where
+			a.status=? and a.makeStatus=? and a.memberSeq=b.seq
+		]]></statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+	</dao>
+	<dao name="QueryOrderByMakeStatus">
+		<statement><![CDATA[select * from PhotoOrder where makeStatus=?]]></statement>
+		<parameter type="int">makeStatus</parameter>
+	</dao>
+	<dao name="QueryOrderBySwfStatus">
+		<statement><![CDATA[select * from PhotoOrder where
+			makeStatus = ? and swfStatus = ?
+		]]></statement>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="int">swfStatus</parameter>
+	</dao>
+	<dao name="QueryOrderXML">
+		<statement><![CDATA[select * from orderxml where orderSeq=?]]></statement>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="AddOrderXML">
+		<statement><![CDATA[insert into orderxml(seq,orderSeq,GPID,orderNo,xml1,xml2) values(?,?,?,?,?,?)]]></statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">xml1</parameter>
+		<parameter type="String">xml2</parameter>
+	</dao>
+	<dao name="UpdateOrderXML2">
+		<statement><![CDATA[update orderxml set xml2=? where orderSeq=?]]></statement>
+		<parameter type="String">xml2</parameter>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="UpdateOrderPageData">
+		<statement><![CDATA[update PhotoOrder set pageData=? where seq=?]]></statement>
+		<parameter type="String">pageData</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QueryOrderKinds">
+		<statement><![CDATA[select * from orderkinds where seq = ?]]></statement>
+		<parameter type="int">productSeq</parameter>
+	</dao>
+	<dao name="UpdateOrderPdfFail">
+		<statement>update PhotoOrder set pdfFailNum=? where seq=?</statement>
+		<parameter type="int">pdfFailNum</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderMakeStatus">
+		<statement><![CDATA[update PhotoOrder set makeStatus=? where seq=?]]></statement>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderPdfPath">
+		<statement><![CDATA[update PhotoOrder set
+			pdfPath=?,coverPdfPath=?,insidePath=?,copyrightPath=?,titlePath=?,
+			makeStatus=?,swfStatus=? where seq=?
+		]]></statement>
+		<parameter type="String">pdfPath</parameter>
+		<parameter type="String">coverPdfPath</parameter>
+		<parameter type="String">insidePath</parameter>
+		<parameter type="String">copyrightPath</parameter>
+		<parameter type="String">titlePath</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="int">swfStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderSwfStatus">
+		<statement><![CDATA[update PhotoOrder set swfStatus=? where seq=?]]></statement>
+		<parameter type="int">swfStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderStatus">
+		<statement>update PhotoOrder set status=? where seq=?</statement>
+		<parameter type="String">status</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="AddOrderLog">
+		<statement><![CDATA[insert into order_log(orderNo,GPID,message,createDate) values(?,?,?,?)]]></statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">message</parameter>
+		<parameter type="Timestamp">now()</parameter>
+	</dao>
+	<dao name="QueryStyle">
+		<statement>select * from PhotoStyle where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QueryStyleBylpicture">
+		<statement>select * from PhotoStyle where lpicture=?</statement>
+		<parameter type="String">lpicture</parameter>
+	</dao>
+	<dao name="qa_extras">
+		<statement><![CDATA[select  * from extras where productSeq=? and kind=?]]></statement>
+		<parameter type="int">productSeq</parameter>
+		<parameter type="int">kind</parameter>
+	</dao>
+	<dao name="QueryFrames">
+		<statement>select * from frames where seq=?</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderDemoStatus">
+		<statement>update PhotoOrder set demoStatus=? where seq=?</statement>
+		<parameter type="int">demoStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="q_photoorder_page">
+		<statement><![CDATA[select * from photoorder_page where kind = ? and orderSeq = ? and page = ?]]></statement>
+		<parameter type="int">kind</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="int">page</parameter>
+	</dao>
+	<dao name="del_orderkinds">
+		<statement><![CDATA[delete from orderkinds where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+
+</root>
+	

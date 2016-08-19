@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="AddCalPic">
+    <statement>insert into
+      cal_pic(orderSeq,userId,category,fileName,ohpic,olpic,caption,status,come) values(?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="long">orderSeq</parameter>
+    <parameter type="String">userId</parameter>
+    <parameter type="String">category</parameter>
+    <parameter type="String">fileName</parameter>
+    <parameter type="String">ohpic</parameter>
+    <parameter type="String">olpic</parameter>
+    <parameter type="String">caption</parameter>
+    <parameter type="int">status</parameter>
+    <parameter type="int">come</parameter>
+  </dao>
+  <dao name="QueryCalPic">
+    <statement>select  * from cal_pic where orderSeq=? and (status=1 or
+      status =0)</statement>
+    <parameter type="long">orderSeq</parameter>
+  </dao>
+  <dao name="QueryCalPicBySeqAndCategory">
+    <statement>select * from cal_pic where orderSeq=? and category=? and (status=1 or
+      status =0)</statement>
+    <parameter type="long">orderSeq</parameter>
+    <parameter type="String">category</parameter>
+  </dao>
+  <dao name="QueryCalPicByStatusAndOrderSeq">
+    <statement>select  * from cal_pic where status=? and orderSeq=?</statement>
+    <parameter type="int">status</parameter>
+    <parameter type="long">orderSeq</parameter>
+  </dao>
+  <dao name="QueryCalPicByFrom">
+    <statement>select  * from cal_pic where orderSeq=? and come = ?</statement>
+    <parameter type="int">orderSeq</parameter>
+    <parameter type="int">come</parameter>
+  </dao>
+  <dao name="UpdateCalPicStatusBySeq">
+    <statement>update cal_pic set status=? where seq=?</statement>
+    <parameter type="int">status</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="UpdateCalPicCgyBySeq">
+    <statement>update cal_pic set category=? where seq=?</statement>
+    <parameter type="String">category</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="UpdateCalPicStatusByOrderSeq">
+    <statement>update cal_pic set status=? where orderSeq=?</statement>
+    <parameter type="int">status</parameter>
+    <parameter type="long">orderSeq</parameter>
+  </dao>
+  <dao name="QueryCalPicByStatus">
+    <statement>select  * from cal_pic where status = ? and orderSeq=?</statement>
+    <parameter type="int">status</parameter>
+    <parameter type="long">orderSeq</parameter>
+  </dao>
+  <dao name="QueryCalPicByStatus2">
+    <statement>select  * from cal_pic where status = ?</statement>
+    <parameter type="int">status</parameter>
+  </dao>
+  <dao name="QueryCalPicByDaemon">
+    <statement>select  * from cal_pic where status = -1 or status = -2</statement>
+  </dao>
+  <dao name="QueryCalPicBySeq">
+    <statement>select  * from cal_pic where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="UpdateCalPic">
+    <statement>update cal_pic set
+      hpic=?,lpic=?,ohpic=?,olpic=?,ext=?,lwidth=?,lheight=?,hwidth=?,hheight=?,caption=?,status=?,come=?
+      where seq=?</statement>
+    <parameter type="String">hpic</parameter>
+    <parameter type="String">lpic</parameter>
+    <parameter type="String">ohpic</parameter>
+    <parameter type="String">olpic</parameter>
+    <parameter type="String">ext</parameter>
+    <parameter type="int">lwidth</parameter>
+    <parameter type="int">lheight</parameter>
+    <parameter type="int">hwidth</parameter>
+    <parameter type="int">hheight</parameter>
+    <parameter type="String">caption</parameter>
+    <parameter type="int">status</parameter>
+    <parameter type="short">come</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="AddCalPic2">
+    <statement>insert into
+      cal_pic(orderSeq,userId,category,fileName,hpic,lpic,ohpic,olpic,ext,
+      lwidth,lheight,hwidth,hheight,caption,status,come)
+      values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="long">orderSeq</parameter>
+    <parameter type="String">userId</parameter>
+    <parameter type="String">category</parameter>
+    <parameter type="String">fileName</parameter>
+    <parameter type="String">hpic</parameter>
+    <parameter type="String">lpic</parameter>
+    <parameter type="String">ohpic</parameter>
+    <parameter type="String">olpic</parameter>
+    <parameter type="String">ext</parameter>
+    <parameter type="int">lwidth</parameter>
+    <parameter type="int">lheight</parameter>
+    <parameter type="int">hwidth</parameter>
+    <parameter type="int">hheight</parameter>
+    <parameter type="String">caption</parameter>
+    <parameter type="int">status</parameter>
+    <parameter type="short">come</parameter>
+  </dao>
+  <dao name="QueryAllCalPic">
+    <statement><![CDATA[select  * from cal_pic where hpic is not null and lpic is not null]]></statement>
+  </dao>
+  <dao name="DeleteCalPicByPK">
+    <statement>delete from cal_pic where seq=? and orderSeq=? and userId=?</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="long">orderSeq</parameter>
+    <parameter type="String">userId</parameter>
+  </dao>
+  <dao name="DeleteCalPicByOrderSeq">
+    <statement>delete from cal_pic where orderSeq=? and userId=?</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="String">userId</parameter>
+  </dao>
+  <dao name="UpdateCalPicOrderSeq">
+    <statement>update cal_pic set orderSeq=? where orderSeq=?</statement>
+    <parameter type="long">neworderSeq</parameter>
+    <parameter type="long">orderSeq</parameter>
+  </dao>   
+</root>

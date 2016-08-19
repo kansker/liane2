@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<code name="特性">
+		<data>
+			<col name="v">1</col>
+			<col name="c">設計師版型</col>
+		</data>
+	</code>
+	<code name="forWho">
+		<data>
+			<col name="v">0</col>
+			<col name="c">風格類別</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">圖庫類別</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">標語類別</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">文案類別</col>
+		</data>
+	</code>
+	<code name="single">
+		<data>
+			<col name="v">0</col>
+			<col name="c">雙頁</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">單頁</col>
+		</data>
+	</code>
+	<code name="stable">
+		<data>
+			<col name="v">0</col>
+			<col name="c">可換版面框配置</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">固定版面框配</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">任意排版面</col>
+		</data>
+	</code>
+	<code name="內頁種類">
+		<data>
+			<col name="v">1</col>
+			<col name="c">單面</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">雙面</col>
+		</data>
+	</code>
+	<code name="風格屬性">
+		<data>
+			<col name="v">0</col>
+			<col name="c">套裝</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">封面</col>
+		</data>
+	</code>
+	<code name="封面種類">
+		<data>
+			<col name="v">0</col>
+			<col name="c">無封面</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">單面</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">雙面</col>
+		</data>
+	</code>
+	<code name="版面範圍">
+		<data>
+			<col name="v">0</col>
+			<col name="c">兩者</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">內頁</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">封面</col>
+		</data>
+	</code>
+	<code name="order">
+		<data>
+			<col name="v">0</col>
+			<col name="c">準備中</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">使用者編輯</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">製作中</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">印刷派單中</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">印製中</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">物流寄送</col>
+		</data>
+		<data>
+			<col name="v">6</col>
+			<col name="c">已經結案</col>
+		</data>
+		<data>
+			<col name="v">7</col>
+			<col name="c">印製檔案錯誤,請重新下單</col>
+		</data>
+		<data>
+			<col name="v">8</col>
+			<col name="c">壓縮保存</col>
+		</data>
+		<data>
+			<col name="v">50</col>
+			<col name="c">待廠商確認印刷</col>
+		</data>
+		<data>
+			<col name="v">-1</col>
+			<col name="c">送WSEP失敗</col>
+		</data>
+		<data>
+			<col name="v">-10</col>
+			<col name="c">訂單審核</col>
+		</data>
+		<data>
+			<col name="v">-20</col>
+			<col name="c">待刪除</col>
+		</data>
+	</code>
+	<code name="MakeStatus">
+		<data>
+			<col name="v">0</col>
+			<col name="c">未制作</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">審核</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">製作中</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">PDF完成</col>
+		</data>
+		<data>
+			<col name="v">-1</col>
+			<col name="c">製作失敗</col>
+		</data>
+	</code>
+	<code name="swfStatus">
+		<data>
+			<col name="v">0</col>
+			<col name="c">未制作</col>
+		</data>
+		<data>
+			<col name="v">1</col>
+			<col name="c">製作中</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">電子書完成</col>
+		</data>
+	</code>
+	<code name="啟停用">
+		<data>
+			<col name="id">1</col>
+			<col name="name">啟用</col>
+		</data>
+		<data>
+			<col name="id">0</col>
+			<col name="name">停用</col>
+		</data>
+	</code>
+	<code name="處理">
+		<data>
+			<col name="id">1</col>
+			<col name="name">已處理</col>
+		</data>
+		<data>
+			<col name="id">0</col>
+			<col name="name">未處理</col>
+		</data>
+	</code>
+	<code name="性別">
+		<data>
+			<col name="id">M</col>
+			<col name="name">男</col>
+		</data>
+		<data>
+			<col name="id">F</col>
+			<col name="name">女</col>
+		</data>
+	</code>
+	<code name="是否">
+		<data>
+			<col name="id"></col>
+			<col name="name">請選擇</col>
+		</data>
+		<data>
+			<col name="id">Y</col>
+			<col name="name">是</col>
+		</data>
+		<data>
+			<col name="id">N</col>
+			<col name="name">否</col>
+		</data>
+	</code>
+	<code name="YesNo">
+		<data>
+			<col name="id">Y</col>
+			<col name="name">是</col>
+		</data>
+		<data>
+			<col name="id">N</col>
+			<col name="name">否</col>
+		</data>
+	</code>
+	<code name="NoYes">
+		<data>
+			<col name="id">N</col>
+			<col name="name">否</col>
+		</data>
+		<data>
+			<col name="id">Y</col>
+			<col name="name">是</col>
+		</data>
+	</code>
+	<code name="useFName">
+		<data>
+			<col name="id">0</col>
+			<col name="name">不使用檔名當圖片描述文字</col>
+		</data>
+		<data>
+			<col name="id">1</col>
+			<col name="name">使用檔名當圖片描述文字</col>
+		</data>
+	</code>
+	<code name="usePix">
+		<data>
+			<col name="id">1</col>
+			<col name="name">縮到 1500 Px</col>
+		</data>
+		<data>
+			<col name="id">2</col>
+			<col name="name">縮到 2200 Px</col>
+		</data>
+		<data>
+			<col name="id">3</col>
+			<col name="name">不縮小</col>
+		</data>
+	</code>
+	<code name="fontSize">
+		<data>
+			<col name="id">8</col>
+			<col name="name">1級</col>
+		</data>
+		<data>
+			<col name="id">10</col>
+			<col name="name">2級</col>
+		</data>
+		<data>
+			<col name="id">12</col>
+			<col name="name">3級</col>
+		</data>
+		<data>
+			<col name="id">14</col>
+			<col name="name">4級</col>
+		</data>
+		<data>
+			<col name="id">16</col>
+			<col name="name">5級</col>
+		</data>
+		<data>
+			<col name="id">18</col>
+			<col name="name">6級</col>
+		</data>
+		<data>
+			<col name="id">20</col>
+			<col name="name">7級</col>
+		</data>
+		<data>
+			<col name="id">22</col>
+			<col name="name">8級</col>
+		</data>
+		<data>
+			<col name="id">24</col>
+			<col name="name">9級</col>
+		</data>
+		<data>
+			<col name="id">26</col>
+			<col name="name">10級</col>
+		</data>
+		<data>
+			<col name="id">28</col>
+			<col name="name">11級</col>
+		</data>
+		<data>
+			<col name="id">30</col>
+			<col name="name">12級</col>
+		</data>
+		<data>
+			<col name="id">32</col>
+			<col name="name">13級</col>
+		</data>
+		<data>
+			<col name="id">34</col>
+			<col name="name">14級</col>
+		</data>
+		<data>
+			<col name="id">36</col>
+			<col name="name">15級</col>
+		</data>
+		<data>
+			<col name="id">38</col>
+			<col name="name">16級</col>
+		</data>
+		<data>
+			<col name="id">0</col>
+			<col name="name">手調自動縮放</col>
+		</data>
+	</code>
+	<code name="電子書">
+		<statement>
+			select seq,name from ebooks where status=1
+		</statement>
+	</code>
+	<code name="cgy">
+		<statement>
+			select seq,name from stylecategory where status=1 and forWho = 0 order by name
+		</statement>
+	</code>
+	<code name="iconCgy">
+		<statement>
+			select seq,name from stylecategory where status=1 and forWho = 1 order by name
+		</statement>
+	</code>
+	<code name="marginCgy">
+		<statement>
+			select seq,name from stylecategory where status=1 and forWho = 2 order by name
+		</statement>
+	</code>
+	<code name="textCgy">
+		<statement>
+			select seq,name from stylecategory where status=1 and forWho = 3 order by name
+		</statement>
+	</code>
+	<code name="framesCgy">
+		<statement>
+			select seq,cgyName as name from frames_cgy order by viewOrder
+		</statement>
+	</code>
+	<code name="lay_num">
+		<data>
+			<col name="id">0</col>
+			<col name="name">全部</col>
+		</data>
+		<data>
+			<col name="id">1</col>
+			<col name="name">1</col>
+		</data>
+		<data>
+			<col name="id">2</col>
+			<col name="name">2</col>
+		</data>
+		<data>
+			<col name="id">3</col>
+			<col name="name">3</col>
+		</data>
+		<data>
+			<col name="id">4</col>
+			<col name="name">4</col>
+		</data>
+		<data>
+			<col name="id">5</col>
+			<col name="name">5</col>
+		</data>
+		<data>
+			<col name="id">6</col>
+			<col name="name">6</col>
+		</data>
+		<data>
+			<col name="id">7</col>
+			<col name="name">7</col>
+		</data>
+		<data>
+			<col name="id">10</col>
+			<col name="name">其他</col>
+		</data>
+	</code>
+	<code name="lay_num2">
+		<data>
+			<col name="id">2</col>
+			<col name="name">封面</col>
+		</data>
+		<data>
+			<col name="id">3</col>
+			<col name="name">封底</col>
+		</data>
+	</code>
+	<code name="roles">
+		<data>
+			<col name="v">1</col>
+			<col name="c">系統管理員</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">一般管理員</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">廠商</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">設計師</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">印刷廠商</col>
+		</data>
+		<data>
+			<col name="v">6</col>
+			<col name="c">物流廠商</col>
+		</data>
+		<data>
+			<col name="v">7</col>
+			<col name="c">美工</col>
+		</data>
+	</code>
+</root>

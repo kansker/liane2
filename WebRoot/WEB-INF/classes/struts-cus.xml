@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+		"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="cus" extends="front-default" namespace="/">
+		<action name="cus_welcome" class="com.liane.action.Customer">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="content">
+				<param name="location">/client/welcome.jsp</param>
+			</result>
+		</action>
+		<action name="cus_search1_main" class="com.liane.action.client.Report1" method="execute">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="content">
+				<param name="location">/client/report1.jsp</param>
+			</result>
+		</action>
+		<action name="cus_search2_main" class="com.liane.action.client.Report2" method="execute">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="content">
+				<param name="location">/client/report2.jsp</param>
+			</result>
+		</action>
+		<action name="cus_search3_main" class="com.liane.action.client.Report3" method="execute">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="content">
+				<param name="location">/client/report3.jsp</param>
+			</result>
+		</action>
+		<action name="cus_search1_datas" class="com.liane.action.client.Report1" method="datas">
+			<interceptor-ref name="defaultStackA"/>
+		</action>
+		<action name="cus_search2_datas" class="com.liane.action.client.Report2" method="datas">
+			<interceptor-ref name="defaultStackA"/>
+		</action>
+		<action name="cus_search3_datas" class="com.liane.action.client.Report3" method="datas">
+			<interceptor-ref name="defaultStackA"/>
+		</action>
+	</package>
+</struts>

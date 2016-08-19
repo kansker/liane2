@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+	<dao name="QueryAllLayout">
+		<statement>select * from Layout where 1=1</statement>
+		<parameter condition="width = ?" kind="2" type="int">width</parameter>
+		<parameter condition="height = ?" kind="2" type="int">height</parameter>
+		<parameter condition="kind = ?" kind="2" type="int">kind</parameter>
+	</dao>
+	<dao name="QueryAllLayout2">
+		<statement>select * from Layout where 1=1</statement>
+		<parameter condition="(productKind like ? or productKind like '%,0,%')" kind="2" type="LikeString">productKind</parameter>
+		<order>name</order>
+		<direction />
+	</dao>
+	<dao name="RemoveLayout">
+		<statement>delete from Layout where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="AddLayout">
+		<statement>insert into
+			Layout(seq,name,preview,createDate,updateDate,width,height,productKind,kind) values(?,?,?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="String">name</parameter>
+		<parameter type="String">preview</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">width</parameter>
+		<parameter type="int">height</parameter>
+		<parameter type="String">productKind</parameter>
+		<parameter type="int">kind</parameter>
+	</dao>
+	<dao name="UpdateLayout">
+		<statement>update Layout set
+			name=?,preview=?,updateDate=?,width=?,height=?,productKind=?,kind=?,num=? where seq=?
+		</statement>
+		<parameter type="String">name</parameter>
+		<parameter type="String">preview</parameter>
+		<parameter type="Timestamp">updateDate</parameter>
+		<parameter type="int">width</parameter>
+		<parameter type="int">height</parameter>
+		<parameter type="String">productKind</parameter>
+		<parameter type="int">kind</parameter>
+		<parameter type="int">num</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="DeleteLayoutRect">
+		<statement>delete from LayoutRect where layoutSeq=?</statement>
+		<parameter type="long">layoutSeq</parameter>
+	</dao>
+	<dao name="QueryLayoutRect">
+		<statement>select * from LayoutRect where layoutSeq=?</statement>
+		<parameter type="long">layoutSeq</parameter>
+	</dao>
+	<dao name="AddLayoutRect">
+		<statement> insert into
+			LayoutRect(layoutSeq,rectTop,rectLeft,rectWidth,rectHeight,captionTop,captionLeft,captionWidth,captionHeight,createDate,updateDate)
+			values(?,?,?,?,?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">layoutSeq</parameter>
+		<parameter type="int">rectTop</parameter>
+		<parameter type="int">rectLeft</parameter>
+		<parameter type="int">rectWidth</parameter>
+		<parameter type="int">rectHeight</parameter>
+		<parameter type="int">captionTop</parameter>
+		<parameter type="int">captionLeft</parameter>
+		<parameter type="int">captionWidth</parameter>
+		<parameter type="int">captionHeight</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+	</dao>
+	<dao name="AddUserLayout">
+		<statement>insert into
+			userlayout(memberSeq,orderSeq,lpicture,hpicture,lwidth,lheight,createDate) values(?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="String">lpicture</parameter>
+		<parameter type="String">hpicture</parameter>
+		<parameter type="int">lwidth</parameter>
+		<parameter type="int">lheight</parameter>
+		<parameter type="Timestamp">now()</parameter>
+	</dao>
+	<dao name="UpdateUserLayout">
+		<statement>update userlayout set
+			memberSeq=?,lpicture=?,hpicture=?,lwidth=?,lheight=? where seq=?
+		</statement>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="String">lpicture</parameter>
+		<parameter type="String">hpicture</parameter>
+		<parameter type="int">lwidth</parameter>
+		<parameter type="int">lheight</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="DeleteUserLayout">
+		<statement>delete from userlayout where seq=? and memberSeq=?</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="long">memberSeq</parameter>
+	</dao>
+	<dao name="QueryAllUserLayout">
+		<statement>select * from userlayout</statement>
+	</dao>
+	<dao name="QueryUserLayout">
+		<statement>select * from userlayout where orderSeq=?</statement>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="QueryUserLayout2">
+		<statement>select * from userlayout where seq=? and memberSeq=?</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="long">memberSeq</parameter>
+	</dao>
+	<dao name="QueryUserLayoutByLpicture">
+		<statement>select * from userlayout where lpicture=?</statement>
+		<parameter type="String">lpicture</parameter>
+	</dao>
+</root>

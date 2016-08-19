@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dao name="del_productcgy">
+		<statement><![CDATA[delete from productcgy where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_productcgy">
+		<statement><![CDATA[select * from productcgy where 1=1]]></statement>
+		<parameter condition="status = ?" kind="2" type="int">status</parameter>
+		<parameter condition="name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+	<dao name="qa_productcgy1">
+		<statement><![CDATA[
+		select a.*,b.name as cgyname from productcgy1 a 
+		left join productcgy b on a.cgySeq = b.seq
+		where 1=1]]></statement>
+		<parameter condition="a.status = ?" kind="2" type="int">status</parameter>
+		<parameter condition="a.cgyseq = ?" kind="2" type="int">cgyseq</parameter>
+		<parameter condition="a.name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+	<dao name="qa_productcgy1_select">
+		<statement><![CDATA[
+		select * from productcgy1 where 1=1]]></statement>
+		<parameter condition="cgyseq = ?" kind="2" type="int">cgyseq</parameter>
+	</dao>
+	<dao name="del_productcgy1">
+		<statement><![CDATA[delete from productcgy1 where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_productcgy2">
+		<statement><![CDATA[
+		select a.*,b.name as cgy1name,c.name as cgyname from productcgy2 a 
+		left join productcgy1 b on a.cgy1Seq = b.seq
+		left join productcgy c on b.cgySeq = c.seq
+		where 1=1]]></statement>
+		<parameter condition="a.status = ?" kind="2" type="int">status</parameter>
+		<parameter condition="b.cgyseq = ?" kind="2" type="int">cgyseq</parameter>
+		<parameter condition="a.cgy1seq = ?" kind="2" type="int">cgy1seq</parameter>
+		<parameter condition="a.name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+	<dao name="qa_productcgy2_select">
+		<statement><![CDATA[
+		select * from productcgy2 where 1=1]]></statement>
+		<parameter condition="cgy1seq = ?" kind="2" type="int">cgy1seq</parameter>
+	</dao>
+	<dao name="del_productcgy2">
+		<statement><![CDATA[delete from productcgy2 where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qd_productcgy2">
+		<statement><![CDATA[
+		select a.*,b.cgyseq from productcgy2 a 
+		left join productcgy1 b on a.cgy1Seq = b.seq
+		where a.seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+
+	<dao name="qa_orderkinds">
+		<statement><![CDATA[
+		select p.*,a.name as cgy2name,b.name as cgy1name,c.name as cgyname from orderkinds p
+		left join productcgy2 a on p.productKind = a.seq
+		left join productcgy1 b on a.cgy1Seq = b.seq
+		left join productcgy c on b.cgySeq = c.seq
+		where 1=1]]></statement>
+		<statement test="getInt('feature') == 1"><![CDATA[
+		and exists(
+		select s.* from designer s where s.productSeq = p.seq
+		)
+		]]></statement>
+		<parameter condition="p.status = ?" kind="2" type="int">status</parameter>
+		<parameter condition="p.productKind= ?" kind="2" type="int">productKind</parameter>
+		<parameter condition="b.cgyseq = ?" kind="2" type="int">cgyseq</parameter>
+		<parameter condition="a.cgy1seq = ?" kind="2" type="int">cgy1seq</parameter>
+		<parameter condition="p.name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+
+	<dao name="qd_orderkinds">
+		<statement><![CDATA[
+		select p.*,b.cgyseq, a.cgy1seq from orderkinds p 
+		left join productcgy2 a on p.productKind = a.seq
+		left join productcgy1 b on a.cgy1Seq = b.seq
+		where p.seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_designer">
+		<statement><![CDATA[delete from designer where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_designer_by_productSeq">
+		<statement><![CDATA[
+		select * from designer
+		where productSeq = ?]]></statement>
+		<parameter type="long">productSeq</parameter>
+		<parameter condition="status = ?" kind="2" type="int">status</parameter>
+		<parameter condition="name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+	<dao name="qa_designer">
+		<statement><![CDATA[
+		select d.*,p.name as productName from designer d
+		left join orderkinds p on p.seq = d.productSeq
+		where 1=1]]></statement>
+		<parameter condition="productSeq = ?" kind="2" type="int">productSeq</parameter>
+		<parameter condition="d.tatus = ?" kind="2" type="int">status</parameter>
+		<parameter condition="d.name like ?" kind="2" type="LikeString">name</parameter>
+	</dao>
+	<dao name="update_designer_orderseq">
+		<statement><![CDATA[update designer set  orderSeq = ?, updateDate = ? where  seq = ?]]></statement>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="now">updateDate</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+</root>

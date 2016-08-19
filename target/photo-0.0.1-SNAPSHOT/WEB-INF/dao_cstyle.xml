@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="AddCStyle">
+    <statement>insert into
+      cal_style(seq,cgySeq,name,optPicture,hpicture,lpicture,rectTop,rectLeft,rectWidth,rectHeight,
+      textTop,textLeft,textWidth,textHeight,kinds,adminSeq,createDate,updateDate,type) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="String">name</parameter>
+    <parameter type="String">optPicture</parameter>
+    <parameter type="String">hpicture</parameter>
+    <parameter type="String">lpicture</parameter>
+    <parameter type="int">rectTop</parameter>
+    <parameter type="int">rectLeft</parameter>
+    <parameter type="int">rectWidth</parameter>
+    <parameter type="int">rectHeight</parameter>
+    <parameter type="int">textTop</parameter>
+    <parameter type="int">textLeft</parameter>
+    <parameter type="int">textWidth</parameter>
+    <parameter type="int">textHeight</parameter>
+    <parameter type="int">kinds</parameter>
+    <parameter type="int">adminSeq</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">type</parameter>
+  </dao>
+  <dao name="RemoveCStyle">
+    <statement>update cal_style set status=0 where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="RemoveCStyleByAdminSeq">
+    <statement>update cal_style set status=0 where seq=? and adminSeq=?</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="int">adminSeq</parameter>
+  </dao>
+  <dao name="UpdateCStyle">
+    <statement>update cal_style set cgySeq=?,
+      name=?,optPicture=?,hpicture=?,lpicture=?,lwidth=?,lheight=?,rectTop=?,rectLeft=?,rectWidth=?,
+      rectHeight=?,textTop=?,textLeft=?,textWidth=?,textHeight=?,auth=?,updateDate=?,designInfo=?,designDescription=?,type=?,productKind=?
+      where seq=? </statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="String">name</parameter>
+    <parameter type="String">optPicture</parameter>
+    <parameter type="String">hpicture</parameter>
+    <parameter type="String">lpicture</parameter>
+    <parameter type="int">lwidth</parameter>
+    <parameter type="int">lheight</parameter>
+    <parameter type="int">rectTop</parameter>
+    <parameter type="int">rectLeft</parameter>
+    <parameter type="int">rectWidth</parameter>
+    <parameter type="int">rectHeight</parameter>
+    <parameter type="int">textTop</parameter>
+    <parameter type="int">textLeft</parameter>
+    <parameter type="int">textWidth</parameter>
+    <parameter type="int">textHeight</parameter>
+    <parameter type="String">auth</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="String">designInfo</parameter>
+    <parameter type="String">designDescription</parameter>
+    <parameter type="int">type</parameter>
+    <parameter type="String">productKind</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="QueryAllCStyle">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1</statement>
+  </dao>
+  <dao name="QueryAllCStyleAndType">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.type = ?</statement>
+    <parameter type="int">type</parameter>
+  </dao>
+  <dao name="QueryAllCStyle2">
+    <statement>select * from cal_style</statement>
+  </dao>
+  <dao name="QueryAllCStyleByAdminSeq">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.adminSeq=?</statement>
+    <parameter type="int">adminSeq</parameter>
+  </dao>
+  <dao name="QueryAllCStyleByAdminSeqAndType">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.adminSeq=? and a.type = ?</statement>
+    <parameter type="int">adminSeq</parameter>
+    <parameter type="int">type</parameter>
+  </dao>
+  <dao name="QueryCStyleByCgy">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.cgySeq=? and a.kinds=?</statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="int">kinds</parameter>
+  </dao>
+  <dao name="QueryCStyleByCgyAndAuth">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.cgySeq=? and (kinds=0 or auth like ? or auth like '%,ALL,%') order by a.name</statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="LikeString">auth</parameter>
+  </dao>
+  <dao name="QueryCStyleByCgyAndAuthAndPrK">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.cgySeq=? and (kinds=0 or auth like ? or auth like '%,ALL,%') and (productKind like ? or productKind like '%,0,%') order by a.name</statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="LikeString">auth</parameter>
+     <parameter type="LikeString">productKind</parameter>
+  </dao>
+  <dao name="QueryCStyleByCgyAndAuthAndType">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.cgySeq=? and a.type = ? and (kinds=0 or auth like ? or auth like '%,ALL,%') order by a.name</statement>
+    <parameter type="int">cgySeq</parameter>
+     <parameter type="int">type</parameter>
+    <parameter type="LikeString">auth</parameter>
+  </dao>
+   <dao name="QueryCStyleByAuth">
+     <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+       where a.status=1 and (kinds=0 or auth like ? or auth like '%,ALL,%') order by a.name
+     </statement>
+     <parameter type="LikeString">auth</parameter>
+  </dao>
+   <dao name="QueryCStyleByAuthAndPrK">
+     <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+       where a.status=1 and (kinds=0 or auth like ? or auth like '%,ALL,%') and (productKind like ? or productKind like '%,0,%') order by a.name
+     </statement>
+     <parameter type="LikeString">auth</parameter>
+     <parameter type="LikeString">productKind</parameter>
+  </dao>
+   <dao name="QueryCStyleByAuthAndType">
+     <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+       where a.status=1 and a.type = ? and (kinds=0 or auth like ? or auth like '%,ALL,%') order by a.name
+     </statement>
+     <parameter type="int">type</parameter>
+     <parameter type="LikeString">auth</parameter>
+  </dao>
+  <dao name="QueryCStyleByKinds">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.kinds=?</statement>
+    <parameter type="int">kinds</parameter>
+  </dao>
+  <dao name="QueryCStyleByKindsAndAuth">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.kinds=? and (auth like ? or auth like '%,ALL,%')</statement>
+    <parameter type="int">kinds</parameter>
+    <parameter type="LikeString">auth</parameter>
+  </dao>
+  <dao name="QueryCStyle2">
+    <statement>select a.*,b.name cgyName from cal_style a left join cal_style_cgy b on a.cgySeq=b.seq
+      where a.status=1 and a.seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="QueryCStyle">
+    <statement>select * from cal_style where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="QueryCSLayout">
+    <statement>select * from cal_slayout where styleSeq=?</statement>
+    <parameter type="long">styleSeq</parameter>
+  </dao>
+  <dao name="QueryCSLayout2">
+    <statement>select seq,preview,stable from cal_slayout where styleSeq=? order by createDate desc</statement>
+    <parameter type="long">styleSeq</parameter>
+  </dao>
+  <dao name="QueryCSLayoutByKinds">
+    <statement>select a.*,b.preview from cal_style a,cal_slayout b
+      where a.seq = b.styleSeq and a.kinds=?</statement>
+    <parameter type="int">kinds</parameter>
+  </dao>
+  <dao name="QueryCSLayoutByCgyAndKinds">
+    <statement>select a.*,b.preview from cal_style a,cal_slayout b
+      where a.seq = b.styleSeq and a.cgySeq=? and a.kinds=?</statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="int">kinds</parameter>
+  </dao>
+  <dao name="QueryCSLayoutByCgyAndKinds2">
+    <statement>select a.*,b.preview from cal_style a,cal_slayout b
+      where a.seq = b.styleSeq and a.cgySeq=? and a.kinds=? and (auth like ? or auth like '%,ALL,%')</statement>
+    <parameter type="int">cgySeq</parameter>
+    <parameter type="int">kinds</parameter>
+    <parameter type="LikeString">auth</parameter>
+  </dao>
+  <dao name="QueryCSLayoutByKindsAndAuth">
+    <statement>select a.*,b.preview from cal_style a,cal_slayout b
+      where a.seq = b.styleSeq and a.kinds=? and (auth like ? or auth like '%,ALL,%')</statement>
+    <parameter type="int">kinds</parameter>
+    <parameter type="LikeString">auth</parameter>
+  </dao>
+  <dao name="QueryCSLayoutBySeq">
+    <statement>select * from cal_slayout where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="QueryAllCSLayout">
+    <statement>select * from cal_slayout</statement>
+  </dao>
+  <dao name="AddCSLayout">
+    <statement>insert into
+      cal_slayout(seq,styleSeq,layoutSeq,preview,leftPicture,rightPicture,leftPicture2,rightPicture2,stable,createDate,updateDate)
+      values(?,?,?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="long">styleSeq</parameter>
+    <parameter type="long">layoutSeq</parameter>
+    <parameter type="String">preview</parameter>
+    <parameter type="String">leftPicture</parameter>
+    <parameter type="String">rightPicture</parameter>
+    <parameter type="String">leftPicture2</parameter>
+    <parameter type="String">rightPicture2</parameter>
+    <parameter type="int">stable</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="UpdateCSLayout">
+    <statement>update cal_slayout set
+      styleSeq=?,layoutSeq=?,preview=?,leftPicture=?,rightPicture=?,leftPicture2=?,rightPicture2=?,
+      stable=?,updateDate=?
+      where seq=?</statement>
+    <parameter type="long">styleSeq</parameter>
+    <parameter type="long">layoutSeq</parameter>
+    <parameter type="String">preview</parameter>
+    <parameter type="String">leftPicture</parameter>
+    <parameter type="String">rightPicture</parameter>
+    <parameter type="String">leftPicture2</parameter>
+    <parameter type="String">rightPicture2</parameter>
+    <parameter type="int">stable</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="UpdateCSLayoutDeploy">
+    <statement>update cal_slayout set
+      deploy=?,updateDate=?
+      where seq=?</statement>
+    <parameter type="String">deploy</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="DeleteCSLayout">
+    <statement>delete from cal_slayout where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <!-- -->
+  <dao name="AddCSRect">
+    <statement>insert into
+      cal_srect(styleLayoutSeq,positions,rectTop,rectLeft,rectWidth,rectHeight,captionTop,captionLeft,captionWidth,captionHeight,createDate,updateDate) values(?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="int">styleLayoutSeq</parameter>
+    <parameter type="int">positions</parameter>
+    <parameter type="int">rectTop</parameter>
+    <parameter type="int">rectLeft</parameter>
+    <parameter type="int">rectWidth</parameter>
+    <parameter type="int">rectHeight</parameter>
+    <parameter type="int">captionTop</parameter>
+    <parameter type="int">captionLeft</parameter>
+    <parameter type="int">captionWidth</parameter>
+    <parameter type="int">captionHeight</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="DeleteCSRect">
+    <statement>delete from cal_srect where styleLayoutSeq=?</statement>
+    <parameter type="int">styleLayoutSeq</parameter>
+  </dao>
+  <dao name="QueryCSRect">
+    <statement>select  * from cal_srect where styleLayoutSeq=? and  positions=?</statement>
+    <parameter type="int">styleLayoutSeq</parameter>
+    <parameter type="int">positions</parameter>
+  </dao>
+  <!-- -->
+  <dao name="AddCStyleCgy">
+    <statement>insert into cal_style_cgy(seq,name,createDate,updateDate) values(?,?,?,?)</statement>
+    <parameter type="int">seq</parameter>
+    <parameter type="String">name</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="DeleteCStyleCgy">
+    <statement>delete from cal_style_cgy where seq=?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="RemoveCStyleCgy">
+    <statement>update cal_style_cgy set status=0,updateDate=? where seq=?</statement>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="UpdateCStyleCgy">
+    <statement>update cal_style_cgy set name=?,updateDate=? where seq=?</statement>
+    <parameter type="String">name</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="QueryAllCStyleCgy">
+    <statement>select  * from cal_style_cgy where status = 1</statement>
+  </dao>
+  <dao name="QueryCStyleCgy">
+    <statement>select  * from cal_style_cgy where status = 1 and seq = ?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+</root>

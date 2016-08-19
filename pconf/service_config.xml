@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <struts_path comment="基本struts模組路徑">action-config.xml</struts_path>
+  <struts_session_interval comment="struts session檢查間隔">60000</struts_session_interval>
+  <struts_filter_class comment="struts運作權限Filter class">com.photo.common.AuthFilter</struts_filter_class>
+  <struts_db_class comment="struts 使用的db connection 來源">com.ponlin.util.DBConnection</struts_db_class>
+  <struts_page_template><![CDATA[
+    <table width="500" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="138" align="left" class="txtArea6">第 %=frange%-%=erange% 筆，共 %=total_num% 筆資料 </td>
+        <td width="310" align="left">
+          <table width="310" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="68"><a href="%=fpage%"><img src="images/btn_front.gif" width="68" height="17" border="0" class="domroll images/btn_front_over.gif"></a></td>
+              <td width="68"><a href="%=ppage%"><img src="images/btn_up.gif" width="68" height="17" border="0" class="domroll images/btn_up_over.gif"></a></td>
+              <td width="36" align="center" class="txtArea9">%=list%</td>
+              <td width="68"><a href="%=npage%"><img src="images/btn_down.gif" width="68" height="17" border="0" class="domroll images/btn_down_over.gif"></a></td>
+              <td width="70"><a href="%=lpage%"><img src="images/btn_last.gif" width="68" height="17" border="0" class="domroll images/btn_last_over.gif"></a></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>]]></struts_page_template>
+  <struts_page_size comment="Struts每頁包含多少筆數">20</struts_page_size>
+  <struts_group_size comment="Struts每群族包含多少頁數">5</struts_group_size>
+  <struts_admin_id comment="Struts系統管理員帳號">admin</struts_admin_id>
+  <struts_admin_password comment="Struts系統管理員密碼">admin</struts_admin_password>
+  <struts_multipart_encode comment="struts_multipart_encode">UTF-8</struts_multipart_encode>
+  <struts_admin_ip comment="Struts系統管理可連線ip">127.0.0.1,220.132.179.165,140.118.175.178</struts_admin_ip>
+  <struts_upload_path base="true" comment="Struts檔案上傳路徑">upload</struts_upload_path>
+  <struts_image_path base="true" comment="Struts圖形檔案路徑">upload</struts_image_path>
+  <struts_noimage_name comment="Struts無圖形檔案名">sp.gif</struts_noimage_name>
+  <struts_session_clear comment="Struts Session清除啟動設定">true</struts_session_clear>
+  <struts_session_clear_path comment="Struts Session清除規則">_main</struts_session_clear_path>
+  <struts_session_nonclear_key comment="Struts Session不清除Key">page_msg,UserBean,AdminBean</struts_session_nonclear_key>
+  <photo_lcover base="true" comment="cover低檔路徑">lcover</photo_lcover>
+  <photo_hcover base="true" comment="cover高檔路徑">hcover</photo_hcover>
+  <photo_preview base="true" comment="preview">preview</photo_preview>
+  <photo_opt base="true" comment="opt">opt</photo_opt>
+  <photo_bg base="true" comment="style layout low bg">bg</photo_bg>
+  <photo_hbg base="true" comment="style layout high bg">hbg</photo_hbg>
+  <photo_bgpre base="true" comment="bg preview">bgpre</photo_bgpre>
+  <photo_rate comment="mall_version">1</photo_rate>
+  <font_exe comment="font_exe">D:\Java\FontEffect\TypeImage.exe</font_exe>
+  <photo_2_do comment="photo_2_do">D:\Java\Y_PhotoData\photo2Do</photo_2_do>
+  <photo_ok comment="photo_ok">D:\Java\Y_PhotoData\PhotoOK</photo_ok>
+  <photo_img_in comment="photo_img_in">D:\Java\Y_PhotoData\PImgIN</photo_img_in>
+  <photo_caption base="true" comment="caption">caption</photo_caption>
+  <photo_caption2 base="true" comment="caption2">caption2</photo_caption2>
+  <photo_layout base="true" comment="layout">layout</photo_layout>
+  <photo_user_img base="true" comment="photo_user_img">user</photo_user_img>
+  <photo_user_img2 comment="photo_user_img">user</photo_user_img2>
+  <photo_huser_img base="true" comment="photo_huser_img">huser</photo_huser_img>
+  <photo_huser_img2 comment="photo_huser_img">huser</photo_huser_img2>
+  <photo_user_pdf base="true" comment="photo_user_pdf">pdf</photo_user_pdf>
+  <photo_user_pdf2 comment="photo_user_pdf2">pdf</photo_user_pdf2>
+  <photo_webservice_ip comment="photo_webservice_ip"><![CDATA[127.0.0.1,220.132.179.165,*]]></photo_webservice_ip>
+  <photo_admin_ip comment="photo_admin_ip"><![CDATA[127.0.0.1,220.132.179.165,*]]></photo_admin_ip>
+  <photo_url comment="photo_url">http://140.131.24.227/</photo_url>
+  <photo_edit_css_font_size comment="編輯區的css字型大小"><![CDATA[8px]]></photo_edit_css_font_size>
+  <photo_preview_css_font_size comment="A4預覽的css字型大小"><![CDATA[12px]]></photo_preview_css_font_size>
+  <photo_A5preview_css_font_size comment="A5預覽的css字型大小"><![CDATA[12px]]></photo_A5preview_css_font_size>
+  <magick_dataout comment="magick_dataout">http://localhost/magick/dataout</magick_dataout>
+  <photo_logo base="true" comment="logo">logo</photo_logo>
+  <photo_demo base="true" comment="logo">demo</photo_demo>
+  <photo_user_jpg base="true" comment="photo_user_jpg">jpg</photo_user_jpg>
+  <photo_user_zip base="true" comment="photo_user_zip">zip</photo_user_zip>
+  <atm_server comment="ATM SERVER">kker.no-ip.org</atm_server>
+  <atm_port comment="ATM PORT">5600</atm_port>
+  <atm_userid comment="商家使用者帳號">mediafun</atm_userid>
+  <atm_passwd comment="商家使用者密碼">media123</atm_passwd>
+  <atm_MerchantNumber comment="台新商店代碼，由台新提供">325335</atm_MerchantNumber>
+  <atm_PaymentType comment="付款型態">DTATM</atm_PaymentType>
+  <atm_BankID comment="銀行代碼">004</atm_BankID>
+  <atm_SuccNextURL comment="轉帳成功，導回商家之網址">http://140.131.24.227/</atm_SuccNextURL>
+  <atm_FailNextURL comment="轉帳失敗，導回商家之網址">http://140.131.24.227/</atm_FailNextURL>
+  <photo_demo_jpg base="true" comment="photo_demo_jpg">djpg</photo_demo_jpg>
+
+
+  <photo_cpreview base="true" comment="photo_cpreview">cpreview</photo_cpreview>
+  <photo_cuser_img base="true" comment="photo_cuser_img">cuser</photo_cuser_img>
+  <photo_cuser_img2 comment="photo_cuser_img2">cuser</photo_cuser_img2>
+  <photo_hcuser_img base="true" comment="photo_hcuser_img">hcuser</photo_hcuser_img>
+  <photo_hcuser_img2 comment="photo_hcuser_img2">hcuser</photo_hcuser_img2>
+  <photo_clayout base="true" comment="clayout">clayout</photo_clayout>
+  <photo_clcover base="true" comment="日曆cover低檔路徑">clcover</photo_clcover>
+  <photo_chcover base="true" comment="日曆cover高檔路徑">chcover</photo_chcover>
+  <photo_copt base="true" comment="日曆opt">copt</photo_copt>
+  <photo_cbg base="true" comment="style layout low bg">cbg</photo_cbg>
+  <photo_chbg base="true" comment="style layout high bg">chbg</photo_chbg>
+  <photo_cbgpre base="true" comment="cbg preview">cbgpre</photo_cbgpre>
+
+  <photo_cuser_jpg base="true" comment="photo_cuser_jpg">cjpg</photo_cuser_jpg>
+  <photo_cuser_zip base="true" comment="photo_cuser_zip">czip</photo_cuser_zip>
+  <photo_cdemo_jpg base="true" comment="photo_demo_jpg">cdjpg</photo_cdemo_jpg>
+</root>

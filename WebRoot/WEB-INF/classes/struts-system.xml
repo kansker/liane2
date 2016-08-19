@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+		"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="system" extends="front-default" namespace="/">
+		<action name="admin_manager" class="com.liane.action.Manager">
+			<result name="success" type="content">
+				<param name="location">/admin/system/manager.jsp</param>
+			</result>
+		</action>
+		<action name="admin_manager_back" class="com.liane.action.Manager" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/system/manager.jsp</param>
+			</result>
+		</action>
+		<action name="admin_manager_add" class="com.liane.action.Manager" method="add">
+			<result name="success" type="content">
+				<param name="location">/admin/system/manager_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_manager_update" class="com.liane.action.Manager" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/system/manager_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_manager_save" class="com.liane.action.Manager" method="save">
+		</action>
+		<action name="admin_manager_remove" class="com.liane.action.Manager" method="remove">
+		</action>
+		<action name="admin_manager_datas" class="com.liane.action.Manager" method="datas"/>
+
+
+		<action name="admin_user" class="com.liane.action.User">
+			<result name="success" type="content">
+				<param name="location">/admin/system/user.jsp</param>
+			</result>
+		</action>
+		<action name="admin_user_back" class="com.liane.action.User" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/system/user.jsp</param>
+			</result>
+		</action>
+		<action name="admin_user_add" class="com.liane.action.User" method="add">
+			<result name="success" type="content">
+				<param name="location">/admin/system/user_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_user_update" class="com.liane.action.User" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/system/user_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_user_save" class="com.liane.action.User" method="save">
+		</action>
+		<action name="admin_user_remove" class="com.liane.action.User" method="remove">
+		</action>
+		<action name="admin_user_datas" class="com.liane.action.User" method="datas"/>
+
+
+		<action name="admin_worker" class="com.liane.action.Worker">
+			<result name="success" type="content">
+				<param name="location">/admin/system/worker.jsp</param>
+			</result>
+		</action>
+		<action name="admin_worker_back" class="com.liane.action.Worker" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/system/worker.jsp</param>
+			</result>
+		</action>
+		<action name="admin_worker_add" class="com.liane.action.Worker" method="add">
+			<result name="success" type="content">
+				<param name="location">/admin/system/worker_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_worker_update" class="com.liane.action.Worker" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/system/worker_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_worker_save" class="com.liane.action.Worker" method="save">
+		</action>
+		<action name="admin_worker_remove" class="com.liane.action.Worker" method="remove">
+		</action>
+		<action name="admin_worker_datas" class="com.liane.action.Worker" method="datas"/>
+
+		<action name="admin_upload1" class="com.liane.action.Upload1">
+			<result name="success" type="content">
+				<param name="location">/admin/system/upload1.jsp</param>
+			</result>
+		</action>
+		<action name="admin_upload1_save" class="com.liane.action.Upload1" method="save">
+		</action>
+
+		<action name="admin_upload2" class="com.liane.action.Upload2">
+			<result name="success" type="content">
+				<param name="location">/admin/system/upload2.jsp</param>
+			</result>
+		</action>
+		<action name="admin_upload2_save" class="com.liane.action.Upload2" method="save">
+		</action>
+
+		<action name="admin_upload3" class="com.liane.action.Upload3">
+			<result name="success" type="content">
+				<param name="location">/admin/system/upload3.jsp</param>
+			</result>
+		</action>
+		<action name="admin_upload3_save" class="com.liane.action.Upload3" method="save">
+		</action>
+	</package>
+</struts>

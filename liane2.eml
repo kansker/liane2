@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="antlr.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/antlr.jar!/"/>
+	</lib>
+	<lib name="commons-collections.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/commons-collections.jar!/"/>
+	</lib>
+	<lib name="cos.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/cos.jar!/"/>
+	</lib>
+	<lib name="itext-1.4.4.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/itext-1.4.4.jar!/"/>
+	</lib>
+	<lib name="iTextAsian.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/iTextAsian.jar!/"/>
+	</lib>
+	<lib name="jakarta-oro.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jakarta-oro.jar!/"/>
+	</lib>
+	<lib name="jmagick.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jmagick.jar!/"/>
+	</lib>
+	<lib name="kplug.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/kplug.jar!/"/>
+	</lib>
+	<lib name="ojdbc14.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/ojdbc14.jar!/"/>
+	</lib>
+	<lib name="param.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/param.jar!/"/>
+	</lib>
+	<levels>
+		<level name="Tomcat 8.0.28" value="application_server_libraries"/>
+		<level name="activation-1.1" value="project"/>
+	</levels>
+</component>

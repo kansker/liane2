@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+	<dao name="AddEbook">
+		<statement>insert into ebooks(seq,name,status,createDate,updateDate) values(?,?,?,?,?)
+		</statement>
+		<parameter type="int">seq</parameter>
+		<parameter type="String">name</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+	</dao>
+	<dao name="UpdateEbook">
+		<statement>update ebooks set
+			name=?,status=?,updateDate=?
+			where seq=?
+		</statement>
+		<parameter type="String">name</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="DeleteEbook">
+		<statement>delete from ebooks where seq=?</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="StopEbook">
+		<statement>update ebooks set status=0 where seq=? and status = 1</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="StartEbook">
+		<statement>update ebooks set status=1 where seq=? and status = 0</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="QueryAllEbook">
+		<statement>select * from ebooks</statement>
+	</dao>
+	<dao name="QueryAllEbook2">
+		<statement>select * from ebooks where status=1</statement>
+	</dao>
+	<dao name="QueryEbook">
+		<statement>select * from ebooks where seq=?</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+</root>

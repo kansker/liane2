@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dao name="AddSystem">
+		<statement><![CDATA[insert into system_code(sys_code,sys_value,op_date) values(?,?,?)]]></statement>
+		<parameter type="String">sys_code</parameter>
+		<parameter type="String">sys_value</parameter>
+		<parameter type="Timestamp">now()</parameter>
+	</dao>
+	<dao name="UpdateSystem">
+		<statement><![CDATA[update system_code set sys_value=?,op_date=? where sys_code=?]]></statement>
+		<parameter type="String">sys_value</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">sys_code</parameter>
+	</dao>
+	<dao name="QuerySystem">
+		<statement><![CDATA[select * from system_code where sys_code=?]]></statement>
+		<parameter type="String">sys_code</parameter>
+	</dao>
+	<dao name="add_member">
+		<statement>insert into member(userName,userId,userPwd,power1,power2) values(?,?,?,?,?)</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+		<parameter type="int">power1</parameter>
+		<parameter type="String">power2</parameter>
+	</dao>
+	<dao name="update_member">
+		<statement>update member set userName=?,userId=?,userPwd=?,power1=?,power2=? where seq=?</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+		<parameter type="int">power1</parameter>
+		<parameter type="String">power2</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_member">
+		<statement>delete from member where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="q_member">
+		<statement>select * from member where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_member">
+		<statement>select * from member where power1 = ?</statement>
+		<statement test="isNotEmpty('keyword')"><![CDATA[
+		and ( userName like @keyword or userId like @keyword)
+		]]></statement>
+		<parameter kind="3" type="LikeString">keyword</parameter>
+		<parameter type="int">power1</parameter>
+		<orderby>order by userName</orderby>
+	</dao>
+	<dao name="add_worker">
+		<statement>insert into worker(EXACODE,EXANAME,EXATYPE,EXAID) values(?,?,?,?)</statement>
+		<parameter type="String">EXACODE</parameter>
+		<parameter type="String">EXANAME</parameter>
+		<parameter type="String">EXATYPE</parameter>
+		<parameter type="String">EXAID</parameter>
+	</dao>
+	<dao name="update_worker">
+		<statement>update worker set EXANAME=?,EXATYPE=?,EXAID=? where EXACODE=?</statement>
+		<parameter type="String">EXANAME</parameter>
+		<parameter type="String">EXATYPE</parameter>
+		<parameter type="String">EXAID</parameter>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+	<dao name="del_worker">
+		<statement>delete from worker where EXACODE=?</statement>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+	<dao name="qa_worker">
+		<statement>select * from worker where 1=1</statement>
+		<statement test="isNotEmpty('keyword')"><![CDATA[
+		and ( EXACODE like @keyword or EXANAME like @keyword)
+		]]></statement>
+		<parameter kind="3" type="LikeString">keyword</parameter>
+	</dao>
+	<dao name="q_worker">
+		<statement>select * from worker where EXACODE = ?</statement>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+	<dao name="add_report1">
+		<statement>insert into report1(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,itemJ,itemK,itemL,itemM,itemN,itemO,PASCODE,itemP,importDate,status,userId) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+		<parameter type="String">itemA</parameter>
+		<parameter type="String">itemB</parameter>
+		<parameter type="String">itemC</parameter>
+		<parameter type="String">itemD</parameter>
+		<parameter type="String">itemE</parameter>
+		<parameter type="String">itemF</parameter>
+		<parameter type="String">itemG</parameter>
+		<parameter type="String">itemH</parameter>
+		<parameter type="String">itemI</parameter>
+		<parameter type="String">itemJ</parameter>
+		<parameter type="String">itemK</parameter>
+		<parameter type="String">itemL</parameter>
+		<parameter type="String">itemM</parameter>
+		<parameter type="String">itemN</parameter>
+		<parameter type="String">itemO</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">itemP</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">status</parameter>
+		<parameter type="String">userId</parameter>
+	</dao>
+	<dao name="update_report1">
+		<statement>update report1 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,
+			itemH=?,itemI=?,itemJ=?,itemK=?,itemL=?,itemM=?,itemN=?,itemO=?,PASCODE=?,itemP=?,
+			status=?,userId=? where itemC=?
+		</statement>
+		<parameter type="String">itemA</parameter>
+		<parameter type="String">itemB</parameter>
+		<parameter type="String">itemD</parameter>
+		<parameter type="String">itemE</parameter>
+		<parameter type="String">itemF</parameter>
+		<parameter type="String">itemG</parameter>
+		<parameter type="String">itemH</parameter>
+		<parameter type="String">itemI</parameter>
+		<parameter type="String">itemJ</parameter>
+		<parameter type="String">itemK</parameter>
+		<parameter type="String">itemL</parameter>
+		<parameter type="String">itemM</parameter>
+		<parameter type="String">itemN</parameter>
+		<parameter type="String">itemO</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">itemP</parameter>
+		<parameter type="String">status</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">itemC</parameter>
+	</dao>
+	<dao name="add_report2">
+		<statement>insert into report2(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,
+			itemJ,itemK,itemL,itemM,itemN,itemO,itemP,itemQ,itemR,itemS,itemT,itemU,
+			PASCODE,importDate,status,userId) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="String">itemA</parameter>
+		<parameter type="String">itemB</parameter>
+		<parameter type="String">itemC</parameter>
+		<parameter type="String">itemD</parameter>
+		<parameter type="String">itemE</parameter>
+		<parameter type="String">itemF</parameter>
+		<parameter type="String">itemG</parameter>
+		<parameter type="String">itemH</parameter>
+		<parameter type="String">itemI</parameter>
+		<parameter type="String">itemJ</parameter>
+		<parameter type="String">itemK</parameter>
+		<parameter type="String">itemL</parameter>
+		<parameter type="String">itemM</parameter>
+		<parameter type="String">itemN</parameter>
+		<parameter type="String">itemO</parameter>
+		<parameter type="String">itemP</parameter>
+		<parameter type="String">itemQ</parameter>
+		<parameter type="String">itemR</parameter>
+		<parameter type="String">itemS</parameter>
+		<parameter type="String">itemT</parameter>
+		<parameter type="String">itemU</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">status</parameter>
+		<parameter type="String">userId</parameter>
+	</dao>
+	<dao name="update_report2">
+		<statement>update report2 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,itemH=?,itemI=?,itemJ=?,itemK=?,itemL=?,itemM=?,itemN=?,itemO=?,itemP=?,itemQ=?,itemR=?,itemS=?,itemT=?,itemU=?,PASCODE=?,importDate=?,status=?,userId=? where itemC=?</statement>
+		<parameter type="String">itemA</parameter>
+		<parameter type="String">itemB</parameter>
+		<parameter type="String">itemD</parameter>
+		<parameter type="String">itemE</parameter>
+		<parameter type="String">itemF</parameter>
+		<parameter type="String">itemG</parameter>
+		<parameter type="String">itemH</parameter>
+		<parameter type="String">itemI</parameter>
+		<parameter type="String">itemJ</parameter>
+		<parameter type="String">itemK</parameter>
+		<parameter type="String">itemL</parameter>
+		<parameter type="String">itemM</parameter>
+		<parameter type="String">itemN</parameter>
+		<parameter type="String">itemO</parameter>
+		<parameter type="String">itemP</parameter>
+		<parameter type="String">itemQ</parameter>
+		<parameter type="String">itemR</parameter>
+		<parameter type="String">itemS</parameter>
+		<parameter type="String">itemT</parameter>
+		<parameter type="String">itemU</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">status</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">itemC</parameter>
+	</dao>
+	<dao name="add_report3">
+		<statement>insert into report3(PTNAME,PTBIRTH,PTID,PTEDUCAT,ADDCODEA,ADDCODEB,PTSUPPER,LASTCHKD,CHARTNO,PASDATE,PASCODE,CHKCODE,CHKREC,CHKNO,CHKQUL,CHKDIF,CHKDIF2,CHKINF,CHKDATA,JPATH,SPATH,PATH,CHKSURED,CHKQTY,FUN_TYPE,HFLAG,PTTEL,ADDR,ICD9_1,ICD9_2,ICD9_3,CARDNO,ULTOMY,X_RAY,PAS_PUR,SPL_TYPE,CHK_WAY,NATIONALIT,CARD_NO,importDate,status) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+		<parameter type="String">PTNAME</parameter>
+		<parameter type="String">PTBIRTH</parameter>
+		<parameter type="String">PTID</parameter>
+		<parameter type="String">PTEDUCAT</parameter>
+		<parameter type="String">ADDCODEA</parameter>
+		<parameter type="String">ADDCODEB</parameter>
+		<parameter type="String">PTSUPPER</parameter>
+		<parameter type="String">LASTCHKD</parameter>
+		<parameter type="String">CHARTNO</parameter>
+		<parameter type="String">PASDATE</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">CHKCODE</parameter>
+		<parameter type="String">CHKREC</parameter>
+		<parameter type="String">CHKNO</parameter>
+		<parameter type="String">CHKQUL</parameter>
+		<parameter type="String">CHKDIF</parameter>
+		<parameter type="String">CHKDIF2</parameter>
+		<parameter type="String">CHKINF</parameter>
+		<parameter type="String">CHKDATA</parameter>
+		<parameter type="String">JPATH</parameter>
+		<parameter type="String">SPATH</parameter>
+		<parameter type="String">PATH</parameter>
+		<parameter type="String">CHKSURED</parameter>
+		<parameter type="String">CHKQTY</parameter>
+		<parameter type="String">FUN_TYPE</parameter>
+		<parameter type="String">HFLAG</parameter>
+		<parameter type="String">PTTEL</parameter>
+		<parameter type="String">ADDR</parameter>
+		<parameter type="String">ICD9_1</parameter>
+		<parameter type="String">ICD9_2</parameter>
+		<parameter type="String">ICD9_3</parameter>
+		<parameter type="String">CARDNO</parameter>
+		<parameter type="String">ULTOMY</parameter>
+		<parameter type="String">X_RAY</parameter>
+		<parameter type="String">PAS_PUR</parameter>
+		<parameter type="String">SPL_TYPE</parameter>
+		<parameter type="String">CHK_WAY</parameter>
+		<parameter type="String">NATIONALIT</parameter>
+		<parameter type="String">CARD_NO</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">status</parameter>
+	</dao>
+	<dao name="update_report3">
+		<statement>update report3 set PTNAME=?,PTBIRTH=?,PTID=?,PTEDUCAT=?,ADDCODEA=?,ADDCODEB=?,PTSUPPER=?,LASTCHKD=?,CHARTNO=?,PASDATE=?,PASCODE=?,CHKCODE=?,CHKREC=?,CHKNO=?,CHKQUL=?,CHKDIF=?,CHKDIF2=?,CHKINF=?,CHKDATA=?,JPATH=?,SPATH=?,PATH=?,CHKSURED=?,CHKQTY=?,FUN_TYPE=?,HFLAG=?,PTTEL=?,ADDR=?,ICD9_1=?,ICD9_2=?,ICD9_3=?,CARDNO=?,ULTOMY=?,X_RAY=?,PAS_PUR=?,SPL_TYPE=?,CHK_WAY=?,NATIONALIT=?,CARD_NO=?,importDate=?,status=? where CHKNO=?</statement>
+		<parameter type="String">PTNAME</parameter>
+		<parameter type="String">PTBIRTH</parameter>
+		<parameter type="String">PTID</parameter>
+		<parameter type="String">PTEDUCAT</parameter>
+		<parameter type="String">ADDCODEA</parameter>
+		<parameter type="String">ADDCODEB</parameter>
+		<parameter type="String">PTSUPPER</parameter>
+		<parameter type="String">LASTCHKD</parameter>
+		<parameter type="String">CHARTNO</parameter>
+		<parameter type="String">PASDATE</parameter>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">CHKCODE</parameter>
+		<parameter type="String">CHKREC</parameter>
+		<parameter type="String">CHKNO</parameter>
+		<parameter type="String">CHKQUL</parameter>
+		<parameter type="String">CHKDIF</parameter>
+		<parameter type="String">CHKDIF2</parameter>
+		<parameter type="String">CHKINF</parameter>
+		<parameter type="String">CHKDATA</parameter>
+		<parameter type="String">JPATH</parameter>
+		<parameter type="String">SPATH</parameter>
+		<parameter type="String">PATH</parameter>
+		<parameter type="String">CHKSURED</parameter>
+		<parameter type="String">CHKQTY</parameter>
+		<parameter type="String">FUN_TYPE</parameter>
+		<parameter type="String">HFLAG</parameter>
+		<parameter type="String">PTTEL</parameter>
+		<parameter type="String">ADDR</parameter>
+		<parameter type="String">ICD9_1</parameter>
+		<parameter type="String">ICD9_2</parameter>
+		<parameter type="String">ICD9_3</parameter>
+		<parameter type="String">CARDNO</parameter>
+		<parameter type="String">ULTOMY</parameter>
+		<parameter type="String">X_RAY</parameter>
+		<parameter type="String">PAS_PUR</parameter>
+		<parameter type="String">SPL_TYPE</parameter>
+		<parameter type="String">CHK_WAY</parameter>
+		<parameter type="String">NATIONALIT</parameter>
+		<parameter type="String">CARD_NO</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">status</parameter>
+		<parameter type="String">CHKNO</parameter>
+	</dao>
+	<dao name="q_report1">
+		<statement>select * from report1 where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="q_report2">
+		<statement>select * from report2 where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="q_report3">
+		<statement>select * from report3 where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_report1">
+		<statement>select * from report1</statement>
+	</dao>
+	<dao name="qa_report2">
+		<statement>select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2</statement>
+	</dao>
+	<dao name="qa_report3">
+		<statement>select * from report3</statement>
+	</dao>
+	<dao name="del_report1">
+		<statement>delete from report1 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_report2">
+		<statement>delete from report2 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_report3">
+		<statement>delete from report3 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+</root>

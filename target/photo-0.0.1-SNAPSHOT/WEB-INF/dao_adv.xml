@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="AddAdvertise">
+    <statement>insert into
+      advertise(seq,subject,color,content,htmlName,createDate,updateDate,status) values(?,?,?,?,?,?,?,?)</statement>
+    <parameter type="int">seq</parameter>
+    <parameter type="String">subject</parameter>
+    <parameter type="String">color</parameter>
+    <parameter type="String">content</parameter>
+    <parameter type="String">htmlName</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">status</parameter>
+  </dao>
+  <dao name="UpdateAdvertise">
+    <statement>update advertise set subject=?,color=?,content=?,updateDate=?,status=? where seq=?</statement>
+    <parameter type="String">subject</parameter>
+    <parameter type="String">color</parameter>
+    <parameter type="String">content</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">status</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="UpdateAdvertiseHtml">
+    <statement>update advertise set htmlName=?,updateDate=? where seq=?</statement>
+    <parameter type="String">htmlName</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="QueryAllAdvertise">
+    <statement>select * from advertise where status=1</statement>
+  </dao>
+  <dao name="QueryAdvertise">
+    <statement>select * from advertise where seq=?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="UpdateAdvertiseStatus">
+    <statement>update advertise set updateDate=?,status=? where seq=?</statement>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">status</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="RemoveAdvertise">
+    <statement>update advertise set updateDate=?,status=0 where seq=?</statement>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="UpdateAdvertiseSendDate">
+    <statement>update advertise set sendDate=? where seq=?</statement>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+</root>

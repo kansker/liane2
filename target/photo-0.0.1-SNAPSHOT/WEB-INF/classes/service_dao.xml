@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+	<sql-sources>
+		<sql-source base="true" comment="common" key="common" path="dao_common.xml" />
+		<sql-source base="true" comment="pdf" key="pdf" path="dao_pdf.xml" />
+		<sql-source base="true" comment="default" key="default" path="dao_default.xml" />
+		<sql-source base="true" comment="product" key="product" path="dao_product.xml" />
+		<sql-source base="true" comment="style" key="style" path="dao_style.xml" />
+		<sql-source base="true" comment="order" key="order" path="dao_order.xml" />
+		<sql-source base="true" comment="system" key="system" path="dao_system.xml" />
+	</sql-sources>
+</struts-config>

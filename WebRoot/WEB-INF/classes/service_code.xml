@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<code name="condition1">
+		<data>
+			<col name="v">1</col>
+			<col name="c">equals</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">contains</col>
+		</data>
+		<data>
+			<col name="v"></col>
+			<col name="c">begins with</col>
+		</data>
+	</code>
+	<code name="condition2">
+		<data>
+			<col name="v">1</col>
+			<col name="c">equals</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">greater than</col>
+		</data>
+	</code>
+	<code name="condition3">
+		<data>
+			<col name="v">1</col>
+			<col name="c">from</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">after</col>
+		</data>
+	</code>
+	<code name="condition4">
+		<data>
+			<col name="v">1</col>
+			<col name="c">to</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">before</col>
+		</data>
+	</code>
+	<code name="reportStatus">
+		<data>
+			<col name="v">1</col>
+			<col name="c"></col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">已修改</col>
+		</data>
+	</code>
+	<code name="memberByPASCODE">
+		<statement>select userId,userName from member where userId = ?</statement>
+		<parameter type="String">PASCODE</parameter>
+	</code>
+	<code name="memberByCHKCODE">
+		<statement>select userId,userName from member where userId = ?</statement>
+		<parameter type="String">CHKCODE</parameter>
+	</code>
+
+	<code name="areacode">
+		<statement>select AREACODE,AREANAME from areacode</statement>
+	</code>
+	<code name="med28">
+		<statement>select DIACODE,DIANAME from med where DIATYPE = 1</statement>
+	</code>
+	<code name="worker">
+		<statement>select EXACODE,EXANAME from worker</statement>
+	</code>
+	<code name="PTEDUCAT">
+		<data>
+			<col name="v">1</col>
+			<col name="c">無</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">小學</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">初中、初職</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">高中、高職</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">專科大學</col>
+		</data>
+		<data>
+			<col name="v">6</col>
+			<col name="c">研究所以上</col>
+		</data>
+	</code>
+	<code name="LASTCHKD">
+		<data>
+			<col name="v">1</col>
+			<col name="c">從未檢查過</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">一年內</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">一到二年間</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">二到三年間</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">三年以上</col>
+		</data>
+	</code>
+	<code name="ULTOMY">
+		<data>
+			<col name="v">1</col>
+			<col name="c">是</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">否</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">不知道</col>
+		</data>
+	</code>
+	<code name="X_RAY">
+		<data>
+			<col name="v">1</col>
+			<col name="c">是</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">否</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">不知道</col>
+		</data>
+	</code>
+	<code name="PTSUPPER">
+		<data>
+			<col name="v">1</col>
+			<col name="c">健保預防保健</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">健保醫療給付</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">公務預算補助</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">其他</col>
+		</data>
+	</code>
+	<code name="NATIONALIT">
+		<data>
+			<col name="v">1</col>
+			<col name="c">本國</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">外籍人士</col>
+		</data>
+	</code>
+	<code name="PAS_PUR">
+		<data>
+			<col name="v">1</col>
+			<col name="c">篩檢</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">懷疑癌症</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">追蹤</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">其他</col>
+		</data>
+	</code>
+	<code name="SPL_TYPE">
+		<data>
+			<col name="v">1</col>
+			<col name="c">常規抹片</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">液體標本</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">其他</col>
+		</data>
+	</code>
+	<code name="CHK_WAY">
+		<data>
+			<col name="v">1</col>
+			<col name="c">人工</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">機械</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">人工+機械</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">其他</col>
+		</data>
+	</code>
+	<code name="CHKQUL">
+		<data>
+			<col name="v">1</col>
+			<col name="c">良好</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">尚可</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">抹片難以判讀</col>
+		</data>
+	</code>
+	<code name="CHKDIF">
+		<data>
+			<col name="v">1</col>
+			<col name="c">抹片固定或保存不良</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">細胞太少</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">太厚或太多血液</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">沒有子宮內頸成份</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">炎症細胞過多</col>
+		</data>
+		<data>
+			<col name="v">6</col>
+			<col name="c">過多細胞溶解或自溶</col>
+		</data>
+		<data>
+			<col name="v">7</col>
+			<col name="c">存在外來物</col>
+		</data>
+		<data>
+			<col name="v">8</col>
+			<col name="c">其它</col>
+		</data>
+	</code>
+	<code name="CHKINF">
+		<data>
+			<col name="v">1</col>
+			<col name="c">Candida</col>
+		</data>
+		<data>
+			<col name="v">2</col>
+			<col name="c">Trichomonas</col>
+		</data>
+		<data>
+			<col name="v">3</col>
+			<col name="c">Herpes</col>
+		</data>
+		<data>
+			<col name="v">4</col>
+			<col name="c">Human papilloma virus</col>
+		</data>
+		<data>
+			<col name="v">5</col>
+			<col name="c">Chlamydiae</col>
+		</data>
+		<data>
+			<col name="v">6</col>
+			<col name="c">Others</col>
+		</data>
+		<data>
+			<col name="v">7</col>
+			<col name="c">Shift in flora(bacterial vaginosis)</col>
+		</data>
+		<data>
+			<col name="v">8</col>
+			<col name="c">Actinomyces</col>
+		</data>
+	</code>
+</root>

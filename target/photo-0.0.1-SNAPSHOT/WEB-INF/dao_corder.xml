@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+	<!-- use -->
+	<dao name="AddCalOrder">
+		<statement>
+			insert into
+			cal_order(seq,orderNo,GPID,memberSeq,userId,userName,email,address,tel,mobile,productSeq,kinds,skin,
+			styleSeq,captionFont,captionPic,captionText,captionEffect,
+			captionColor,lcoverPic,hcoverPic,amount,bookNum,
+			createDate,updateDate,status,pageNum,pageSize,productName,valuation)
+			values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">productSeq</parameter>
+		<parameter type="int">kinds</parameter>
+		<parameter type="String">skin</parameter>
+		<parameter type="int">styleSeq</parameter>
+		<parameter type="String">captionFont</parameter>
+		<parameter type="String">captionPic</parameter>
+		<parameter type="String">captionText</parameter>
+		<parameter type="int">captionEffect</parameter>
+		<parameter type="String">captionColor</parameter>
+		<parameter type="String">1coverPic</parameter>
+		<parameter type="String">hcoverPic</parameter>
+		<parameter type="int">amount</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">pageNum</parameter>
+		<parameter type="String">pageSize</parameter>
+		<parameter type="String">productName</parameter>
+		<parameter type="int">valuation</parameter>
+	</dao>
+	<dao name="UpdateCalOrderUserData">
+		<statement>
+			update cal_order set
+			userName=?,email=?,address=?,tel=?,mobile=? where seq=?
+		</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrder">
+		<statement>
+			update cal_order set
+			styleSeq=?,captionFont=?,captionPic=?,captionPic2=?,captionText=?,captionShow=?,captionEffect=?,captionColor=?,
+			lcoverPic=?,hcoverPic=?,amount=?,bookNum=?,
+			updateDate=?,status=?,makeStatus=? where seq=?
+		</statement>
+		<parameter type="int">styleSeq</parameter>
+		<parameter type="String">captionFont</parameter>
+		<parameter type="String">captionPic</parameter>
+		<parameter type="String">captionPic2</parameter>
+		<parameter type="String">captionText</parameter>
+		<parameter type="String">captionShow</parameter>
+		<parameter type="int">captionEffect</parameter>
+		<parameter type="String">captionColor</parameter>
+		<parameter type="String">lcoverPic</parameter>
+		<parameter type="String">hcoverPic</parameter>
+		<parameter type="int">amount</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<!-- use -->
+	<dao name="UpdateCalOrder2">
+		<statement>
+			update cal_order set
+			productSeq=?,kinds=?,skin=?,pageNum=?,pageSize=?,productName=?,valuation=?
+			where seq=?
+		</statement>
+		<parameter type="int">productSeq</parameter>
+		<parameter type="int">kinds</parameter>
+		<parameter type="string">skin</parameter>
+		<parameter type="int">pageNum</parameter>
+		<parameter type="String">pageSize</parameter>
+		<parameter type="String">productName</parameter>
+		<parameter type="int">valuation</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrder3">
+		<statement>
+			update cal_order set
+			userName=?,email=?,address=?,tel=?,mobile=?,bookNum=?,
+			invoiceType=?,invoiceBuyer=?,invoiceNumber=?,invoiceTitle=?,invoiceAddress=?,
+			total=?,freight=? where seq=?
+		</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="int">invoiceType</parameter>
+		<parameter type="String">invoiceBuyer</parameter>
+		<parameter type="string">invoiceNumber</parameter>
+		<parameter type="String">invoiceTitle</parameter>
+		<parameter type="String">invoiceAddress</parameter>
+		<parameter type="int">total</parameter>
+		<parameter type="int">freight</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrder4">
+		<statement>
+			update cal_order set
+			userName=?,email=?,address=?,tel=?,mobile=?,bookNum=?,
+			invoiceType=?,invoiceBuyer=?,invoiceNumber=?,invoiceTitle=?,invoiceAddress=?,
+			total=?,freight=?,valuation=?,pageNum=? where seq=?
+		</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="int">invoiceType</parameter>
+		<parameter type="String">invoiceBuyer</parameter>
+		<parameter type="string">invoiceNumber</parameter>
+		<parameter type="String">invoiceTitle</parameter>
+		<parameter type="String">invoiceAddress</parameter>
+		<parameter type="int">total</parameter>
+		<parameter type="int">freight</parameter>
+		<parameter type="int">valuation</parameter>
+		<parameter type="int">pageNum</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrder5">
+		<statement>
+			update cal_order set
+			userName=?,email=?,address=?,tel=?,mobile=?,bookNum=?,
+			invoiceType=?,invoiceBuyer=?,invoiceNumber=?,invoiceTitle=?,invoiceAddress=?,
+			total=?,freight=?,onsalesType=?,onsalesNum=?,onsalesRate=?,onsalesSeq=?
+			where seq=?
+		</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="int">invoiceType</parameter>
+		<parameter type="String">invoiceBuyer</parameter>
+		<parameter type="string">invoiceNumber</parameter>
+		<parameter type="String">invoiceTitle</parameter>
+		<parameter type="String">invoiceAddress</parameter>
+		<parameter type="int">total</parameter>
+		<parameter type="int">freight</parameter>
+		<parameter type="short">onsalesType</parameter>
+		<parameter type="String">onsalesNum</parameter>
+		<parameter type="double">onsalesRate</parameter>
+		<parameter type="long">onsalesSeq</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderStyleSeq">
+		<statement>
+			update cal_order set styleSeq=? where seq=?
+		</statement>
+		<parameter type="int">styleSeq</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderPageData"><!-- use -->
+		<statement>
+			update cal_order set pageData=? where seq=?
+		</statement>
+		<parameter type="String">pageData</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderPdfPath">
+		<statement>
+			update cal_order set pdfPath=?,coverPdfPath=?,makeStatus=?
+			where seq=?
+		</statement>
+		<parameter type="String">pdfPath</parameter>
+		<parameter type="String">coverPdfPath</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="DeleteCalOrder">
+		<statement>
+			delete from cal_order where seq=? and (status = 0 or status	= 1 or status	= 50)
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderPdfFail">
+		<statement>
+			update cal_order set pdfFailNum=? where seq=?
+		</statement>
+		<parameter type="int">pdfFailNum</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderWsepFail">
+		<statement>
+			update cal_order set wsepFailNum=? where seq=?
+		</statement>
+		<parameter type="int">wsepFailNum</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderUserId">
+		<statement>update cal_order set userId=? where seq=?</statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderPrinter">
+		<statement>update cal_order set status=4,printer=?,care=? where seq=?</statement>
+		<parameter type="int">printer</parameter>	
+		<parameter type="String">care</parameter>			
+		<parameter type="long">seq</parameter>
+	</dao>	
+	<dao name="UpdateCalOrderStatus">
+		<statement>update cal_order set status=? where seq=?</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderToUse">
+		<statement>update cal_order set seq=? where seq=?</statement>
+		<parameter type="long">newseq</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderUserDate">
+		<statement>
+			update cal_order set userDate=? where seq=?
+		</statement>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderStatusAndMakeStatus">
+		<statement>
+			update cal_order set status=?,makeStatus=? where seq=?
+		</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderATMGold">
+		<statement>
+			update cal_order set
+			status=?,makeStatus=?,goldStatus,BankIDr=?,InAcctNo=? where
+			seq=?
+		</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="int">goldStatus</parameter>
+		<parameter type="String">BankIDr</parameter>
+		<parameter type="String">InAcctNo</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderMakeStatus">
+		<statement>
+			update cal_order set makeStatus=? where seq=?
+		</statement>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderShareStatusByMember">
+		<statement>
+			update cal_order set shareStatus=? where seq=? and memberSeq
+			=?
+		</statement>
+		<parameter type="int">shareStatus</parameter>
+		<parameter type="long">seq</parameter>
+		<parameter type="long">memberSeq</parameter>
+	</dao>
+	<dao name="CalStartMakePDF">
+		<statement>
+			update cal_order set makeStatus=2 where seq=?
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="CalStartMakeSWF">
+		<statement>
+			update cal_order set swfStatus=1 where seq=?
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="CalStartValidateCalOrder">
+		<statement>update cal_order set status=1 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="CalStartValidatePrint">
+		<statement>
+			update cal_order set makeStatus=2 where seq=?
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="ResendCalOrder">
+		<statement>update cal_order set status=2 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="ReeditCalOrder">
+		<statement>
+			update cal_order set status=1,MakeStatus=0 where seq=?
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QueryAllCalOrder">
+		<statement>select * from cal_order where status > -9</statement>
+	</dao>
+	<dao name="QueryAllCalOrderByGPID">
+		<statement>
+			select * from cal_order where status > -9 and GPID=?
+		</statement>
+		<parameter type="String">GPID</parameter>
+	</dao>
+	<dao name="QueryValidateCalOrder">
+		<statement>
+			select * from cal_order where status = -10
+		</statement>
+	</dao>
+	<dao name="QueryCalOrder">
+		<statement>
+			select * from cal_order where seq=? and memberSeq=?
+		</statement>
+		<parameter type="int">seq</parameter>
+		<parameter type="int">memberSeq</parameter>
+	</dao>
+	<dao name="QueryCalOrderBySeq">
+		<statement>select * from cal_order where seq=?</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<!-- use -->
+	<dao name="QueryCalOrder2">
+		<statement>
+			select a.*,b.userId from cal_order a,member b where a.seq=?
+			and a.memberSeq=? and a.memberSeq=b.seq
+		</statement>
+		<parameter type="int">seq</parameter>
+		<parameter type="int">memberSeq</parameter>
+	</dao>
+  <dao name="QueryCalOrder3">
+    <statement>select a.*,b.userId from cal_order a,member b where
+      a.seq=? and a.memberSeq=b.seq</statement>
+    <parameter type="int">seq</parameter>
+  </dao>	
+	<dao name="QueryCalOrderByStatus2">
+		<statement>
+			select a.*,b.userId from cal_order a,member b where
+			a.status=? and a.memberSeq=b.seq and a.seq > 0
+		</statement>
+		<parameter type="int">status</parameter>
+	</dao>
+	<dao name="QueryCalOrderByWS">
+		<statement><![CDATA[select a.*,b.userId from cal_order a,member b where a.seq < 0 and a.memberSeq=b.seq]]></statement>
+	</dao>
+	<dao name="QueryCalOrderByShareStatus">
+		<statement>
+			select * from cal_order where shareStatus=?
+		</statement>
+		<parameter type="int">shareStatus</parameter>
+	</dao>
+	<dao name="QueryCalValidatePrint">
+		<statement>
+			select * from cal_order where status=2 and makeStatus=1
+		</statement>
+	</dao>
+	<dao name="QueryCalAssignPrint">
+		<statement>
+			select * from cal_order where status=3
+		</statement>
+	</dao>	
+	<dao name="QueryCalOrderByMemberSeq">
+		<statement>
+			select a.*,b.lpicture,c.GPID,c.userId from cal_order a left
+			join cal_style b on a.styleSeq = b.seq inner join member c
+			on a.memberSeq = c.seq where a.memberSeq=?
+		</statement>
+		<parameter type="int">memberSeq</parameter>
+	</dao>
+	<dao name="QueryCalOrderByOrderNo">
+		<statement>
+			select * from cal_order where orderNo=? and GPID=?
+		</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+	</dao>
+	<dao name="QueryCalOrderStatusByOrderNo2">
+		<statement>
+			select a.status from cal_order a,seller b where
+			a.GPID=b.GPID and a.orderNo=? and a.GPID=? and b.passCode=?
+		</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">passCode</parameter>
+	</dao>
+	<dao name="AddCalOrderXML">
+		<statement>
+			insert into cal_xml(seq,orderSeq,GPID,orderNo,xml1,xml2)
+			values(?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">xml1</parameter>
+		<parameter type="String">xml2</parameter>
+	</dao>
+	<dao name="UpdateCalOrderXML1">
+		<statement>
+			update cal_xml set xml1=? where orderSeq=?
+		</statement>
+		<parameter type="String">xml1</parameter>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="UpdateCalOrderXML2">
+		<statement>
+			update cal_xml set xml2=? where orderSeq=?
+		</statement>
+		<parameter type="String">xml2</parameter>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="QueryCalOrderXML">
+		<statement>select * from cal_xml where orderSeq=?</statement>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+
+	<dao name="UpdateCalOrderAmount">
+		<statement>update cal_order set amount=? where seq=?</statement>
+		<parameter type="int">amount</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="CountCalOnsales">
+		<statement>
+			select count(*) usedNum from cal_order where onsalesSeq = ?
+			and status > 1
+		</statement>
+		<parameter type="int">onsalesSeq</parameter>
+	</dao>
+</root>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+		"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="report" extends="front-default" namespace="/">
+		<action name="admin_report1" class="com.liane.action.Report1">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report1.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report1_back" class="com.liane.action.Report1" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report1.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report1_view" class="com.liane.action.Report1" method="view">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report1_content.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report1.action</result>
+		</action>
+		<action name="admin_report1_update" class="com.liane.action.Report1" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report1_content.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report1.action</result>
+		</action>
+		<action name="admin_report1_save" class="com.liane.action.Report1" method="save">
+		</action>
+		<action name="admin_report1_remove" class="com.liane.action.Report1" method="remove">
+		</action>
+		<action name="admin_report1_datas" class="com.liane.action.Report1" method="datas"/>
+
+
+		<action name="admin_report2" class="com.liane.action.Report2">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report2.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report2_back" class="com.liane.action.Report2" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report2.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report2_view" class="com.liane.action.Report2" method="view">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report2_content.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report2.action</result>
+		</action>
+		<action name="admin_report2_update" class="com.liane.action.Report2" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report2_content.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report2.action</result>
+		</action>
+		<action name="admin_report2_save" class="com.liane.action.Report2" method="save">
+		</action>
+		<action name="admin_report2_remove" class="com.liane.action.Report2" method="remove">
+		</action>
+		<action name="admin_report2_datas" class="com.liane.action.Report2" method="datas"/>
+
+		<action name="admin_report3" class="com.liane.action.Report3">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report3.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report3.action</result>
+		</action>
+		<action name="admin_report3_back" class="com.liane.action.Report3" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report3.jsp</param>
+			</result>
+			<result name="fail" type="redirect">/admin_report3.action</result>
+		</action>
+		<action name="admin_report3_view" class="com.liane.action.Report3" method="view">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report3_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report3_update" class="com.liane.action.Report3" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/report/report3_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_report3_save" class="com.liane.action.Report3" method="save">
+		</action>
+		<action name="admin_report3_remove" class="com.liane.action.Report3" method="remove">
+		</action>
+		<action name="admin_report3_datas" class="com.liane.action.Report3" method="datas"/>
+	</package>
+</struts>

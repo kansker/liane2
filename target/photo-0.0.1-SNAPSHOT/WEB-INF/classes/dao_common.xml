@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dao name="AdminLogin">
+		<statement>
+			select * from adminuser where userId=? and userPwd=? and
+			status = 1
+		</statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+	</dao>
+	<dao name="UpdateVisit">
+		<statement>
+			update adminuser set lastvisitDate=? where seq=?
+		</statement>
+		<parameter type="now">lastvisitDate</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QuerySellerByAdminSeq">
+		<statement>select * from seller where adminSeq=?</statement>
+		<parameter type="long">adminSeq</parameter>
+	</dao>
+	<dao name="QueryAllSeller2">
+		<statement><![CDATA[
+			select a.*,b.username name from seller a left join adminuser b on a.adminSeq = b.seq
+		]]></statement>
+	</dao>
+	<dao name="QuerySellerByGPID4">
+		<statement><![CDATA[
+			select a.*,b.username name from seller a left join adminuser b on a.adminSeq = b.seq where a.GPID=? and a.status=1
+		]]></statement>
+		<parameter type="String">GPID</parameter>
+	</dao>
+
+	<dao name="api_updateOrderkindsDistance">
+		<statement><![CDATA[update orderkinds set distance=?,distanceCost=?,distanceMax=? where seq=?]]></statement>
+		<parameter type="int">distance</parameter>
+		<parameter type="int">distanceCost</parameter>
+		<parameter type="int">distanceMax</parameter>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="api_updateOrderPublish">
+		<statement><![CDATA[update PhotoOrder set bookName=?,author=?,publishDate=?,barCode=?,status=?,makeStatus=? where seq=?]]></statement>
+		<parameter type="String">bookName</parameter>
+		<parameter type="String">author</parameter>
+		<parameter type="String">publishDate</parameter>
+		<parameter type="String">barCode</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="api_AddPic">
+		<statement><![CDATA[insert into
+			orderpic(seq,orderSeq,userId,category,fileName,hpic,lpic,ohpic,olpic,ext,
+			lwidth,lheight,hwidth,hheight,caption,status,come)
+			values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		]]></statement>
+		<parameter seq="orderpic" seq2="seq" type="mseq">seq</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">category</parameter>
+		<parameter type="String">fileName</parameter>
+		<parameter type="String">hpic</parameter>
+		<parameter type="String">lpic</parameter>
+		<parameter type="String">ohpic</parameter>
+		<parameter type="String">olpic</parameter>
+		<parameter type="String">ext</parameter>
+		<parameter type="int">lwidth</parameter>
+		<parameter type="int">lheight</parameter>
+		<parameter type="int">hwidth</parameter>
+		<parameter type="int">hheight</parameter>
+		<parameter type="String">caption</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="short">come</parameter>
+	</dao>
+	<dao name="api_QueryOrderPicByDaemon">
+		<statement><![CDATA[select * from OrderPic where status = -1 order by seq desc]]></statement>
+	</dao>
+	<dao name="api_add_photoorder_page">
+		<statement><![CDATA[insert into photoorder_page (page, orderSeq, kind, data, op_date) values(?,?,?,?,?)]]></statement>
+		<parameter type="int">page</parameter>
+		<parameter type="long">orderSeq</parameter>
+		<parameter type="int">kind</parameter>
+		<parameter type="string">data</parameter>
+		<parameter type="now">op_date</parameter>
+	</dao>
+	<dao name="api_AddOrder">
+		<statement><![CDATA[
+			insert into PhotoOrder(seq,orderNo,GPID,memberSeq,userId,userName,company,email,address,tel,mobile,productSeq,productKind,skin, styleSeq,captionFont,captionPic,captionText,captionEffect,
+			captionColor,lcoverPic,hcoverPic,amount,bookNum, createDate,updateDate,status,pageNum,pageSize,productName,valuation,width,height,version,cwidth,cheight,mm,thick,coverKind,pageData,ebookSeq,
+			marginX,marginY,pageKind)
+			values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		]]></statement>
+		<parameter type="mseq" seq="order">seq</parameter>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">company</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">productSeq</parameter>
+		<parameter type="int">productKind</parameter>
+		<parameter type="String">skin</parameter>
+		<parameter type="int">styleSeq</parameter>
+		<parameter type="String">captionFont</parameter>
+		<parameter type="String">captionPic</parameter>
+		<parameter type="String">captionText</parameter>
+		<parameter type="int">captionEffect</parameter>
+		<parameter type="String">captionColor</parameter>
+		<parameter type="String">1coverPic</parameter>
+		<parameter type="String">hcoverPic</parameter>
+		<parameter type="int">amount</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">pageNum</parameter>
+		<parameter type="String">pageSize</parameter>
+		<parameter type="String">productName</parameter>
+		<parameter type="int">valuation</parameter>
+		<parameter type="int">width</parameter>
+		<parameter type="int">height</parameter>
+		<parameter type="String">version</parameter>
+		<parameter type="int">cwidth</parameter>
+		<parameter type="int">cheight</parameter>
+		<parameter type="double">mm</parameter>
+		<parameter type="int">thick</parameter>
+		<parameter type="int">coverKind</parameter>
+		<parameter type="String">pageData</parameter>
+		<parameter type="int">ebookSeq</parameter>
+		<parameter type="int">marginX</parameter>
+		<parameter type="int">marginY</parameter>
+		<parameter type="int">pageKind</parameter>
+	</dao>
+	<dao name="api_QueryAllOrderKinds">
+		<statement><![CDATA[select * from orderkinds where status=1 order by name]]></statement>
+	</dao>
+	<dao name="api_QueryOrderByOrderNo">
+		<statement>select * from PhotoOrder where orderNo=? and GPID=?</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+	</dao>
+	<dao name="api_ReeditOrder">
+		<statement>update PhotoOrder set status=1,MakeStatus=0 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="api_UpdateMemberUrlPwd">
+		<statement>update Member set urlPwd=?,urlEnable=1 where
+			userId=? and GPID=?
+		</statement>
+		<parameter type="String">urlPwd</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">GPID</parameter>
+	</dao>
+	<dao name="api_UpdateOrderPic">
+		<statement>update orderpic set
+			hpic=?,lpic=?,ohpic=?,olpic=?,ext=?,lwidth=?,lheight=?,hwidth=?,hheight=?,caption=?,status=?,come=?
+			where seq=?
+		</statement>
+		<parameter type="String">hpic</parameter>
+		<parameter type="String">lpic</parameter>
+		<parameter type="String">ohpic</parameter>
+		<parameter type="String">olpic</parameter>
+		<parameter type="String">ext</parameter>
+		<parameter type="int">lwidth</parameter>
+		<parameter type="int">lheight</parameter>
+		<parameter type="int">hwidth</parameter>
+		<parameter type="int">hheight</parameter>
+		<parameter type="String">caption</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="short">come</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QuerySellerByGPIDandStatus">
+		<statement><![CDATA[select * from seller where GPID=? and passCode=? and status=?]]></statement>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">passCode</parameter>
+		<parameter type="short">status</parameter>
+	</dao>
+	<dao name="QueryMemberByUserIdAndGPID">
+		<statement><![CDATA[select a.* from Member a,seller b where a.userId = ? and
+			a.GPID = ? and a.GPID=b.GPID and a.status=1 and b.passCode=?]]></statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">passCode</parameter>
+	</dao>
+	<dao name="AddMember">
+		<statement><![CDATA[insert into
+			Member(GPID,userId,userPwd,email,name,zip,
+			address,tel,mobile,sex,birthday,education,occupation,createDate,status,updateDate,active,company)
+			values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		]]></statement>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">name</parameter>
+		<parameter type="String">zip</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="int">sex</parameter>
+		<parameter type="Timestamp">birthday</parameter>
+		<parameter type="int">education</parameter>
+		<parameter type="int">occupation</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="String">active</parameter>
+		<parameter type="String">company</parameter>
+	</dao>
+	<dao name="api_QueryStyleByCgyAndAuth">
+		<statement><![CDATA[select a.*,b.name cgyName 
+		from PhotoStyle a 
+		inner join photostyle_product p on a.seq = p.styleSeq
+		left join stylecategory b on a.cgySeq=b.seq 
+		where a.status=1
+		]]></statement>
+		<parameter condition="p.productSeq = ?" kind="2" type="int">productSeq</parameter>
+		<parameter condition="a.forWho =? " kind="2" type="int">forWho</parameter>
+		<parameter condition="a.cgySeq=?" kind="2" type="int">cgySeq</parameter>
+		<parameter condition="a.width = ?" kind="2" type="int">width</parameter>
+		<parameter condition="a.height = ?" kind="2" type="int">height</parameter>
+		<parameter condition="(a.kinds=0 or a.auth like ? or a.auth like '%,ALL,%')" kind="2" type="LikeString">auth</parameter>
+		<parameter condition="a.type = ?" kind="2" type="int">type</parameter>
+		<parameter condition="a.adminSeq=?" kind="2" type="int">adminSeq</parameter>
+		<parameter condition="(a.type = 0 or a.type = ?)" kind="2" type="int">type2</parameter>
+		<order>a.name</order>
+		<direction>ASC</direction>
+	</dao>
+	<dao name="api_qa_orderpic">
+		<statement><![CDATA[select * from orderpic where orderSeq=? and status=1]]></statement>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="api_qa_photoorder_page">
+		<statement><![CDATA[select * from photoorder_page where orderSeq = ?]]></statement>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="UpdateOderPicStatusBySeq">
+		<statement>update OrderPic set status=? where seq=?</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOrderPicFail">
+		<statement>update orderpic set failNum=failNum+1 where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QueryOrderByStatus2">
+		<statement>select * from PhotoOrder where status=? and seq > 0</statement>
+		<parameter type="int">status</parameter>
+	</dao>
+	<dao name="QueryOderPicByStatusAndOrderSeq">
+		<statement>select * from OrderPic where status=? and orderSeq=?</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="QueryOrderByWS">
+		<statement><![CDATA[select * from PhotoOrder a where seq < 0 ]]></statement>
+	</dao>
+	<dao name="del_photoorder">
+		<statement><![CDATA[delete from photoorder where seq = ?]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateOderPicOrderSeq">
+		<statement>update orderpic set orderSeq=? where orderSeq=?</statement>
+		<parameter type="long">neworderSeq</parameter>
+		<parameter type="long">orderSeq</parameter>
+	</dao>
+	<dao name="QueryStyleLayout">
+		<statement><![CDATA[select * from PhotoLayout where styleSeq=?]]></statement>
+		<parameter type="long">styleSeq</parameter>
+	</dao>
+	<dao name="QueryLayoutRect">
+		<statement><![CDATA[select * from LayoutRect where layoutSeq=?]]></statement>
+		<parameter type="long">layoutSeq</parameter>
+	</dao>
+	<dao name="transfer_layout1">
+		<statement><![CDATA[
+		select width,height,kind,productKind,count(*) from layout
+		group by width,height,kind,productKind
+		]]></statement>
+	</dao>
+	<dao name="transfer_layout2">
+		<statement><![CDATA[
+		select * from layout where width = ? and height =? and kind =? and productKind = ?
+		]]></statement>
+		<parameter type="long">width</parameter>
+		<parameter type="long">height</parameter>
+		<parameter type="long">kind</parameter>
+		<parameter type="String">productKind</parameter>
+	</dao>
+	<dao name="transfer_layout3">
+		<statement><![CDATA[
+		select * from layoutrect where layoutSeq = ?
+		]]></statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="transfer4">
+		<statement><![CDATA[
+		select * from frame_page where seq in (2 , 4 , 7,8)
+		]]></statement>
+	</dao>
+	<dao name="transfer5">
+		<statement><![CDATA[
+		delete from frame_page where seq in (2 , 4 , 7,8)
+		]]></statement>
+	</dao>
+</root>

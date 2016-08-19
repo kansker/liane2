@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<dao name="CusLogin">
+		<statement>select * from member where userId=? and userPwd=?</statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+	</dao>
+	<dao name="QueryReport1ByPASCODE">
+		<statement>select * from report1 where PASCODE = ?</statement>
+		<parameter type="string">PASCODE</parameter>
+	</dao>
+	<dao name="QueryReport1ByToday">
+		<statement>select * from report1 where itemH = ?</statement>
+		<parameter type="String">itemH</parameter>
+	</dao>
+	<dao name="QueryReport1ByItemC">
+		<statement>select * from report1 where itemC = ?</statement>
+		<parameter type="String">itemC</parameter>
+	</dao>
+	<dao name="QueryReport1ByItemJ">
+		<statement>select * from report1 where itemJ = ?</statement>
+		<parameter type="String">exportDate</parameter>
+	</dao>
+	<dao name="DeleteReport1ByItemJ">
+		<statement>delete from report1 where itemJ=?</statement>
+		<parameter type="String">deleteDate</parameter>
+	</dao>
+	<dao name="DeleteReport1ByItemI">
+		<statement>delete from report1 where itemI between ? and ?</statement>
+		<parameter type="String">itemIStart</parameter>
+		<parameter type="String">itemIEnd</parameter>
+	</dao>
+	<dao name="UpdateReport1Test">
+		<statement>update report1 set PASCODE=? where itemC=?</statement>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">itemC</parameter>
+	</dao>
+
+	<dao name="UpdateReport2Test">
+		<statement>update report2 set PASCODE=? where itemC=?</statement>
+		<parameter type="String">PASCODE</parameter>
+		<parameter type="String">itemC</parameter>
+	</dao>
+	<dao name="QueryReport2ByItemC">
+		<statement>select * from report2 where itemC = ?</statement>
+		<parameter type="String">itemC</parameter>
+	</dao>
+	<dao name="QueryReport2ByItemP">
+		<statement>select * from report2 where itemP = ?</statement>
+		<parameter type="String">exportDate</parameter>
+	</dao>
+	<dao name="QueryReport2ByPASCODE">
+		<statement>select * from report2 where PASCODE=?</statement>
+		<parameter type="string">PASCODE</parameter>
+	</dao>
+
+	<dao name="DeleteReport2ByItemP">
+		<statement>delete from report2 where itemP=?</statement>
+		<parameter type="String">deleteDate</parameter>
+	</dao>
+	<dao name="DeleteReport2ByItemN">
+		<statement>delete from report2 where itemN between ? and ?</statement>
+		<parameter type="String">itemNStart</parameter>
+		<parameter type="String">itemNEnd</parameter>
+	</dao>
+	<dao name="AdminLogin">
+		<statement>select * from member where userId=? and userPwd=? and power1 = 1</statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userPwd</parameter>
+	</dao>
+	<dao name="QueryAdminuserByUserName2">
+		<statement>select * from member where userName like ? and power1 = 1</statement>
+		<parameter type="LikeString">userName</parameter>
+	</dao>
+	<dao name="QueryAdminuserByUserId">
+		<statement>select * from member where userId=?</statement>
+		<parameter type="String">userId</parameter>
+	</dao>
+	<dao name="QueryAdminuserByUserId2">
+		<statement>select * from member where userId like ? and power1 = 1</statement>
+		<parameter type="LikeString">userId</parameter>
+	</dao>
+	<dao name="QueryAdminuserByUserId3">
+		<statement><![CDATA[select * from member where userId = ? and seq <>?]]></statement>
+		<parameter type="String">userId</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="QueryReport3ByCHKNO">
+		<statement>select * from report3 where CHKNO=?</statement>
+		<parameter type="String">CHKNO</parameter>
+	</dao>
+	<dao name="QueryReport3ByPASCODE">
+		<statement>select * from report3 where PASCODE=?</statement>
+		<parameter type="String">PASCODE</parameter>
+	</dao>
+	<dao name="DeleteReport3ByCHKREC">
+		<statement>delete from report3 where CHKREC between ? and ?</statement>
+		<parameter type="String">CHKRECStart1</parameter>
+		<parameter type="String">CHKRECEnd1</parameter>
+	</dao>
+
+	<dao name="AddArea">
+		<statement>insert into areacode(AREACODE,AREANAME) values(?,?)</statement>
+		<parameter type="String">AREACODE</parameter>
+		<parameter type="String">AREANAME</parameter>
+	</dao>
+	<dao name="AddMed">
+		<statement>insert into med(DIATYPE,DIACODE,DIANAME) values(?,?,?)</statement>
+		<parameter type="String">DIATYPE</parameter>
+		<parameter type="String">DIACODE</parameter>
+		<parameter type="String">DIANAME</parameter>
+	</dao>
+
+	<dao name="add_worker">
+		<statement>insert into worker(EXACODE,EXANAME,EXATYPE,EXAID) values(?,?,?,?)</statement>
+		<parameter type="String">EXACODE</parameter>
+		<parameter type="String">EXANAME</parameter>
+		<parameter type="String">EXATYPE</parameter>
+		<parameter type="String">EXAID</parameter>
+	</dao>
+	<dao name="update_worker">
+		<statement>update worker set EXANAME=?,EXATYPE=?,EXAID=? where EXACODE=?</statement>
+		<parameter type="String">EXANAME</parameter>
+		<parameter type="String">EXATYPE</parameter>
+		<parameter type="String">EXAID</parameter>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+	<dao name="del_worker">
+		<statement>delete from worker where EXACODE=?</statement>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+	<dao name="qa_worker">
+		<statement>select * from worker where 1=1</statement>
+		<statement test="isNotEmpty('keyword')"><![CDATA[
+		and ( EXACODE like @keyword or EXANAME like @keyword)
+		]]></statement>
+		<parameter kind="3" type="LikeString">keyword</parameter>
+	</dao>
+	<dao name="q_worker">
+		<statement>select * from worker where EXACODE = ?</statement>
+		<parameter type="String">EXACODE</parameter>
+	</dao>
+</root>
+	

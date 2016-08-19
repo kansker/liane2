@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="AddGroups">
+    <statement>insert into groups(name,status,createDate,updateDate) values(?,?,?,?)</statement>
+    <parameter type="String">name</parameter>
+    <parameter type="short">status</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="UpdateGroups">
+    <statement>update groups set name=?,status=?,updateDate=? where seq=?</statement>
+    <parameter type="String">name</parameter>
+    <parameter type="short">status</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="DeleteGroups">
+    <statement>delete from groups where seq=?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="QueryAllGroups">
+    <statement>select * from groups</statement>
+  </dao>
+  <dao name="QueryAllGroups1">
+    <statement>select * from groups where status=1</statement>
+  </dao>
+  <dao name="QueryGroups">
+    <statement>select * from groups where seq=? and status=1</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="RemoveGroups">
+    <statement>update groups set status=0 where seq=?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+</root>

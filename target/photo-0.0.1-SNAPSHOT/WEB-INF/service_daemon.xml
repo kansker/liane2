@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+	<daemon_name_1>PicDaemon</daemon_name_1>
+	<daemon_class_1>com.photo.daemon.PicDaemon</daemon_class_1>
+	<daemon_start_time_1>2006/02/26 17:50:00</daemon_start_time_1>
+	<daemon_end_time_1>2016/02/26 17:55:00</daemon_end_time_1>
+	<daemon_interval_secs_1>60</daemon_interval_secs_1>
+
+	<daemon_name_2>SetFlashDaemon</daemon_name_2>
+	<daemon_class_2>com.photo.daemon.SetFlashDaemon</daemon_class_2>
+	<daemon_start_time_2>2006/02/26 17:50:00</daemon_start_time_2>
+	<daemon_end_time_2>2016/02/26 17:55:00</daemon_end_time_2>
+	<daemon_interval_secs_2>60</daemon_interval_secs_2>
+
+</root>

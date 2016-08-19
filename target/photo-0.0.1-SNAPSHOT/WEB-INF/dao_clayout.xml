@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="QueryAllCLayout">
+    <statement>select * from cal_layout</statement>
+  </dao>
+  <dao name="QueryAllCLayout2">
+    <statement>select * from cal_layout order by name</statement>
+  </dao>
+  <dao name="RemoveCLayout">
+    <statement>delete from cal_layout where seq=?</statement>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="AddCLayout">
+    <statement>insert into
+      cal_layout(seq,name,preview,createDate,updateDate) values(?,?,?,?,?)</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="String">name</parameter>
+    <parameter type="String">preview</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="UpdateCLayout">
+    <statement>update cal_layout set name=?,preview=?,updateDate=? where seq=?</statement>
+    <parameter type="String">name</parameter>
+    <parameter type="String">preview</parameter>
+    <parameter type="Timestamp">updateDate</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="DeleteCLayoutRect">
+    <statement>delete from cal_layoutrect where layoutSeq=?</statement>
+    <parameter type="long">layoutSeq</parameter>
+  </dao>
+  <dao name="QueryCLayoutRect">
+    <statement>select  * from cal_layoutrect where layoutSeq=?</statement>
+    <parameter type="long">layoutSeq</parameter>
+  </dao>
+  <dao name="AddCLayoutRect">
+    <statement>insert into
+      cal_layoutrect(layoutSeq,rectTop,rectLeft,rectWidth,rectHeight,captionTop,captionLeft,captionWidth,captionHeight,createDate,updateDate) values(?,?,?,?,?,?,?,?,?,?,?)</statement>
+    <parameter type="long">layoutSeq</parameter>
+    <parameter type="int">rectTop</parameter>
+    <parameter type="int">rectLeft</parameter>
+    <parameter type="int">rectWidth</parameter>
+    <parameter type="int">rectHeight</parameter>
+    <parameter type="int">captionTop</parameter>
+    <parameter type="int">captionLeft</parameter>
+    <parameter type="int">captionWidth</parameter>
+    <parameter type="int">captionHeight</parameter>
+    <parameter type="Timestamp">now()</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+
+
+
+
+  <dao name="AddCalUserLayout">
+    <statement>insert into
+      cal_userlayout(memberSeq,orderSeq,lpicture,hpicture,lwidth,lheight,createDate) values(?,?,?,?,?,?,?)</statement>
+    <parameter type="long">memberSeq</parameter>
+    <parameter type="long">orderSeq</parameter>
+    <parameter type="String">lpicture</parameter>
+    <parameter type="String">hpicture</parameter>
+    <parameter type="int">lwidth</parameter>
+    <parameter type="int">lheight</parameter>
+    <parameter type="Timestamp">now()</parameter>
+  </dao>
+  <dao name="UpdateCalUserLayout">
+    <statement>update cal_userlayout set memberSeq=?,lpicture=?,hpicture=?,lwidth=?,lheight=? where seq=?</statement>
+    <parameter type="long">memberSeq</parameter>
+    <parameter type="String">lpicture</parameter>
+    <parameter type="String">hpicture</parameter>
+    <parameter type="int">lwidth</parameter>
+    <parameter type="int">lheight</parameter>
+    <parameter type="long">seq</parameter>
+  </dao>
+  <dao name="DeleteCalUserLayout">
+    <statement>delete from cal_userlayout where seq=? and memberSeq=?</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="long">memberSeq</parameter>
+  </dao>
+  <dao name="QueryAllCalUserLayout">
+    <statement>select  * from cal_userlayout</statement>
+  </dao>
+  <dao name="QueryCalUserLayout">
+    <statement>select  * from cal_userlayout where orderSeq=?</statement>
+    <parameter type="long">orderSeq</parameter>
+  </dao>
+  <dao name="QueryCalUserLayout2">
+    <statement>select  * from cal_userlayout where seq=? and memberSeq=?</statement>
+    <parameter type="long">seq</parameter>
+    <parameter type="long">memberSeq</parameter>
+  </dao>
+</root>

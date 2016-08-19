@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <mail_smtp_host comment="電子郵件伺服器位置">smtp.gmail.com</mail_smtp_host>
+  <mail_smtp_port comment="電子郵件伺服器port">465</mail_smtp_port>
+  <mail_from comment="電子郵件伺服器發送者">mediafun@gmail.com</mail_from>
+  <mail_auth comment="電子郵件伺服器是否要認證">true</mail_auth>
+  <mail_starttls comment="電子郵件伺服器是否要starttls">true</mail_starttls>
+  <mail_user comment="電子郵件登入使用者認證名稱">mediafun</mail_user>
+  <mail_password comment="電子郵件登入使用者認證密碼">ericho890</mail_password>
+  <mail_charset comment="電子郵件編碼">big5</mail_charset>
+</root>

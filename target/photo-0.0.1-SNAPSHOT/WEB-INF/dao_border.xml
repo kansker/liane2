@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+	<dao name="AddBOrder">
+		<statement>
+			insert into b_order(seq,orderNo,GPID,memberSeq,userId,userName,email,address,tel, mobile,kinds,lcoverPic,hcoverPic,ccoverPic,amount,bookNum,createDate,
+			updateDate,status,makeStatus,pageData,pdfPath,pdfFailNum,valuation,total, userDate,freight,usedPage,deleteStatus,remark,printer,care)
+			values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		</statement>
+		<parameter type="long">seq</parameter>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="short">kinds</parameter>
+		<parameter type="String">lcoverPic</parameter>
+		<parameter type="String">hcoverPic</parameter>
+		<parameter type="String">ccoverPic</parameter>
+		<parameter type="int">amount</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="String">pageData</parameter>
+		<parameter type="String">pdfPath</parameter>
+		<parameter type="int">pdfFailNum</parameter>
+		<parameter type="int">valuation</parameter>
+		<parameter type="int">total</parameter>
+		<parameter type="Timestamp">userDate</parameter>
+		<parameter type="int">freight</parameter>
+		<parameter type="int">usedPage</parameter>
+		<parameter type="short">deleteStatus</parameter>
+		<parameter type="String">remark</parameter>
+		<parameter type="int">printer</parameter>
+		<parameter type="String">care</parameter>
+	</dao>
+	<dao name="UpdateBorder">
+		<statement>
+			update b_order set orderNo=?,GPID=?,memberSeq=?,userId=?,userName=?,email=?,address=?,tel=?,mobile=?, kinds=?,lcoverPic=?,hcoverPic=?,ccoverPic=?,amount=?,bookNum=?,
+			createDate=?,updateDate=?,status=?,makeStatus=?,pageData=?,pdfPath=?, pdfFailNum=?,valuation=?,total=?, userDate=?,freight=?,usedPage=?,deleteStatus=?,remark=?,printer=?,care=? where seq=?
+		</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="long">memberSeq</parameter>
+		<parameter type="String">userId</parameter>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="short">kinds</parameter>
+		<parameter type="String">lcoverPic</parameter>
+		<parameter type="String">hcoverPic</parameter>
+		<parameter type="String">ccoverPic</parameter>
+		<parameter type="int">amount</parameter>
+		<parameter type="int">bookNum</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="Timestamp">now()</parameter>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="String">pageData</parameter>
+		<parameter type="String">pdfPath</parameter>
+		<parameter type="int">pdfFailNum</parameter>
+		<parameter type="int">valuation</parameter>
+		<parameter type="int">total</parameter>
+		<parameter type="Timestamp">userDate</parameter>
+		<parameter type="int">freight</parameter>
+		<parameter type="int">usedPage</parameter>
+		<parameter type="short">deleteStatus</parameter>
+		<parameter type="String">remark</parameter>
+		<parameter type="int">printer</parameter>
+		<parameter type="String">care</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="UpdateBOrder5">
+		<statement>
+			update b_order set
+			userName=?,email=?,address=?,tel=?,mobile=?
+			where seq=?
+		</statement>
+		<parameter type="String">userName</parameter>
+		<parameter type="String">email</parameter>
+		<parameter type="String">address</parameter>
+		<parameter type="String">tel</parameter>
+		<parameter type="String">mobile</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>	
+	<dao name="UpdateBOrderStatusAndMakeStatus">
+		<statement>
+			update b_order set status=?,makeStatus=? where seq=?
+		</statement>
+		<parameter type="int">status</parameter>
+		<parameter type="int">makeStatus</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>	
+	<dao name="QueryBOrderBymemberSeq">
+		<statement>select a.* from b_order a where a.memberSeq=?</statement>
+		<parameter type="long">memberSeq</parameter>
+	</dao>
+	<dao name="QueryBOrder">
+		<statement>
+			select * from b_order where seq=? and memberSeq=?
+		</statement>
+		<parameter type="int">seq</parameter>
+		<parameter type="int">memberSeq</parameter>
+	</dao>
+	<dao name="QueryBOrderBySeq">
+		<statement>select * from b_order where seq=?</statement>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="QueryBOrder2">
+		<statement>
+			select a.*,b.userId from b_order a,member b where a.seq=?
+			and a.memberSeq=? and a.memberSeq=b.seq
+		</statement>
+		<parameter type="int">seq</parameter>
+		<parameter type="int">memberSeq</parameter>
+	</dao>
+	<dao name="QueryBOrder3">
+		<statement>
+			select a.*,b.userId from b_order a,member b where a.seq=?
+			and a.memberSeq=b.seq
+		</statement>
+		<parameter type="int">seq</parameter>
+	</dao>	
+	<dao name="UpdateBOrderPageData">
+		<statement>
+			update b_order set pageData=? where seq=?
+		</statement>
+		<parameter type="String">pageData</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="DeleteBOrder">
+		<statement>
+			delete from b_order where seq=? and (status = 0 or status
+			= 1 or status = -20)
+		</statement>
+		<parameter type="long">seq</parameter>
+	</dao>	
+	<dao name="QueryBOrderByOrderNo">
+		<statement>
+			select * from b_order where orderNo=? and GPID=?
+		</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+	</dao>
+	<dao name="QueryBOrderByOrderNo2">
+		<statement>select * from b_order where orderNo=?</statement>
+		<parameter type="String">orderNo</parameter>
+	</dao>
+	<dao name="QueryBOrderStatusByOrderNo2">
+		<statement>
+			select a.status from b_order a,seller b where
+			a.GPID=b.GPID and a.orderNo=? and a.GPID=? and b.passCode=?
+		</statement>
+		<parameter type="String">orderNo</parameter>
+		<parameter type="String">GPID</parameter>
+		<parameter type="String">passCode</parameter>
+	</dao>	
+</root>

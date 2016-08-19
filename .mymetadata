@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="photo"
+  id="myeclipse.1192721930609"
+  context-root="/photo"
+  j2ee-spec="1.3"
+  archive="photo.war">
+  <attributes>
+    <attribute name="webrootdir" value="/photo" />
+  </attributes>
+</project-module>
+

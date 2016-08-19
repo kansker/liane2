@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="big5"?>
+<root>
+  <dao name="QueryAllContents">
+    <statement>select * from contents</statement>
+  </dao>
+  <dao name="QueryContents">
+    <statement>select *  from contents where seq=?</statement>
+    <parameter type="int">seq</parameter>
+  </dao>
+  <dao name="UpdateContents">
+    <statement>update contents set subject=?,content=?,showName=?,bccs=? where seq=?</statement>
+    <parameter type="String">subject</parameter>
+    <parameter type="String">content</parameter>
+    <parameter type="String">showName</parameter>
+    <parameter type="String">bccs</parameter>
+    <parameter type="int">seq</parameter>
+  </dao>
+</root>
