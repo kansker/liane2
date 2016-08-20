@@ -29,6 +29,8 @@ public class Report2 extends EventAction {
 		condition = new WParam();
 		condition.add("offset", 0);
 		condition.add("limit", 10);
+		condition.addParameter("itemme", new java.util.Date());
+		condition.addParameter("itemms", condition.getTimeString("itemme", "yyyy/MM/01"));
 		return SUCCESS;
 	}
 

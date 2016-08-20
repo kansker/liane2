@@ -1,0 +1,2546 @@
+2016/08/20 00:02:50	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 00:05:25	 select * from system_code where sys_code=?
+2016/08/20 00:05:25	 select * from system_code where sys_code=?
+2016/08/20 00:05:25	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 00:05:25	data:    sys_code = liane_hot
+    op_date = 2016/08/19
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111117
+
+2016/08/20 00:05:25	sqlstirng: update system_code set sys_value='111117',op_date='2016/08/20 00:05:25' where sys_code='liane_hot'
+2016/08/20 00:05:25	effect row:1
+2016/08/20 00:05:25	 select * from system_code where sys_code=?
+2016/08/20 00:05:41	 select * from member where userId=? and userPwd=?
+2016/08/20 00:05:46	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/20 00:05:48	 select * from report1
+2016/08/20 00:06:09	 select * from report1 where seq = ?
+2016/08/20 00:06:44	 select * from report1 where seq = ?
+2016/08/20 00:08:04	 select * from report1 where seq = ?
+2016/08/20 00:08:29	 select * from report1 where seq = ?
+2016/08/20 00:08:35	 select * from report1 where seq = ?
+2016/08/20 00:08:41	 select * from report1 where seq = ?
+2016/08/20 00:09:05	 select * from report1
+2016/08/20 00:09:08	 select * from report1 where seq = ?
+2016/08/20 00:09:45	 select * from report1 where seq = ?
+2016/08/20 00:09:55	 select * from report1 where seq = ?
+2016/08/20 00:10:04	 select * from report1 where seq = ?
+2016/08/20 00:10:14	 select * from report1 where seq = ?
+2016/08/20 00:10:46	 select * from report1 where seq = ?
+2016/08/20 00:14:10	 select * from report1 where seq = ?
+2016/08/20 00:14:37	 select * from report1 where seq = ?
+2016/08/20 00:14:57	 select * from report1 where seq = ?
+2016/08/20 00:16:26	 select * from report1 where seq = ?
+2016/08/20 00:17:27	 select * from report1 where seq = ?
+2016/08/20 00:17:52	 select * from report1 where seq = ?
+2016/08/20 00:18:12	 select * from report1 where seq = ?
+2016/08/20 00:18:32	 select * from report1 where seq = ?
+2016/08/20 00:20:33	 select * from report1 where seq = ?
+2016/08/20 00:20:49	 select * from report1 where seq = ?
+2016/08/20 00:20:53	 select * from report1 where seq = ?
+2016/08/20 00:21:27	 select * from report1 where seq = ?
+2016/08/20 00:21:32	 select * from report1 where seq = ?
+2016/08/20 00:21:54	 select * from report1 where seq = ?
+2016/08/20 00:22:33	 select * from report1 where seq = ?
+2016/08/20 00:22:45	 select * from report1 where seq = ?
+2016/08/20 00:22:54	 select * from report1 where seq = ?
+2016/08/20 00:23:04	 select * from report1 where seq = ?
+2016/08/20 00:23:14	 select * from report1 where seq = ?
+2016/08/20 00:23:43	 select * from report1 where seq = ?
+2016/08/20 00:24:03	 select * from report1 where seq = ?
+2016/08/20 00:24:08	 select * from report1 where seq = ?
+2016/08/20 00:24:18	 select * from report1 where seq = ?
+2016/08/20 00:24:57	 select * from report1 where seq = ?
+2016/08/20 00:25:12	 select * from report1 where seq = ?
+2016/08/20 00:25:35	 select * from report1 where seq = ?
+2016/08/20 00:27:03	 select * from report1 where seq = ?
+2016/08/20 00:28:05	 select * from report1 where seq = ?
+2016/08/20 00:29:20	 select * from report1 where seq = ?
+2016/08/20 00:29:44	 select * from report1 where seq = ?
+2016/08/20 00:30:05	 select * from report1 where seq = ?
+2016/08/20 00:30:15	 select * from report1 where seq = ?
+2016/08/20 00:31:10	 select * from report1 where seq = ?
+2016/08/20 00:32:21	 select * from report1 where seq = ?
+2016/08/20 00:32:37	 select * from report1 where seq = ?
+2016/08/20 00:33:38	 select * from report1 where seq = ?
+2016/08/20 00:33:54	 select * from report1 where seq = ?
+2016/08/20 00:34:07	 select * from report1 where seq = ?
+2016/08/20 00:34:43	 select * from report1 where seq = ?
+2016/08/20 00:34:55	 select * from report1 where seq = ?
+2016/08/20 00:35:46	 select * from report1 where seq = ?
+2016/08/20 00:36:05	 select * from report1 where seq = ?
+2016/08/20 00:36:23	 select * from report1 where seq = ?
+2016/08/20 00:36:45	 select * from report1 where seq = ?
+2016/08/20 00:37:16	 select * from report1 where seq = ?
+2016/08/20 00:37:28	 select * from report1 where seq = ?
+2016/08/20 00:37:33	 select * from report1 where seq = ?
+2016/08/20 00:37:48	 select * from report1 where seq = ?
+2016/08/20 00:38:39	 select * from report1 where seq = ?
+2016/08/20 00:39:05	 select * from report1 where seq = ?
+2016/08/20 00:39:58	 select * from report1 where seq = ?
+2016/08/20 00:42:06	 select * from report1 where seq = ?
+2016/08/20 00:42:13	 select * from report1 where seq = ?
+2016/08/20 00:43:19	 select * from report1 where seq = ?
+2016/08/20 00:43:36	 select * from report1
+2016/08/20 00:43:38	 select * from report1 where seq = ?
+2016/08/20 00:54:18	 select * from report1 where seq = ?
+2016/08/20 00:55:16	 select * from report1 where seq = ?
+2016/08/20 00:55:37	 select * from report1 where seq = ?
+2016/08/20 00:55:47	 select * from report1 where seq = ?
+2016/08/20 00:56:09	 select * from report1 where seq = ?
+2016/08/20 00:56:16	 select * from report1
+2016/08/20 00:56:17	 select * from report1 where seq = ?
+2016/08/20 00:57:57	 select * from report1 where seq = ?
+2016/08/20 00:58:13	 select * from report1 where seq = ?
+2016/08/20 00:58:41	 select * from report1 where seq = ?
+2016/08/20 01:12:34	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 01:12:42	 select * from system_code where sys_code=?
+2016/08/20 01:12:42	 select * from system_code where sys_code=?
+2016/08/20 01:12:42	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 01:12:42	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111118
+
+2016/08/20 01:12:42	sqlstirng: update system_code set sys_value='111118',op_date='2016/08/20 01:12:42' where sys_code='liane_hot'
+2016/08/20 01:12:42	effect row:1
+2016/08/20 01:12:42	 select * from system_code where sys_code=?
+2016/08/20 01:12:54	 select * from member where userId=? and userPwd=?
+2016/08/20 01:12:58	 select * from report1
+2016/08/20 01:13:01	 select * from report1
+2016/08/20 01:13:17	 select * from report1 where seq = ?
+2016/08/20 01:27:55	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 01:28:05	 select * from system_code where sys_code=?
+2016/08/20 01:28:05	 select * from system_code where sys_code=?
+2016/08/20 01:28:05	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 01:28:05	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111119
+
+2016/08/20 01:28:05	sqlstirng: update system_code set sys_value='111119',op_date='2016/08/20 01:28:05' where sys_code='liane_hot'
+2016/08/20 01:28:05	effect row:1
+2016/08/20 01:28:05	 select * from system_code where sys_code=?
+2016/08/20 01:28:11	 select * from member where userId=? and userPwd=?
+2016/08/20 01:28:16	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/20 01:28:18	 select * from report2 where seq = ?
+2016/08/20 01:28:30	 select * from report2 where seq = ?
+2016/08/20 01:29:30	 select * from report2 where seq = ?
+2016/08/20 01:29:43	 select * from report2 where seq = ?
+2016/08/20 01:30:00	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/20 01:31:23	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:31:23	 select * from report2 where seq = ?
+2016/08/20 01:33:24	 select * from report3
+2016/08/20 01:33:27	 select * from report3 where seq = ?
+2016/08/20 01:33:44	 select * from report3 where seq = ?
+2016/08/20 01:46:33	 select * from report3 where seq = ?
+2016/08/20 01:47:35	 select * from report3 where seq = ?
+2016/08/20 01:47:45	 select * from report3 where seq = ?
+2016/08/20 01:48:12	 select * from report3 where seq = ?
+2016/08/20 01:48:39	 select * from report3 where seq = ?
+2016/08/20 01:49:44	 select * from report3 where seq = ?
+2016/08/20 01:50:25	 select * from report3
+2016/08/20 01:50:28	 select * from report3 where seq = ?
+2016/08/20 01:51:13	 select * from report3 where seq = ?
+2016/08/20 01:51:42	 select * from report3 where seq = ?
+2016/08/20 01:52:06	 select * from report3 where seq = ?
+2016/08/20 01:52:19	 select * from report3
+2016/08/20 01:52:30	 select * from report3 where seq = ?
+2016/08/20 11:50:22	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 11:50:46	 select * from system_code where sys_code=?
+2016/08/20 11:50:46	 select * from system_code where sys_code=?
+2016/08/20 11:50:46	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 11:50:46	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111120
+
+2016/08/20 11:50:46	sqlstirng: update system_code set sys_value='111120',op_date='2016/08/20 11:50:46' where sys_code='liane_hot'
+2016/08/20 11:50:46	effect row:1
+2016/08/20 11:50:46	 select * from system_code where sys_code=?
+2016/08/20 11:51:12	 select * from member where userId=? and userPwd=?
+2016/08/20 11:53:10	 select * from report1 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:53:33	 select * from system_code where sys_code=?
+2016/08/20 11:53:33	 select * from system_code where sys_code=?
+2016/08/20 11:53:33	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 11:53:33	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111121
+
+2016/08/20 11:53:33	sqlstirng: update system_code set sys_value='111121',op_date='2016/08/20 11:53:33' where sys_code='liane_hot'
+2016/08/20 11:53:33	effect row:1
+2016/08/20 11:53:33	 select * from system_code where sys_code=?
+2016/08/20 11:53:37	 select * from member where userId=? and userPwd=?
+2016/08/20 11:53:37	 select * from system_code where sys_code=?
+2016/08/20 11:53:37	 select * from system_code where sys_code=?
+2016/08/20 11:53:37	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 11:53:37	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111122
+
+2016/08/20 11:53:37	sqlstirng: update system_code set sys_value='111122',op_date='2016/08/20 11:53:37' where sys_code='liane_hot'
+2016/08/20 11:53:37	effect row:1
+2016/08/20 11:53:37	 select * from system_code where sys_code=?
+2016/08/20 11:55:42	 select * from member where userId=? and userPwd=?
+2016/08/20 11:55:47	 select * from report1 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:55:50	 select * from report1 where seq = ?
+2016/08/20 11:56:06	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:56:32	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:56:36	 select * from system_code where sys_code=?
+2016/08/20 11:56:36	 select * from system_code where sys_code=?
+2016/08/20 11:56:36	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 11:56:36	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111123
+
+2016/08/20 11:56:36	sqlstirng: update system_code set sys_value='111123',op_date='2016/08/20 11:56:36' where sys_code='liane_hot'
+2016/08/20 11:56:36	effect row:1
+2016/08/20 11:56:36	 select * from system_code where sys_code=?
+2016/08/20 11:56:39	 select * from member where userId=? and userPwd=?
+2016/08/20 11:56:45	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:56:49	 select * from report2 where seq = ?
+2016/08/20 11:57:04	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:57:06	 select * from report2 where seq = ?
+2016/08/20 11:57:08	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 11:57:09	 select * from report2 where seq = ?
+2016/08/20 11:57:09	 select * from report2 where seq = ?
+2016/08/20 11:57:09	 select * from report2 where seq = ?
+2016/08/20 11:57:09	 select * from report2 where seq = ?
+2016/08/20 11:57:10	 select * from report2 where seq = ?
+2016/08/20 11:57:10	 select * from report2 where seq = ?
+2016/08/20 11:57:10	 select * from report2 where seq = ?
+2016/08/20 11:57:10	 select * from report2 where seq = ?
+2016/08/20 11:57:10	 select * from report2 where seq = ?
+2016/08/20 11:57:11	 select * from report2 where seq = ?
+2016/08/20 11:57:46	 select * from report3 where 1=1 
+		and PASCODE = @PASCODE
+		
+2016/08/20 16:15:59	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 16:17:42	 select * from system_code where sys_code=?
+2016/08/20 16:17:42	 select * from system_code where sys_code=?
+2016/08/20 16:17:42	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:17:42	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111124
+
+2016/08/20 16:17:42	sqlstirng: update system_code set sys_value='111124',op_date='2016/08/20 16:17:42' where sys_code='liane_hot'
+2016/08/20 16:17:42	effect row:1
+2016/08/20 16:17:42	 select * from system_code where sys_code=?
+2016/08/20 16:18:13	 select * from member where userId=? and userPwd=? and power1 = 1
+2016/08/20 16:18:32	 select * from member where userId=? and userPwd=? and power1 = 1
+2016/08/20 16:18:37	 select * from report1 where 1=1
+2016/08/20 16:18:41	 select * from report1 where 1=1 
+		and iteme like @iteme
+		
+2016/08/20 16:18:48	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and itemc like @itemc
+		
+2016/08/20 16:18:50	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and itemc like @itemc
+		
+2016/08/20 16:18:58	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		
+2016/08/20 16:19:00	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		
+2016/08/20 16:19:02	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		
+2016/08/20 16:20:10	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:13	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:15	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:17	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:20	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and iteml like @iteml
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:23	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and itemc like @itemc
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:24	 select * from report1 where 1=1 
+		and iteme like @iteme
+		 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:26	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:26	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:27	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:27	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:28	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:29	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:29	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:34	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:20:39	 select * from report1 where 1=1 
+		and itemh >= @itemhs
+		 
+		and itemh <= @itemhe
+		
+2016/08/20 16:25:01	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 16:25:12	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemd like @itemd
+		
+2016/08/20 16:25:17	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		
+2016/08/20 16:25:19	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		
+2016/08/20 16:25:21	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		
+2016/08/20 16:25:26	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemq like @itemq
+		
+2016/08/20 16:25:28	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemq like @itemq
+		
+2016/08/20 16:25:38	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:25:48	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:25:49	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:25:53	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:25:59	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm <= @itemme
+		
+2016/08/20 16:28:00	 select * from report3 where 1=1
+2016/08/20 16:28:02	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:05	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:28:10	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:17	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:19	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:21	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:23	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:27	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:46	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:50	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:28:51	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:30:43	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		
+2016/08/20 16:30:46	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:30:51	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:30:53	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:30:53	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:31:14	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:31:17	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:31:18	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:31:41	 select * from system_code where sys_code=?
+2016/08/20 16:31:41	 select * from system_code where sys_code=?
+2016/08/20 16:31:41	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:31:41	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111125
+
+2016/08/20 16:31:41	sqlstirng: update system_code set sys_value='111125',op_date='2016/08/20 16:31:41' where sys_code='liane_hot'
+2016/08/20 16:31:41	effect row:1
+2016/08/20 16:31:41	 select * from system_code where sys_code=?
+2016/08/20 16:32:27	 select * from system_code where sys_code=?
+2016/08/20 16:32:27	 select * from system_code where sys_code=?
+2016/08/20 16:32:27	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:32:27	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111126
+
+2016/08/20 16:32:27	sqlstirng: update system_code set sys_value='111126',op_date='2016/08/20 16:32:27' where sys_code='liane_hot'
+2016/08/20 16:32:27	effect row:1
+2016/08/20 16:32:27	 select * from system_code where sys_code=?
+2016/08/20 16:32:32	 select * from system_code where sys_code=?
+2016/08/20 16:32:32	 select * from system_code where sys_code=?
+2016/08/20 16:32:32	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:32:32	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111127
+
+2016/08/20 16:32:32	sqlstirng: update system_code set sys_value='111127',op_date='2016/08/20 16:32:32' where sys_code='liane_hot'
+2016/08/20 16:32:32	effect row:1
+2016/08/20 16:32:32	 select * from system_code where sys_code=?
+2016/08/20 16:32:44	 select * from system_code where sys_code=?
+2016/08/20 16:32:44	 select * from system_code where sys_code=?
+2016/08/20 16:32:44	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:32:44	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111128
+
+2016/08/20 16:32:44	sqlstirng: update system_code set sys_value='111128',op_date='2016/08/20 16:32:44' where sys_code='liane_hot'
+2016/08/20 16:32:45	effect row:1
+2016/08/20 16:32:45	 select * from system_code where sys_code=?
+2016/08/20 16:32:56	 select * from system_code where sys_code=?
+2016/08/20 16:32:56	 select * from system_code where sys_code=?
+2016/08/20 16:32:56	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 16:32:56	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111129
+
+2016/08/20 16:32:56	sqlstirng: update system_code set sys_value='111129',op_date='2016/08/20 16:32:56' where sys_code='liane_hot'
+2016/08/20 16:32:56	effect row:1
+2016/08/20 16:32:56	 select * from system_code where sys_code=?
+2016/08/20 16:33:10	 select * from member where userId=? and userPwd=?
+2016/08/20 16:33:28	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 16:33:38	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:33:46	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:33:50	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:33:52	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:34:00	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemq like @itemq
+		 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:34:02	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemc like @itemc
+		 
+		and itemd like @itemd
+		 
+		and itemq like @itemq
+		 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:34:06	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:34:07	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 16:34:09	 select * from report2 where seq = ?
+2016/08/20 16:34:11	 select * from report2 where seq = ?
+2016/08/20 16:34:11	 select * from report2 where seq = ?
+2016/08/20 16:34:12	 select * from report2 where seq = ?
+2016/08/20 16:34:12	 select * from report2 where seq = ?
+2016/08/20 16:34:13	 select * from report2 where seq = ?
+2016/08/20 16:34:13	 select * from report2 where seq = ?
+2016/08/20 16:34:13	 select * from report2 where seq = ?
+2016/08/20 16:34:13	 select * from report2 where seq = ?
+2016/08/20 16:34:13	 select * from report2 where seq = ?
+2016/08/20 16:34:58	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 16:36:30	 select * from report2 where seq = ?
+2016/08/20 16:36:45	 select * from report1 where 1=1
+2016/08/20 16:36:49	 select * from report1 where 1=1 
+		and itemc like @itemc
+		
+2016/08/20 16:36:54	 select * from report3 where 1=1
+2016/08/20 16:37:04	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:37:10	 select * from report3 where 1=1 
+		and pasdate >= @pasdates
+		 
+		and pasdate <= @pasdatee
+		
+2016/08/20 16:37:16	 select * from report3 where 1=1
+2016/08/20 16:38:30	 select * from report3 where 1=1
+2016/08/20 16:39:08	 select * from report3 where 1=1
+2016/08/20 16:39:21	 select * from report3 where 1=1
+2016/08/20 16:39:38	 select * from report3 where 1=1
+2016/08/20 16:40:06	 select * from report3 where 1=1
+2016/08/20 16:40:25	 select * from report3 where 1=1
+2016/08/20 16:42:42	 select * from report3 where seq = ?
+2016/08/20 16:42:42	select userId,userName from member where userId = ?
+2016/08/20 16:43:50	 select * from report3 where seq = ?
+2016/08/20 16:44:03	select userId,userName from member where userId = ?
+2016/08/20 16:46:28	 select * from report3 where seq = ?
+2016/08/20 16:46:31	 select userId,userName from member where userId = ?
+2016/08/20 16:47:55	 select * from report3 where seq = ?
+2016/08/20 16:47:55	 select userId,userName from member where userId = ?
+2016/08/20 16:48:28	 select * from report3 where seq = ?
+2016/08/20 16:48:28	 select userId,userName from member where userId = ?
+2016/08/20 16:49:07	 select * from report3 where seq = ?
+2016/08/20 16:49:07	 select userId,userName from member where userId = ?
+2016/08/20 16:49:41	 select * from report3 where seq = ?
+2016/08/20 16:49:41	 select userId,userName from member where userId = ?
+2016/08/20 16:51:10	 select * from report3 where seq = ?
+2016/08/20 16:51:10	 select userId,userName from member where userId = ?
+2016/08/20 16:51:10	 select userId,userName from member where userId = ?
+2016/08/20 16:51:43	 select * from report3 where seq = ?
+2016/08/20 16:51:43	 select userId,userName from member where userId = ?
+2016/08/20 16:51:43	 select userId,userName from member where userId = ?
+2016/08/20 16:52:17	 select * from report3 where seq = ?
+2016/08/20 16:52:17	 select userId,userName from member where userId = ?
+2016/08/20 16:52:17	 select userId,userName from member where userId = ?
+2016/08/20 16:53:16	 select * from report3 where seq = ?
+2016/08/20 16:53:16	 select userId,userName from member where userId = ?
+2016/08/20 16:53:16	 select userId,userName from member where userId = ?
+2016/08/20 16:53:58	 select * from report3 where seq = ?
+2016/08/20 16:53:58	 select userId,userName from member where userId = ?
+2016/08/20 16:53:58	 select userId,userName from member where userId = ?
+2016/08/20 16:55:04	 select * from report3 where seq = ?
+2016/08/20 16:55:04	 select userId,userName from member where userId = ?
+2016/08/20 16:55:04	 select userId,userName from member where userId = ?
+2016/08/20 16:55:47	 select * from report3 where seq = ?
+2016/08/20 16:55:47	 select userId,userName from member where userId = ?
+2016/08/20 16:55:48	 select userId,userName from member where userId = ?
+2016/08/20 16:56:29	 select * from report3 where seq = ?
+2016/08/20 16:56:29	 select userId,userName from member where userId = ?
+2016/08/20 16:56:29	 select userId,userName from member where userId = ?
+2016/08/20 16:56:56	 select * from report3 where seq = ?
+2016/08/20 16:56:56	 select userId,userName from member where userId = ?
+2016/08/20 16:56:56	 select userId,userName from member where userId = ?
+2016/08/20 16:58:42	 select * from report3 where seq = ?
+2016/08/20 16:58:42	 select userId,userName from member where userId = ?
+2016/08/20 16:58:42	 select userId,userName from member where userId = ?
+2016/08/20 16:59:17	 select * from report3 where seq = ?
+2016/08/20 16:59:17	 select userId,userName from member where userId = ?
+2016/08/20 16:59:17	 select userId,userName from member where userId = ?
+2016/08/20 16:59:45	 select * from report3 where seq = ?
+2016/08/20 16:59:45	 select userId,userName from member where userId = ?
+2016/08/20 16:59:45	 select userId,userName from member where userId = ?
+2016/08/20 17:00:21	 select * from report3 where seq = ?
+2016/08/20 17:00:21	 select userId,userName from member where userId = ?
+2016/08/20 17:00:21	 select userId,userName from member where userId = ?
+2016/08/20 17:01:47	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 17:01:56	 select * from system_code where sys_code=?
+2016/08/20 17:01:56	 select * from system_code where sys_code=?
+2016/08/20 17:01:56	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 17:01:56	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111130
+
+2016/08/20 17:01:56	sqlstirng: update system_code set sys_value='111130',op_date='2016/08/20 17:01:56' where sys_code='liane_hot'
+2016/08/20 17:01:56	effect row:1
+2016/08/20 17:01:56	 select * from system_code where sys_code=?
+2016/08/20 17:02:04	 select * from member where userId=? and userPwd=?
+2016/08/20 17:02:10	 select * from report3 where 1=1
+2016/08/20 17:02:11	 select * from report3 where seq = ?
+2016/08/20 17:02:11	 select userId,userName from member where userId = ?
+2016/08/20 17:02:11	 select userId,userName from member where userId = ?
+2016/08/20 17:02:28	 select * from report3 where seq = ?
+2016/08/20 17:02:28	 select userId,userName from member where userId = ?
+2016/08/20 17:02:28	 select userId,userName from member where userId = ?
+2016/08/20 17:02:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:03:04	 select * from report3 where seq = ?
+2016/08/20 17:03:04	 select userId,userName from member where userId = ?
+2016/08/20 17:03:04	 select userId,userName from member where userId = ?
+2016/08/20 17:03:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:03:34	 select * from report3 where seq = ?
+2016/08/20 17:03:34	 select userId,userName from member where userId = ?
+2016/08/20 17:03:34	 select userId,userName from member where userId = ?
+2016/08/20 17:03:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:03:48	 select * from report3 where seq = ?
+2016/08/20 17:03:48	 select userId,userName from member where userId = ?
+2016/08/20 17:03:48	 select userId,userName from member where userId = ?
+2016/08/20 17:03:48	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:04:35	 select * from report3 where seq = ?
+2016/08/20 17:04:35	 select userId,userName from member where userId = ?
+2016/08/20 17:04:35	 select userId,userName from member where userId = ?
+2016/08/20 17:04:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:04:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:05:12	 select * from report3 where seq = ?
+2016/08/20 17:05:12	 select userId,userName from member where userId = ?
+2016/08/20 17:05:12	 select userId,userName from member where userId = ?
+2016/08/20 17:05:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:05:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:08:17	 select * from report3 where seq = ?
+2016/08/20 17:08:17	 select userId,userName from member where userId = ?
+2016/08/20 17:08:17	 select userId,userName from member where userId = ?
+2016/08/20 17:08:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:08:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:08:39	 select * from report3 where seq = ?
+2016/08/20 17:08:39	 select userId,userName from member where userId = ?
+2016/08/20 17:08:39	 select userId,userName from member where userId = ?
+2016/08/20 17:08:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:08:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:08:39	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:09:22	 select * from report3 where seq = ?
+2016/08/20 17:09:22	 select userId,userName from member where userId = ?
+2016/08/20 17:09:22	 select userId,userName from member where userId = ?
+2016/08/20 17:09:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:09:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:09:22	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:10:11	 select * from report3 where seq = ?
+2016/08/20 17:10:11	 select userId,userName from member where userId = ?
+2016/08/20 17:10:11	 select userId,userName from member where userId = ?
+2016/08/20 17:10:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:10:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:10:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:11:47	 select * from report3 where seq = ?
+2016/08/20 17:11:47	 select userId,userName from member where userId = ?
+2016/08/20 17:11:47	 select userId,userName from member where userId = ?
+2016/08/20 17:11:47	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:11:47	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:11:47	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:12:30	 select * from report3 where seq = ?
+2016/08/20 17:12:30	 select userId,userName from member where userId = ?
+2016/08/20 17:12:30	 select userId,userName from member where userId = ?
+2016/08/20 17:12:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:12:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:12:30	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:12:47	 select * from report3 where seq = ?
+2016/08/20 17:12:47	 select userId,userName from member where userId = ?
+2016/08/20 17:12:47	 select userId,userName from member where userId = ?
+2016/08/20 17:12:47	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:12:48	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:12:48	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:13:16	 select * from report3 where seq = ?
+2016/08/20 17:13:16	 select userId,userName from member where userId = ?
+2016/08/20 17:13:16	 select userId,userName from member where userId = ?
+2016/08/20 17:13:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:13:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:13:16	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:13:36	 select * from report3 where seq = ?
+2016/08/20 17:13:36	 select userId,userName from member where userId = ?
+2016/08/20 17:13:36	 select userId,userName from member where userId = ?
+2016/08/20 17:13:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:13:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:13:36	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:13:36	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:14:34	 select * from report3 where seq = ?
+2016/08/20 17:14:34	 select userId,userName from member where userId = ?
+2016/08/20 17:14:34	 select userId,userName from member where userId = ?
+2016/08/20 17:14:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:14:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:14:34	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:14:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:14:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:14:46	 select * from report3 where seq = ?
+2016/08/20 17:14:46	 select userId,userName from member where userId = ?
+2016/08/20 17:14:46	 select userId,userName from member where userId = ?
+2016/08/20 17:14:46	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:14:46	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:14:46	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:14:46	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:14:46	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:20	 select * from report3 where seq = ?
+2016/08/20 17:15:20	 select userId,userName from member where userId = ?
+2016/08/20 17:15:20	 select userId,userName from member where userId = ?
+2016/08/20 17:15:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:20	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:41	 select * from report3 where 1=1
+2016/08/20 17:15:41	 select userId,userName from member where userId = ?
+2016/08/20 17:15:41	 select userId,userName from member where userId = ?
+2016/08/20 17:15:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:41	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:42	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select userId,userName from member where userId = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:52	 select * from report3 where 1=1
+2016/08/20 17:15:55	 select * from report3 where 1=1
+2016/08/20 17:15:55	 select userId,userName from member where userId = ?
+2016/08/20 17:15:55	 select userId,userName from member where userId = ?
+2016/08/20 17:15:55	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:55	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:55	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:55	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:55	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:55	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select userId,userName from member where userId = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:56	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:56	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select userId,userName from member where userId = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:57	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:57	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select userId,userName from member where userId = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:15:59	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select userId,userName from member where userId = ?
+2016/08/20 17:15:59	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:00	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:00	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:01	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:01	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:02	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:02	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:03	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:03	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select userId,userName from member where userId = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:04	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:04	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:05	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select userId,userName from member where userId = ?
+2016/08/20 17:16:05	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select userId,userName from member where userId = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:06	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:07	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:07	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select userId,userName from member where userId = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:08	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:09	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:09	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:10	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:10	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select userId,userName from member where userId = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:11	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:11	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:12	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:12	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select userId,userName from member where userId = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:13	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:13	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select userId,userName from member where userId = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:14	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:14	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:15	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:15	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:16	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:16	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select userId,userName from member where userId = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:17	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:17	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select userId,userName from member where userId = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:18	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:18	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select userId,userName from member where userId = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:19	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:19	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select userId,userName from member where userId = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:20	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select userId,userName from member where userId = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:21	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:21	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select userId,userName from member where userId = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:22	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:22	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select userId,userName from member where userId = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:23	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:23	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select userId,userName from member where userId = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:24	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:24	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:25	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select userId,userName from member where userId = ?
+2016/08/20 17:16:25	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select userId,userName from member where userId = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:26	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select userId,userName from member where userId = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:27	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:27	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select userId,userName from member where userId = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:28	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select userId,userName from member where userId = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:29	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:29	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select userId,userName from member where userId = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:30	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:30	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select userId,userName from member where userId = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:31	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:31	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select userId,userName from member where userId = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:32	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:32	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:33	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:33	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:33	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:33	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:33	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:33	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select userId,userName from member where userId = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:33	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select userId,userName from member where userId = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:34	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:35	 select userId,userName from member where userId = ?
+2016/08/20 17:16:35	 select userId,userName from member where userId = ?
+2016/08/20 17:16:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:35	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:35	 select userId,userName from member where userId = ?
+2016/08/20 17:16:35	 select userId,userName from member where userId = ?
+2016/08/20 17:16:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:35	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:35	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:35	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:36	 select userId,userName from member where userId = ?
+2016/08/20 17:16:36	 select userId,userName from member where userId = ?
+2016/08/20 17:16:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:36	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:36	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:36	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:36	 select userId,userName from member where userId = ?
+2016/08/20 17:16:36	 select userId,userName from member where userId = ?
+2016/08/20 17:16:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:36	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:36	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:36	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:36	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:36	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:37	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:37	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select userId,userName from member where userId = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:37	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:37	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select userId,userName from member where userId = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:38	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:38	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select userId,userName from member where userId = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:39	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:39	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:40	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:40	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select userId,userName from member where userId = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:41	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:41	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:42	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select userId,userName from member where userId = ?
+2016/08/20 17:16:42	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select userId,userName from member where userId = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:16:43	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:16:43	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:17:58	 select * from report3 where seq = ?
+2016/08/20 17:17:58	 select userId,userName from member where userId = ?
+2016/08/20 17:17:58	 select userId,userName from member where userId = ?
+2016/08/20 17:17:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:17:58	 select AREACODE,AREANAME from areacode where AREACODE = ?
+2016/08/20 17:17:58	 select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?
+2016/08/20 17:17:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:17:58	 select EXACODE,EXANAME from worker where EXACODE = ?
+2016/08/20 17:36:52	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 17:37:02	 select * from system_code where sys_code=?
+2016/08/20 17:37:02	 select * from system_code where sys_code=?
+2016/08/20 17:37:02	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 17:37:02	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111131
+
+2016/08/20 17:37:02	sqlstirng: update system_code set sys_value='111131',op_date='2016/08/20 17:37:02' where sys_code='liane_hot'
+2016/08/20 17:37:02	effect row:1
+2016/08/20 17:37:02	 select * from system_code where sys_code=?
+2016/08/20 17:37:08	 select * from member where userId=? and userPwd=?
+2016/08/20 17:37:11	 select * from report1 where 1=1
+2016/08/20 17:37:13	 select * from report1 where 1=1
+2016/08/20 17:37:14	 select * from report1 where 1=1
+2016/08/20 17:37:16	 select * from report1 where 1=1
+2016/08/20 17:37:16	 select * from report1 where 1=1
+2016/08/20 17:37:25	 select * from report1 where 1=1
+2016/08/20 17:37:26	 select * from report1 where 1=1
+2016/08/20 17:37:29	 select * from report1 where 1=1
+2016/08/20 17:38:34	 select * from report1 where 1=1
+2016/08/20 17:38:35	 select * from report1 where 1=1
+2016/08/20 17:38:44	 select * from report1 where 1=1
+2016/08/20 17:39:05	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 17:39:33	 select * from system_code where sys_code=?
+2016/08/20 17:39:33	 select * from system_code where sys_code=?
+2016/08/20 17:39:33	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 17:39:33	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111132
+
+2016/08/20 17:39:33	sqlstirng: update system_code set sys_value='111132',op_date='2016/08/20 17:39:33' where sys_code='liane_hot'
+2016/08/20 17:39:33	effect row:1
+2016/08/20 17:39:33	 select * from system_code where sys_code=?
+2016/08/20 17:39:39	 select * from member where userId=? and userPwd=?
+2016/08/20 17:39:45	 select * from report1 where 1=1
+2016/08/20 17:39:48	 select * from report1 where 1=1
+2016/08/20 17:43:49	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 17:44:34	 select * from system_code where sys_code=?
+2016/08/20 17:44:34	 select * from system_code where sys_code=?
+2016/08/20 17:44:34	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 17:44:34	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111133
+
+2016/08/20 17:44:34	sqlstirng: update system_code set sys_value='111133',op_date='2016/08/20 17:44:34' where sys_code='liane_hot'
+2016/08/20 17:44:34	effect row:1
+2016/08/20 17:44:34	 select * from system_code where sys_code=?
+2016/08/20 17:44:41	 select * from member where userId=? and userPwd=?
+2016/08/20 17:44:41	 select * from system_code where sys_code=?
+2016/08/20 17:44:41	 select * from system_code where sys_code=?
+2016/08/20 17:44:41	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 17:44:41	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111134
+
+2016/08/20 17:44:41	sqlstirng: update system_code set sys_value='111134',op_date='2016/08/20 17:44:41' where sys_code='liane_hot'
+2016/08/20 17:44:41	effect row:1
+2016/08/20 17:44:41	 select * from system_code where sys_code=?
+2016/08/20 17:45:02	 select * from member where userId=? and userPwd=?
+2016/08/20 17:45:11	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:45:16	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:46:01	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:46:51	 select seq,itemA,itemB,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:49:30	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:51:20	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:51:22	 select seq,itemA,itemB,itemD,itemC,itemE,itemF,itemG,itemH,itemI,itemJ,itemM,itemK,itemQ,status from report2 where 1=1 limit 0,1000
+2016/08/20 17:51:54	 select * from report2 where 1=1 limit 0,1000
+2016/08/20 17:52:30	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:52:43	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 17:52:47	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		
+2016/08/20 17:52:51	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 17:52:56	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		
+2016/08/20 17:52:59	 select * from report2 where 1=1 
+		and itemm >= @itemms
+		 
+		and itemm <= @itemme
+		 limit 0,1000
+2016/08/20 18:04:20	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 18:11:56	 select * from member where userId=? and userPwd=? and power1 = 1
+2016/08/20 18:12:43	 select * from marquee where 1=1
+2016/08/20 18:12:46	 select * from ppt where 1=1
+2016/08/20 18:12:48	 select * from marquee where 1=1
+2016/08/20 18:13:18	 select * from marquee where seq = ?
+2016/08/20 18:13:21	 select * from marquee where 1=1
+2016/08/20 18:13:23	 select * from marquee where seq = ?
+2016/08/20 18:13:23	sql: delete from marquee where seq=?
+2016/08/20 18:13:23	data:    now_sql =  select * from marquee where seq = 1
+    query_agent_total_record = 1
+    seq = 1
+
+2016/08/20 18:13:23	sqlstirng: delete from marquee where seq=1
+2016/08/20 18:13:23	effect row:1
+2016/08/20 18:13:23	 select * from marquee where 1=1
+2016/08/20 18:13:50	sql: 
+		insert into marquee (seq, title, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?)
+2016/08/20 18:13:50	data:    ct_id = 
+    op_date = 2016/08/20
+    del_flag = N
+    method = add
+    ct_date = 2016/08/20
+    op_id = 
+    title = bbbbbb
+    seq = 3
+
+2016/08/20 18:13:50	sqlstirng: 
+		insert into marquee (seq, title, del_flag, ct_id, ct_date, op_id, op_date)
+		values(3,'bbbbbb','N','null','2016/08/20 18:13:50','null','2016/08/20 18:13:50')
+2016/08/20 18:13:50	effect row:1
+2016/08/20 18:13:53	 select * from marquee where 1=1
+2016/08/20 18:13:57	sql: 
+		insert into marquee (seq, title, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?)
+2016/08/20 18:13:57	data:    ct_id = 
+    op_date = 2016/08/20
+    del_flag = N
+    method = add
+    ct_date = 2016/08/20
+    op_id = 
+    title = SSSS
+    seq = 4
+
+2016/08/20 18:13:57	sqlstirng: 
+		insert into marquee (seq, title, del_flag, ct_id, ct_date, op_id, op_date)
+		values(4,'SSSS','N','null','2016/08/20 18:13:57','null','2016/08/20 18:13:57')
+2016/08/20 18:13:57	effect row:1
+2016/08/20 18:14:01	 select * from marquee where 1=1
+2016/08/20 18:14:03	 select * from ppt where 1=1
+2016/08/20 18:14:03	 select * from marquee where 1=1
+2016/08/20 18:14:11	 select * from report1 where 1=1
+2016/08/20 18:14:15	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1
+2016/08/20 18:58:33	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 19:00:17	 select * from system_code where sys_code=?
+2016/08/20 19:00:17	 select * from system_code where sys_code=?
+2016/08/20 19:00:17	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 19:00:17	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111135
+
+2016/08/20 19:00:17	sqlstirng: update system_code set sys_value='111135',op_date='2016/08/20 19:00:17' where sys_code='liane_hot'
+2016/08/20 19:00:17	effect row:1
+2016/08/20 19:00:17	 select * from system_code where sys_code=?
+2016/08/20 19:40:36	 select * from system_code where sys_code=?
+2016/08/20 19:40:36	 select * from system_code where sys_code=?
+2016/08/20 19:40:36	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 19:40:36	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111136
+
+2016/08/20 19:40:36	sqlstirng: update system_code set sys_value='111136',op_date='2016/08/20 19:40:36' where sys_code='liane_hot'
+2016/08/20 19:40:36	effect row:1
+2016/08/20 19:40:36	 select * from system_code where sys_code=?
+2016/08/20 19:40:40	 select * from system_code where sys_code=?
+2016/08/20 19:40:40	 select * from system_code where sys_code=?
+2016/08/20 19:40:40	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 19:40:40	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111137
+
+2016/08/20 19:40:40	sqlstirng: update system_code set sys_value='111137',op_date='2016/08/20 19:40:40' where sys_code='liane_hot'
+2016/08/20 19:40:40	effect row:1
+2016/08/20 19:40:40	 select * from system_code where sys_code=?

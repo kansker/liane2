@@ -52,6 +52,8 @@
 						<li><a href="javascript:toPage('admin_manager.action?task=query');"><i class="fa fa-fw fa-desktop"></i>管理者管理</a></li>
 						<li><a href="javascript:toPage('admin_user.action?task=query');"><i class="fa fa-fw fa-paypal"></i>使用者管理</a></li>
 						<li><a href="javascript:toPage('admin_worker.action?task=query');"><i class="fa fa-fw fa-paypal"></i>工作人員代碼</a></li>
+						<li><a href="javascript:toPage('admin_ppt.action?task=query');"><i class="fa fa-fw fa-paypal"></i>PPT管理</a></li>
+						<li><a href="javascript:toPage('admin_marquee.action?task=query');"><i class="fa fa-fw fa-paypal"></i>跑馬燈管理</a></li>
 					</ul>
 				</li>
 				<li><a href="javascript:;" data-toggle="collapse" data-target="#menu5"><i class="fa fa-fw fa-desktop"></i>CVS上傳 <i class="fa fa-fw fa-caret-down"></i></a>
@@ -120,7 +122,7 @@
 		$("#ifContent").height(h);
 	});
 	function toLogout() {
-		window.location.href = 'adminLogout.ko';
+		window.location.href = 'logoutA.action';
 	}
 	function openPage(u, t) {
 		$('#dgHistoryLabel').html(t);

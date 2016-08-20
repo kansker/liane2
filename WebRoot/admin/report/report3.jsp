@@ -75,7 +75,7 @@
 					>
 						<thead>
 						<tr>
-							<th data-field="PTNAME" data-formatter="nFormatter" data-events="operateEvents" data-align="center" data-sortable="true">姓名</th>
+							<th data-field="PTNAME" data-align="center" data-sortable="true">姓名</th>
 							<th data-field="PASCODE" data-align="center" data-sortable="true">送檢單位</th>
 							<th data-field="CHARTNO" data-align="center" data-sortable="true">病理號碼</th>
 							<th data-field="PASDATE" data-align="center" data-sortable="true">取樣日期</th>
@@ -152,8 +152,11 @@
 	}
 
 	function queryParams(params) {
-		params["condition.map.keyword"] = $('#keyword').val();
-		params["condition.map.status"] = $('#status').val();
+		params["condition.map.ptname"] = $('#ptname').val();
+		params["condition.map.chartno"] = $('#chartno').val();
+		params["condition.map.ptid"] = $('#ptid').val();
+		params["condition.map.pasdates"] = $('#pasdates').val();
+		params["condition.map.pasdatee"] = $('#pasdatee').val();
 		params.r = getKTagRandom();
 		return params;
 	}

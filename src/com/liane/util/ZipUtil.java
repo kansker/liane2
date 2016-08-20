@@ -1,4 +1,4 @@
-package com.photo.util;
+package com.liane.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

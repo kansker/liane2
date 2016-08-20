@@ -58,6 +58,8 @@
 								             placeholder="取樣日期" size="10"/>
 							</div>
 							<button type="button" id="refresh" class="btn btn-default">搜尋</button>
+							<%--<button type="button" id="csv" class="btn btn-default">下載CSV</button>--%>
+							<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>
 						</div>
 					</div>
 					<table
@@ -69,7 +71,7 @@
 							data-side-pagination="server"
 							data-page-number="<s:property value="%{condition.getInt('offset') / condition.getInt('limit')  + 1}"/>"
 							data-page-size=" <s:property value="%{condition.getInt('limit')}"/>"
-							data-page-list="[5, 10, 20, 50, 100, 200]"
+							data-page-list="[10, 20, 50]"
 							data-search="false"
 							data-toolbar="#custom-toolbar"
 							data-query-params="queryParams"
@@ -89,6 +91,10 @@
 		</div>
 	</div>
 </div>
+<form action="cus_search3_pdf.action" id="form1" name="form1" method="post" target="_blank">
+	<input type="hidden" id="seq" name="condition.map.seq" value=""/>
+	<input type="hidden" id="kind" name="condition.map.kind" value="1"/>
+</form>
 
 <script type="text/javascript">
 
@@ -101,10 +107,23 @@
 	}
 	window.operateEvents = {
 		'click .view': function (e, value, row, index) {
-			window.location.href = '<s:property value="prefix"/>_view.action?condition.map.seq=' + row.seq + '&r=' + getKTagRandom();
+			document.form1.action = "cus_search3_pdf.action";
+			$('#seq').val(row.seq);
+			$('#kind').val("2");
+			document.form1.submit();
 		}
 	};
 	$(function () {
+		$('#pdf').click(function () {
+			$('#kind').val("1");
+			document.form1.action = "cus_search3_pdfs.action";
+			document.form1.submit();
+		});
+		$('#csv').click(function () {
+			$('#kind').val("1");
+			document.form1.action = "cus_search3_csv.action";
+			document.form1.submit();
+		});
 		$('#refresh').click(function () {
 			refresh();
 		});
@@ -131,8 +150,11 @@
 	}
 
 	function queryParams(params) {
-		params["condition.map.keyword"] = $('#keyword').val();
-		params["condition.map.status"] = $('#status').val();
+		params["condition.map.ptname"] = $('#ptname').val();
+		params["condition.map.chartno"] = $('#chartno').val();
+		params["condition.map.ptid"] = $('#ptid').val();
+		params["condition.map.pasdates"] = $('#pasdates').val();
+		params["condition.map.pasdatee"] = $('#pasdatee').val();
 		params.r = getKTagRandom();
 		return params;
 	}

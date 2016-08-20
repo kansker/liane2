@@ -167,8 +167,11 @@
 	}
 
 	function queryParams(params) {
-		params["condition.map.keyword"] = $('#keyword').val();
-		params["condition.map.status"] = $('#status').val();
+		params["condition.map.itemc"] = $('#itemc').val();
+		params["condition.map.itemd"] = $('#itemd').val();
+		params["condition.map.itemq"] = $('#itemq').val();
+		params["condition.map.itemms"] = $('#itemms').val();
+		params["condition.map.itemme"] = $('#itemme').val();
 		params.r = getKTagRandom();
 		return params;
 	}

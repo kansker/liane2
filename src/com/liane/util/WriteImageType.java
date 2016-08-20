@@ -1,4 +1,4 @@
-package com.photo.util;
+package com.liane.util;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;

@@ -58,17 +58,6 @@
 		<statement>select userId,userName from member where userId = ?</statement>
 		<parameter type="String">PASCODE</parameter>
 	</code>
-	<code name="memberByCHKCODE">
-		<statement>select userId,userName from member where userId = ?</statement>
-		<parameter type="String">CHKCODE</parameter>
-	</code>
-
-	<code name="areacode">
-		<statement>select AREACODE,AREANAME from areacode</statement>
-	</code>
-	<code name="med28">
-		<statement>select DIACODE,DIANAME from med where DIATYPE = 1</statement>
-	</code>
 	<code name="worker">
 		<statement>select EXACODE,EXANAME from worker</statement>
 	</code>

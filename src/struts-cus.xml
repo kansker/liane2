@@ -37,5 +37,89 @@
 		<action name="cus_search3_datas" class="com.liane.action.client.Report3" method="datas">
 			<interceptor-ref name="defaultStackA"/>
 		</action>
+		<action name="cus_search1_pdf" class="com.liane.action.client.Report1" method="pdf">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search1_pdfs" class="com.liane.action.client.Report1" method="pdfs">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search1_csv" class="com.liane.action.client.Report1" method="csv">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputname">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${csvFileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="cus_search2_pdf" class="com.liane.action.client.Report2" method="pdf">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search2_pdfs" class="com.liane.action.client.Report2" method="pdfs">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search2_csv" class="com.liane.action.client.Report2" method="csv">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputname">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${csvFileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="cus_search3_pdf" class="com.liane.action.client.Report3" method="pdf">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search3_pdfs" class="com.liane.action.client.Report3" method="pdfs">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">pdfStream</param>
+				<param name="contentDisposition">attachment;filename="${pdfFileName}"</param>
+			</result>
+		</action>
+		<action name="cus_search3_csv" class="com.liane.action.client.Report3" method="csv">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputname">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${csvFileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="cus_user" class="com.liane.action.client.User" method="execute">
+			<interceptor-ref name="defaultStackA"/>
+			<result name="success" type="content">
+				<param name="location">/client/user.jsp</param>
+			</result>
+		</action>
+		<action name="cus_user_save" class="com.liane.action.client.User" method="save">
+			<interceptor-ref name="defaultStackA"/>
+		</action>
 	</package>
 </struts>

@@ -288,13 +288,113 @@
 		<parameter type="long">seq</parameter>
 	</dao>
 	<dao name="qa_report1">
-		<statement>select * from report1</statement>
+		<statement>select * from report1 where 1=1</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<statement test="isNotEmpty('iteme')"><![CDATA[
+		and iteme like @iteme
+		]]></statement>
+		<statement test="isNotEmpty('iteml')"><![CDATA[
+		and iteml like @iteml
+		]]></statement>
+		<statement test="isNotEmpty('itemc')"><![CDATA[
+		and itemc like @itemc
+		]]></statement>
+		<statement test="isNotEmpty('itemhs')"><![CDATA[
+		and itemh >= @itemhs
+		]]></statement>
+		<statement test="isNotEmpty('itemhe')"><![CDATA[
+		and itemh <= @itemhe
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
+		<parameter kind="3" type="LikeString">iteme</parameter>
+		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">iteml</parameter>
+		<parameter kind="3" type="String">itemhs</parameter>
+		<parameter kind="3" type="String">itemhe</parameter>
 	</dao>
 	<dao name="qa_report2">
-		<statement>select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2</statement>
+		<statement>select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<statement test="isNotEmpty('itemc')"><![CDATA[
+		and itemc like @itemc
+		]]></statement>
+		<statement test="isNotEmpty('itemd')"><![CDATA[
+		and itemd like @itemd
+		]]></statement>
+		<statement test="isNotEmpty('itemq')"><![CDATA[
+		and itemq like @itemq
+		]]></statement>
+		<statement test="isNotEmpty('itemms')"><![CDATA[
+		and itemm >= @itemms
+		]]></statement>
+		<statement test="isNotEmpty('itemme')"><![CDATA[
+		and itemm <= @itemme
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
+		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemd</parameter>
+		<parameter kind="3" type="LikeString">itemq</parameter>
+		<parameter kind="3" type="String">itemms</parameter>
+		<parameter kind="3" type="String">itemme</parameter>
+	</dao>
+	<dao name="export_report2">
+		<statement>select * from report2 where 1=1</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<statement test="isNotEmpty('itemc')"><![CDATA[
+		and itemc like @itemc
+		]]></statement>
+		<statement test="isNotEmpty('itemd')"><![CDATA[
+		and itemd like @itemd
+		]]></statement>
+		<statement test="isNotEmpty('itemq')"><![CDATA[
+		and itemq like @itemq
+		]]></statement>
+		<statement test="isNotEmpty('itemms')"><![CDATA[
+		and itemm >= @itemms
+		]]></statement>
+		<statement test="isNotEmpty('itemme')"><![CDATA[
+		and itemm <= @itemme
+		]]></statement>
+		<statement>limit 0,1000</statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
+		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemd</parameter>
+		<parameter kind="3" type="LikeString">itemq</parameter>
+		<parameter kind="3" type="String">itemms</parameter>
+		<parameter kind="3" type="String">itemme</parameter>
 	</dao>
 	<dao name="qa_report3">
-		<statement>select * from report3</statement>
+		<statement>select * from report3 where 1=1</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<statement test="isNotEmpty('ptname')"><![CDATA[
+		and ptname like @ptname
+		]]></statement>
+		<statement test="isNotEmpty('chartno')"><![CDATA[
+		and chartno like @chartno
+		]]></statement>
+		<statement test="isNotEmpty('ptid')"><![CDATA[
+		and ptid like @ptid
+		]]></statement>
+		<statement test="isNotEmpty('pasdates')"><![CDATA[
+		and pasdate >= @pasdates
+		]]></statement>
+		<statement test="isNotEmpty('pasdatee')"><![CDATA[
+		and pasdate <= @pasdatee
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
+		<parameter kind="3" type="LikeString">ptname</parameter>
+		<parameter kind="3" type="LikeString">chartno</parameter>
+		<parameter kind="3" type="LikeString">ptid</parameter>
+		<parameter kind="3" type="String">pasdates</parameter>
+		<parameter kind="3" type="String">pasdatee</parameter>
 	</dao>
 	<dao name="del_report1">
 		<statement>delete from report1 where seq=?</statement>
@@ -308,4 +408,121 @@
 		<statement>delete from report3 where seq=?</statement>
 		<parameter type="long">seq</parameter>
 	</dao>
+	<dao name="update_member_pwd">
+		<statement>update member set userPwd=? where seq=?</statement>
+		<parameter type="String">userPwd</parameter>
+		<parameter type="long">seq</parameter>
+	</dao>
+
+
+	<dao name="add_marquee">
+		<statement><![CDATA[
+		insert into marquee (seq, title, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?)]]></statement>
+		<parameter seq="marquee" seq2="seq" type="mseq">seq</parameter>
+		<parameter type="string">title</parameter>
+		<parameter type="defaultn">del_flag</parameter>
+		<parameter type="op">ct_id</parameter>
+		<parameter type="now">ct_date</parameter>
+		<parameter type="op">op_id</parameter>
+		<parameter type="now">op_date</parameter>
+	</dao>
+	<dao name="update_marquee">
+		<statement><![CDATA[
+		update marquee
+		set
+		title = ?, op_id = ?, op_date = ?
+		where  seq = ?]]></statement>
+		<parameter type="string">title</parameter>
+		<parameter type="op">op_id</parameter>
+		<parameter type="now">op_date</parameter>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="q_marquee">
+		<statement>select * from marquee where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_marquee">
+		<statement>delete from marquee where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_marquee">
+		<statement>select * from marquee where 1=1</statement>
+		<statement test="isNotEmpty('keyword')"><![CDATA[
+		and title like @keyword
+		]]></statement>
+		<parameter kind="3" type="LikeString">keyword</parameter>
+	</dao>
+
+	<dao name="add_ppt">
+		<statement><![CDATA[
+		insert into ppt (seq, title, path, file_name, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?,?,?)]]></statement>
+		<parameter seq="ppt" seq2="seq" type="mseq">seq</parameter>
+		<parameter type="string">title</parameter>
+		<parameter type="string">path</parameter>
+		<parameter type="string">file_name</parameter>
+		<parameter type="defaultn">del_flag</parameter>
+		<parameter type="op">ct_id</parameter>
+		<parameter type="now">ct_date</parameter>
+		<parameter type="op">op_id</parameter>
+		<parameter type="now">op_date</parameter>
+	</dao>
+	<dao name="update_ppt">
+		<statement><![CDATA[
+		update ppt
+		set
+		title = ?, path = ?, file_name = ?,	op_id = ?, op_date = ?
+		where  seq = ?]]></statement>
+		<parameter type="string">title</parameter>
+		<parameter type="string">path</parameter>
+		<parameter type="string">file_name</parameter>
+		<parameter type="op">op_id</parameter>
+		<parameter type="now">op_date</parameter>
+		<parameter type="int">seq</parameter>
+	</dao>
+	<dao name="q_ppt">
+		<statement>select * from ppt where seq = ?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="del_ppt">
+		<statement>delete from ppt where seq=?</statement>
+		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="qa_ppt">
+		<statement>select * from ppt where 1=1</statement>
+		<statement test="isNotEmpty('keyword')"><![CDATA[
+		and title like @keyword
+		]]></statement>
+		<parameter kind="3" type="LikeString">keyword</parameter>
+	</dao>
+	<dao name="memberByPASCODE">
+		<statement>select userId,userName from member where userId = ?</statement>
+		<parameter type="String">PASCODE</parameter>
+	</dao>
+	<dao name="memberByCHKCODE">
+		<statement>select userId,userName from member where userId = ?</statement>
+		<parameter type="String">CHKCODE</parameter>
+	</dao>
+	<dao name="areacode">
+		<statement>select AREACODE,AREANAME from areacode where AREACODE = ?</statement>
+		<parameter type="String">ADDCODEA</parameter>
+	</dao>
+	<dao name="areacodeb">
+		<statement>select AREACODE,AREANAME from areacode where AREACODE = ?</statement>
+		<parameter type="String">ADDCODEB</parameter>
+	</dao>
+	<dao name="CHKDATA">
+		<statement>select DIACODE,DIANAME from med where DIATYPE = 1 and DIACODE = ?</statement>
+		<parameter type="String">CHKDATA</parameter>
+	</dao>
+	<dao name="SPATH">
+		<statement>select EXACODE,EXANAME from worker where EXACODE = ?</statement>
+		<parameter type="String">SPATH</parameter>
+	</dao>
+	<dao name="PATH">
+		<statement>select EXACODE,EXANAME from worker where EXACODE = ?</statement>
+		<parameter type="String">PATH</parameter>
+	</dao>
+
 </root>

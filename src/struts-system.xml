@@ -107,5 +107,60 @@
 		</action>
 		<action name="admin_upload3_save" class="com.liane.action.Upload3" method="save">
 		</action>
+
+
+		<action name="admin_ppt" class="com.liane.action.Ppt">
+			<result name="success" type="content">
+				<param name="location">/admin/system/ppt.jsp</param>
+			</result>
+		</action>
+		<action name="admin_ppt_back" class="com.liane.action.Ppt" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/system/ppt.jsp</param>
+			</result>
+		</action>
+		<action name="admin_ppt_add" class="com.liane.action.Ppt" method="add">
+			<result name="success" type="content">
+				<param name="location">/admin/system/ppt_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_ppt_update" class="com.liane.action.Ppt" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/system/ppt_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_ppt_save" class="com.liane.action.Ppt" method="save">
+		</action>
+		<action name="admin_ppt_remove" class="com.liane.action.Ppt" method="remove">
+		</action>
+		<action name="admin_ppt_datas" class="com.liane.action.Ppt" method="datas"/>
+
+
+
+		<action name="admin_marquee" class="com.liane.action.Marquee">
+			<result name="success" type="content">
+				<param name="location">/admin/system/marquee.jsp</param>
+			</result>
+		</action>
+		<action name="admin_marquee_back" class="com.liane.action.Marquee" method="back">
+			<result name="success" type="content">
+				<param name="location">/admin/system/marquee.jsp</param>
+			</result>
+		</action>
+		<action name="admin_marquee_add" class="com.liane.action.Marquee" method="add">
+			<result name="success" type="content">
+				<param name="location">/admin/system/marquee_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_marquee_update" class="com.liane.action.Marquee" method="update">
+			<result name="success" type="content">
+				<param name="location">/admin/system/marquee_content.jsp</param>
+			</result>
+		</action>
+		<action name="admin_marquee_save" class="com.liane.action.Marquee" method="save">
+		</action>
+		<action name="admin_marquee_remove" class="com.liane.action.Marquee" method="remove">
+		</action>
+		<action name="admin_marquee_datas" class="com.liane.action.Marquee" method="datas"/>
 	</package>
 </struts>

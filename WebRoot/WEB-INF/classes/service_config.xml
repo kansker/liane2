@@ -8,4 +8,6 @@
 	<log_dir></log_dir>
 	<title><![CDATA[Lian-e ]]></title>
 	<ui_layout>v3</ui_layout>
+	<ppt_dir>c:\test\liane\</ppt_dir>
+	<pdf_dir>c:\test\liane\</pdf_dir>
 </root>

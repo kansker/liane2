@@ -17,6 +17,9 @@
 			<td height="399" align="left" VALIGN=top bordercolor="#999999">
 				<table width=607 border=0 cellPadding=5 cellSpacing=0 bgcolor="#FFFFFF" id=table23>
 					<tbody>
+					<%
+						com.liane.util.SystemAgent.set("liane_hot", "" + (com.liane.util.SystemAgent.getInt("liane_hot") + 1));
+					%>
 					<TR>
 						<TD width=512>
 							<h3>
@@ -42,7 +45,7 @@
 							<H3>
 								<font color="#003300" size="2" face="細明體">各位使用者請您先輸入ID後，才能進入查詢系統。</font>
 							</H3>
-							<table id=table24 style="BORDER-COLLAPSE: collapse" borderColor="#111111" cellSpacing=10 cellPadding=0 width="100%" border=0>
+							<table cellSpacing="10" cellPadding="0" width="100%" border="0">
 								<tbody>
 								<tr>
 									<td style="text-align: center">帳號: <input type="text" name="userId" maxlength="20" size="19" value="" style="width: 200px" autocomplete="new-password">

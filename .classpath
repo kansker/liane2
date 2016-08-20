@@ -10,8 +10,8 @@
 	<classpathentry kind="lib" path="lib/antlr.jar"/>
 	<classpathentry kind="lib" path="lib/commons-collections.jar"/>
 	<classpathentry kind="lib" path="lib/cos.jar"/>
-	<classpathentry kind="lib" path="lib/itext-1.4.4.jar"/>
-	<classpathentry kind="lib" path="lib/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="/Liane2/lib/itext-1.4.4.jar"/>
+	<classpathentry kind="lib" path="/Liane2/lib/iTextAsian.jar"/>
 	<classpathentry kind="lib" path="lib/jakarta-oro.jar"/>
 	<classpathentry kind="lib" path="lib/jmagick.jar"/>
 	<classpathentry kind="lib" path="lib/kplug.jar"/>

@@ -1,21 +1,34 @@
 package com.liane.action.client;
 
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.tool.xml.XMLWorkerFontProvider;
+import com.itextpdf.tool.xml.XMLWorkerHelper;
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
 import kplug.action.EventAction;
 import kplug.db.CodeLoader;
-import kplug.db.DBAgent;
+import kplug.db.ConfigAgent;
 import kplug.db.QueryAgent;
 import kplug.util.ParamUtil;
 import kplug.vo.WParam;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
+import org.apache.struts.util.DatePlus;
+import org.apache.struts.util.Param;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.List;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.util.*;
 
 public class Report1 extends EventAction {
 	private static final long serialVersionUID = 2024628204419943134L;
@@ -25,10 +38,24 @@ public class Report1 extends EventAction {
 	private String table = "report1";
 	private String prefix = "cus_search1";
 
+	private InputStream pdfStream;	ByteArrayOutputStream baos = null;
+
+	private String pdfFileName = "";
+	private String csvFileName = "";
+
+	private String html = "";
+	private static String[] item_key = {
+			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
+			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "PASCODE",
+			"itemP", "itemQ", "itemR", "itemS", "itemT", "itemU", "itemV", "itemW",
+			"itemX", "itemY", "itemZ"};
+
 	public String execute() {
 		condition = new WParam();
 		condition.add("offset", 0);
 		condition.add("limit", 10);
+		condition.addParameter("itemhe", new java.util.Date());
+		condition.addParameter("itemhs", condition.getTimeString("itemhe", "yyyy/MM/01"));
 		return SUCCESS;
 	}
 
@@ -59,6 +86,12 @@ public class Report1 extends EventAction {
 		if (StringUtils.isNotEmpty(order)) {
 			order = order + " " + condition.getString("order");
 		}
+		condition.addParameter("sort", order);
+		WParam userBean = this.getSessionWParam("UserBean");
+		if (userBean.getInt("power1") != 1) {
+			condition.addParameter("PASCODE", userBean.getString("userId"));
+		}
+		this.setSession("report1_pdf_condition", condition);
 		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, condition.getInt("offset"), condition.getInt("limit"), order);
 		try {
 			jsonObj = new JSONObject();
@@ -88,6 +121,190 @@ public class Report1 extends EventAction {
 		return "json2";
 	}
 
+	public String pdfs() {
+		condition = this.getSessionWParam("report1_pdf_condition");
+		if (condition == null) {
+			return SUCCESS;
+		}
+		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, condition.getInt("offset"), condition.getInt("limit"), condition.getString("sort"));
+		try {
+			String path = ConfigAgent.getConfigValue("pdf_dir");
+			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
+
+			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
+			document.open();
+			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";
+			XMLWorkerFontProvider fontImp = new XMLWorkerFontProvider(fontPath);
+			FontFactory.setFontImp(fontImp);
+			FontFactory.register(fontPath, "mingliu");
+			System.out.println("IS mingliu?===" + FontFactory.isRegistered("mingliu"));
+			XMLWorkerHelper xmlWorker = XMLWorkerHelper.getInstance();
+			for (int i = 0; i < list.size(); i++) {
+				WParam data = list.get(i);
+				boolean r = genHtml(data);
+				if (r) {
+					String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
+					html = "<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + html + "</body></html>";
+					FileUtils.write(new File(path + htmlName), html, "UTF-8");
+					xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
+				}
+				if (i < list.size()) {
+					document.newPage();
+				}
+			}
+			document.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return SUCCESS;
+	}
+
+	public String csv() {
+		condition = this.getSessionWParam("report1_pdf_condition");
+		if (condition == null) {
+			return SUCCESS;
+		}
+		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, 0, 10000, condition.getString("sort"));
+		try {
+			baos = new ByteArrayOutputStream();
+
+			csvFileName = "export" + DatePlus.getDateString("yyyyMMddHHmmss") + ".csv";
+			StringBuffer sb = new StringBuffer();
+			for (int i = 0; i < list.size(); i++) {
+				WParam data = list.get(i);
+				if (data.getString("itemH").length() > 0) {
+					data.addParameter("itemH", data.getTimestamp("itemH"));
+					data.addParameter("itemH", data.getTimeString("itemH", "MM/dd/yyyy"));
+				}
+				if (data.getString("itemI").length() > 0) {
+					data.addParameter("itemI", data.getTimestamp("itemI"));
+					data.addParameter("itemI", data.getTimeString("itemI", "MM/dd/yyyy"));
+				}
+				if (data.getString("itemJ").length() > 0) {
+					data.addParameter("itemJ", data.getTimestamp("itemJ"));
+					data.addParameter("itemJ", data.getTimeString("itemJ", "MM/dd/yyyy"));
+				}
+
+				for (int j = 0; j < 17; j++) {
+					if (j == 0) {
+						sb.append("\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
+					} else {
+						sb.append(",\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
+					}
+				}
+				sb.append("\n");
+			}
+			baos.write(sb.toString().getBytes());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return SUCCESS;
+	}
+
+	public String pdf() {
+		data = QueryAgent.query("q_" + table, condition);
+		if (data == null) {
+			return SUCCESS;
+		}
+		try {
+			String path = ConfigAgent.getConfigValue("pdf_dir");
+			String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
+			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
+
+			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
+			document.open();
+			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";
+			XMLWorkerFontProvider fontImp = new XMLWorkerFontProvider(fontPath);
+			FontFactory.setFontImp(fontImp);
+			FontFactory.register(fontPath, "mingliu");
+			System.out.println("IS mingliu?===" + FontFactory.isRegistered("mingliu"));
+			XMLWorkerHelper xmlWorker = XMLWorkerHelper.getInstance();
+			boolean r = genHtml(data);
+			if (r) {
+				html = "<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + html + "</body></html>";
+				FileUtils.write(new File(path + htmlName), html, "UTF-8");
+				xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
+			}
+			document.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return SUCCESS;
+	}
+
+	public boolean genHtml(WParam data) {
+		if (data != null) {
+			try {
+				StringWriter writer = new StringWriter();
+				Configuration cfg = new Configuration();
+				try {
+					cfg.setEncoding(new Locale("zh", "TW", ""), "UTF-8");
+					if (FileUtils.getFile(Report1.class.getClassLoader().getResource("/").getPath() + "report1.jsp") != null) {
+						cfg.setDirectoryForTemplateLoading(new File(Report1.class.getClassLoader().getResource("/").getPath()));
+					} else {
+						cfg.setDirectoryForTemplateLoading(new File(ConfigAgent.getConfigValue("pdf_dir")));
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+					cfg.setDirectoryForTemplateLoading(new File(ConfigAgent.getConfigValue("pdf_dir")));
+				}
+				Template template = cfg.getTemplate("report1.jsp");
+
+				Map<String, Object> rootMap = new HashMap<String, Object>();
+				rootMap.put("data", data);
+				rootMap.put("title", "");
+				template.process(rootMap, writer);
+				writer.flush();
+				StringBuffer sb = writer.getBuffer();
+				html = sb.toString();
+			} catch (IOException e) {
+				e.printStackTrace();
+				kplug.log.LogUtil.write("daily", e);
+			} catch (TemplateException e) {
+				e.printStackTrace();
+				kplug.log.LogUtil.write("daily", e);
+			}
+		}
+		return true;
+	}
+
+	public InputStream getPdfStream() {
+		String path = ConfigAgent.getConfigValue("pdf_dir");
+		File file = new File(path + pdfFileName);
+		try {
+			pdfStream = new FileInputStream(file);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return pdfStream;
+	}
+
+	public void setPdfStream(InputStream pdfStream) {
+		this.pdfStream = pdfStream;
+	}
+
+	public String getPdfFileName() {
+		try {
+			return new String(pdfFileName.getBytes(), "ISO8859-1");
+		} catch (Exception ex) {
+			return pdfFileName;
+		}
+	}
+
+	public void setPdfFileName(String pdfFileName) {
+		this.pdfFileName = pdfFileName;
+	}
+
+	public String getCsvFileName() {
+		try {
+			return new String(csvFileName.getBytes(), "ISO8859-1");
+		} catch (Exception ex) {
+			return csvFileName;
+		}
+	}
+
 	public WParam getData() {
 		return data;
 	}
@@ -100,6 +317,15 @@ public class Report1 extends EventAction {
 		try {
 			return new ByteArrayInputStream(jsonObj.toString().getBytes("UTF-8"));
 		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public InputStream getInputStream() {
+		try {
+			return new ByteArrayInputStream(baos.toByteArray());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return null;

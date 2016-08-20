@@ -1,4 +1,4 @@
-package com.photo.common;
+package com.liane.common;
 
 import java.security.Key;
 import java.security.KeyFactory;

@@ -1,4 +1,4 @@
-package com.photo.util;
+package com.liane.util;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

@@ -208,23 +208,12 @@
 										</td>
 									</tr>
 									<tr valign="middle" bordercolor="#CCCCCC" bgcolor="#FFFFCC" class="style13">
-										<td height="16" align="center">
-											<div align="center">送檢單位</div>
-										</td>
-										<td height="16" colspan="2" align="center">
-											<div align="center">送檢醫師</div>
-										</td>
-										<td height="16" align="center">
-											<div align="center">手術日期</div>
-										</td>
+										<td height="16" align="center"> 送檢單位</td>
+										<td height="16" colspan="2" align="center"> 送檢醫師</td>
+										<td height="16" align="center"> 手術日期</td>
 										<td height="16" align="center">收件日期</td>
-										<td height="16" align="center">
-											<div align="center"><span class="style41"><span style="font-weight: normal; text-decoration: none; color: #004f54;" #invalid_attr_id="12px">報告醫師</span></span></div>
-											<div align="center"><span class="style41"></span></div>
-										</td>
-										<td height="16" align="center">
-											<div align="center"><span class="content">報告日期</span></div>
-										</td>
+										<td height="16" align="center" class="style41" style="font-weight: normal; text-decoration: none; color: #004f54;">報告醫師</td>
+										<td height="16" align="center" class="content"> 報告日期</td>
 									</tr>
 									<tr align="center" valign="middle" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="style35">
 										<td height="32" class="style13" align="center"><s:property value="%{data.map.itemk}"/><br></td>

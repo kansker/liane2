@@ -1,4 +1,4 @@
-package com.photo;
+package com.liane;
 
 import kplug.vo.WParam;
 

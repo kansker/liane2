@@ -33,7 +33,7 @@
 					<td width=49 class="p10">
 						<div align="right">回首頁</div>
 					</td>
-					<td width=19><a href="http://www.lian-e.com.tw"><img src="images/menu-icon-home.gif" width="18" height="18" border="0"></a></td>
+					<td width=19><a href="index.htm"><img src="images/menu-icon-home.gif" width="18" height="18" border="0"></a></td>
 				</tr>
 				<tr>
 					<td height="400" colspan="3">

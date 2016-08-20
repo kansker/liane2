@@ -1,7 +1,6 @@
 package com.liane.action;
 
 import kplug.action.EventAction;
-import kplug.db.CodeLoader;
 import kplug.db.DBAgent;
 import kplug.db.QueryAgent;
 import kplug.util.ParamUtil;
@@ -29,6 +28,8 @@ public class Report3 extends EventAction {
 		condition = new WParam();
 		condition.add("offset", 0);
 		condition.add("limit", 10);
+		condition.addParameter("pasdatee", new java.util.Date());
+		condition.addParameter("pasdates", condition.getTimeString("pasdatee", "yyyy/MM/01"));
 		return SUCCESS;
 	}
 
@@ -119,6 +120,8 @@ public class Report3 extends EventAction {
 			condition = new WParam();
 		}
 		ParamUtil.set(condition, ServletActionContext.getRequest());
+		condition.addParameter("pasdates", StringUtils.replace(condition.getString("pasdates"), "/", ""));
+		condition.addParameter("pasdatee", StringUtils.replace(condition.getString("pasdatee"), "/", ""));
 		this.setSession(prefix + "condition", condition);
 		String order = condition.getString("sort");
 		if (StringUtils.isNotEmpty(order)) {

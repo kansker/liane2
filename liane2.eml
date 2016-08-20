@@ -11,12 +11,6 @@
 	<lib name="cos.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/cos.jar!/"/>
 	</lib>
-	<lib name="itext-1.4.4.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/itext-1.4.4.jar!/"/>
-	</lib>
-	<lib name="iTextAsian.jar" scope="COMPILE">
-		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/iTextAsian.jar!/"/>
-	</lib>
 	<lib name="jakarta-oro.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/jakarta-oro.jar!/"/>
 	</lib>

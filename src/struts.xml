@@ -145,6 +145,10 @@
 			</result>
 			<result name="success" type="redirect">/cus_welcome.action</result>
 		</action>
+		<action name="logoutA" class="com.liane.action.Login" method="logoutA">
+			<interceptor-ref name="defaultStack2"/>
+			<result name="success" type="redirect">/indexa.jsp</result>
+		</action>
 	</package>
 	<package name="admin" extends="front-default" namespace="/">
 		<action name="admin" class="com.liane.action.Admin">

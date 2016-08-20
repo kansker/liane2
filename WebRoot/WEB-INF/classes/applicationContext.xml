@@ -4,8 +4,8 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="org.gjt.mm.mysql.Driver"></property>
-		<property name="url" value="jdbc:mysql://192.168.4.1:3306/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
-		<!--<property name="url" value="jdbc:mysql://192.168.0.101:3306/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>-->
+		<!--<property name="url" value="jdbc:mysql://192.168.4.1:3306/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>-->
+		<property name="url" value="jdbc:mysql://192.168.0.101:3306/liane_test?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
 		<property name="username" value="photo"></property>
 		<property name="password" value="photo123"></property>
 	</bean>
@@ -34,7 +34,7 @@
 		<property name="from" value="xx@cc.gov.tw"/>
 		<property name="subject" value="信件標題"/>
 	</bean>
-	<bean id="initAgent" class="com.photo.InitAgent"></bean>
+	<bean id="initAgent" class="com.liane.InitAgent"></bean>
 	<bean id="scheduleAgent" class="kplug.schedule.ScheduleAgent" init-method="init">
 		<property name="who" value="web"></property>
 	</bean>

@@ -1,4 +1,4 @@
-package com.photo.servlet;
+package com.liane.servlet;
 
 import java.awt.Color;
 import java.awt.Font;

@@ -251,3 +251,208 @@
 2016/08/19 17:25:25	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
 2016/08/19 17:48:10	 select * from system_code where sys_code=?
 2016/08/19 17:54:10	 select * from system_code where sys_code=?
+2016/08/19 18:04:02	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/19 18:04:04	 select * from system_code where sys_code=?
+2016/08/19 18:04:04	 select * from system_code where sys_code=?
+2016/08/19 18:04:05	 select * from system_code where sys_code=?
+2016/08/19 18:04:15	 select * from member where userId=? and userPwd=?
+2016/08/19 18:04:27	 select * from report3
+2016/08/19 18:04:40	 select * from report3
+2016/08/19 18:06:37	 select * from report3
+2016/08/19 18:10:31	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/19 18:10:36	 select * from system_code where sys_code=?
+2016/08/19 18:10:36	 select * from system_code where sys_code=?
+2016/08/19 18:10:37	 select * from system_code where sys_code=?
+2016/08/19 18:11:36	 select * from member where userId=? and userPwd=?
+2016/08/19 18:11:53	 select * from report3
+2016/08/19 18:18:24	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/19 18:18:27	 select * from system_code where sys_code=?
+2016/08/19 18:18:27	 select * from system_code where sys_code=?
+2016/08/19 18:18:28	 select * from system_code where sys_code=?
+2016/08/19 18:18:46	 select * from member where userId=? and userPwd=?
+2016/08/19 18:18:57	 select * from report3
+2016/08/19 18:19:24	 select * from report3
+2016/08/19 18:19:30	 select * from report1
+2016/08/19 18:19:39	sql: update member set userPwd=? where seq=?
+2016/08/19 18:19:39	data:    userpwd = aa123qwe
+    userid = iris
+    seq = 1
+    power1 = 1
+    username = §d¨q¬Ã
+    power2 = AB
+
+2016/08/19 18:19:39	sqlstirng: update member set userPwd='aa123qwe' where seq=1
+2016/08/19 18:19:39	effect row:1
+2016/08/19 18:20:04	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/19 18:20:54	 select * from system_code where sys_code=?
+2016/08/19 18:21:00	 select * from member where userId=? and userPwd=?
+2016/08/19 18:22:18	 select * from system_code where sys_code=?
+2016/08/19 18:22:22	 select * from system_code where sys_code=?
+2016/08/19 18:22:26	 select * from system_code where sys_code=?
+2016/08/19 18:22:27	 select * from system_code where sys_code=?
+2016/08/19 18:22:28	 select * from system_code where sys_code=?
+2016/08/19 18:22:30	 select * from system_code where sys_code=?
+2016/08/19 18:22:31	 select * from system_code where sys_code=?
+2016/08/19 18:23:09	 select * from system_code where sys_code=?
+2016/08/19 18:23:09	 select * from system_code where sys_code=?
+2016/08/19 18:23:09	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/19 18:23:09	data:    sys_code = liane_hot
+    op_date = 
+    now() = 2016/08/19
+    sys_comment = 
+    sys_value = 111112
+
+2016/08/19 18:23:09	sqlstirng: update system_code set sys_value='111112',op_date='2016/08/19 18:23:09' where sys_code='liane_hot'
+2016/08/19 18:23:09	effect row:1
+2016/08/19 18:23:09	 select * from system_code where sys_code=?
+2016/08/19 18:23:12	 select * from system_code where sys_code=?
+2016/08/19 18:23:12	 select * from system_code where sys_code=?
+2016/08/19 18:23:12	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/19 18:23:12	data:    sys_code = liane_hot
+    op_date = 2016/08/19
+    now() = 2016/08/19
+    sys_comment = 
+    sys_value = 111113
+
+2016/08/19 18:23:12	sqlstirng: update system_code set sys_value='111113',op_date='2016/08/19 18:23:12' where sys_code='liane_hot'
+2016/08/19 18:23:12	effect row:1
+2016/08/19 18:23:12	 select * from system_code where sys_code=?
+2016/08/19 18:23:21	 select * from member where userId=? and userPwd=?
+2016/08/19 18:23:36	 select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2
+2016/08/19 18:23:40	 select * from member where userId=? and userPwd=? and power1 = 1
+2016/08/19 18:37:39	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/19 18:37:41	 select * from system_code where sys_code=?
+2016/08/19 18:37:41	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/19 18:37:42	data:    sys_code = liane_hot
+    op_date = 2016/08/19
+    now() = 2016/08/19
+    sys_comment = 
+    sys_value = 111114
+
+2016/08/19 18:37:42	sqlstirng: update system_code set sys_value='111114',op_date='2016/08/19 18:37:42' where sys_code='liane_hot'
+2016/08/19 18:37:42	effect row:1
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/19 18:37:42	data:    sys_code = liane_hot
+    op_date = 2016/08/19
+    now() = 2016/08/19
+    sys_comment = 
+    sys_value = 111115
+
+2016/08/19 18:37:42	sqlstirng: update system_code set sys_value='111115',op_date='2016/08/19 18:37:42' where sys_code='liane_hot'
+2016/08/19 18:37:42	effect row:1
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	 select * from system_code where sys_code=?
+2016/08/19 18:37:42	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/19 18:37:42	data:    sys_code = liane_hot
+    op_date = 2016/08/19
+    now() = 2016/08/19
+    sys_comment = 
+    sys_value = 111116
+
+2016/08/19 18:37:42	sqlstirng: update system_code set sys_value='111116',op_date='2016/08/19 18:37:42' where sys_code='liane_hot'
+2016/08/19 18:37:42	effect row:1
+2016/08/19 18:37:43	 select * from system_code where sys_code=?
+2016/08/19 18:38:17	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/19 18:38:41	 select * from member where userId=? and userPwd=? and power1 = 1
+2016/08/19 18:40:21	sql: 
+		insert into ppt (seq, title, path, file_name, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?,?,?)
+2016/08/19 18:40:21	data:    ct_id = 
+    op_date = 2016/08/19
+    del_flag = N
+    method = add
+    ct_date = 2016/08/19
+    op_id = 
+    title = 111
+    seq = 1
+
+2016/08/19 18:40:21	sqlstirng: 
+		insert into ppt (seq, title, path, file_name, del_flag, ct_id, ct_date, op_id, op_date)
+		values(1,'111','','','N','null','2016/08/19 18:40:21','null','2016/08/19 18:40:21')
+2016/08/19 18:40:21	effect row:1
+2016/08/19 18:41:11	 select * from ppt
+2016/08/19 18:41:13	 select * from ppt where seq = ?
+2016/08/19 18:41:26	sql: 
+		update ppt
+		set
+		title = ?, path = ?, file_name = ?,	op_id = ?, op_date = ?
+		where  seq = ?
+2016/08/19 18:41:26	data:    ct_id = 
+    op_date = 2016/08/19
+    path = 
+    del_flag = N
+    method = update
+    file_name = 
+    ct_date = 2016/08/19
+    op_id = 
+    title = 2222
+    seq = 1
+
+2016/08/19 18:41:26	sqlstirng: 
+		update ppt
+		set
+		title = '2222', path = '', file_name = '',	op_id = 'null', op_date = '2016/08/19 18:41:26'
+		where  seq = 1
+2016/08/19 18:41:27	effect row:1
+2016/08/19 18:43:16	 select * from ppt
+2016/08/19 18:43:18	 select * from ppt where seq = ?
+2016/08/19 18:43:24	sql: 
+		update ppt
+		set
+		title = ?, path = ?, file_name = ?,	op_id = ?, op_date = ?
+		where  seq = ?
+2016/08/19 18:43:24	data:    ct_id = 
+    op_date = 2016/08/19
+    path = 39345b62bd50498d90d1b3fc8acdc5ef569793.jpg
+    del_flag = N
+    method = update
+    file_name = 3b535d3d9977451e9156d85d93abbb53241171.jpg
+    ct_date = 2016/08/19
+    op_id = 
+    title = 2222
+    seq = 1
+
+2016/08/19 18:43:24	sqlstirng: 
+		update ppt
+		set
+		title = '2222', path = '39345b62bd50498d90d1b3fc8acdc5ef569793.jpg', file_name = '3b535d3d9977451e9156d85d93abbb53241171.jpg',	op_id = 'null', op_date = '2016/08/19 18:43:24'
+		where  seq = 1
+2016/08/19 18:43:24	effect row:1
+2016/08/19 18:43:30	 select * from ppt
+2016/08/19 18:43:31	 select * from ppt
+2016/08/19 18:43:41	sql: 
+		insert into ppt (seq, title, path, file_name, del_flag, ct_id, ct_date, op_id, op_date)
+		values(?,?,?,?,?,?,?,?,?)
+2016/08/19 18:43:41	data:    ct_id = 
+    op_date = 2016/08/19
+    del_flag = N
+    method = add
+    ct_date = 2016/08/19
+    op_id = 
+    title = 1111
+    seq = 2
+
+2016/08/19 18:43:41	sqlstirng: 
+		insert into ppt (seq, title, path, file_name, del_flag, ct_id, ct_date, op_id, op_date)
+		values(2,'1111','','','N','null','2016/08/19 18:43:41','null','2016/08/19 18:43:41')
+2016/08/19 18:43:41	effect row:1
+2016/08/19 18:43:44	 select * from ppt
+2016/08/19 18:43:46	 select * from ppt where seq = ?
+2016/08/19 18:43:46	sql: delete from ppt where seq=?
+2016/08/19 18:43:46	data:    now_sql =  select * from ppt where seq = 2
+    query_agent_total_record = 1
+    seq = 2
+
+2016/08/19 18:43:46	sqlstirng: delete from ppt where seq=2
+2016/08/19 18:43:46	effect row:1
+2016/08/19 18:43:46	 select * from ppt
+2016/08/19 18:43:48	 select * from ppt where seq = ?
+2016/08/19 18:43:50	 select * from ppt
+2016/08/19 18:44:28	 select * from member where power1 = ? order by userName
+2016/08/19 18:44:29	 select * from worker where 1=1
+2016/08/19 18:44:30	 select * from ppt
