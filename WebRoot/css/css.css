@@ -1,0 +1,4 @@
+.showD .modal-dialog {
+    width: 90%;
+    height: calc(100% - 80px);
+}

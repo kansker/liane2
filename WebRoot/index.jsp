@@ -30,7 +30,7 @@
 							<div align="right">回首頁</div>
 						</TD>
 						<TD width=19>
-							<a href="http://www.lian-e.com.tw">
+							<a href="index.htm">
 								<img src="images/menu-icon-home.gif" width="18" height="18" border="0">
 							</a>
 						</TD>

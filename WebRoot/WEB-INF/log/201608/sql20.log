@@ -2544,3 +2544,21 @@
 2016/08/20 19:40:40	sqlstirng: update system_code set sys_value='111137',op_date='2016/08/20 19:40:40' where sys_code='liane_hot'
 2016/08/20 19:40:40	effect row:1
 2016/08/20 19:40:40	 select * from system_code where sys_code=?
+2016/08/20 23:47:27	select * from sysschedule where sys_status = '1' and sys_who = 'web'
+2016/08/20 23:48:15	 select * from marquee where 1=1
+2016/08/20 23:48:32	 select * from marquee where 1=1
+2016/08/20 23:48:51	 select * from marquee where 1=1
+2016/08/20 23:49:22	 select * from marquee where 1=1
+2016/08/20 23:49:53	 select * from marquee where 1=1
+2016/08/20 23:50:12	 select * from system_code where sys_code=?
+2016/08/20 23:50:12	 select * from system_code where sys_code=?
+2016/08/20 23:50:12	sql: update system_code set sys_value=?,op_date=? where sys_code=?
+2016/08/20 23:50:12	data:    sys_code = liane_hot
+    op_date = 2016/08/20
+    now() = 2016/08/20
+    sys_comment = 
+    sys_value = 111138
+
+2016/08/20 23:50:12	sqlstirng: update system_code set sys_value='111138',op_date='2016/08/20 23:50:12' where sys_code='liane_hot'
+2016/08/20 23:50:12	effect row:1
+2016/08/20 23:50:12	 select * from system_code where sys_code=?

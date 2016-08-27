@@ -277,14 +277,26 @@
 	</dao>
 	<dao name="q_report1">
 		<statement>select * from report1 where seq = ?</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter type="long">seq</parameter>
 	</dao>
 	<dao name="q_report2">
 		<statement>select * from report2 where seq = ?</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter type="long">seq</parameter>
 	</dao>
 	<dao name="q_report3">
 		<statement>select * from report3 where seq = ?</statement>
+		<statement test="isNotEmpty('PASCODE')"><![CDATA[
+		and PASCODE = @PASCODE
+		]]></statement>
+		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter type="long">seq</parameter>
 	</dao>
 	<dao name="qa_report1">
@@ -301,6 +313,9 @@
 		<statement test="isNotEmpty('itemc')"><![CDATA[
 		and itemc like @itemc
 		]]></statement>
+		<statement test="isNotEmpty('itemg')"><![CDATA[
+		and itemg like @itemg
+		]]></statement>
 		<statement test="isNotEmpty('itemhs')"><![CDATA[
 		and itemh >= @itemhs
 		]]></statement>
@@ -310,12 +325,13 @@
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">iteme</parameter>
 		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemg</parameter>
 		<parameter kind="3" type="LikeString">iteml</parameter>
 		<parameter kind="3" type="String">itemhs</parameter>
 		<parameter kind="3" type="String">itemhe</parameter>
 	</dao>
 	<dao name="qa_report2">
-		<statement>select seq,itemD,itemC,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1</statement>
+		<statement>select seq,itemD,itemC,itemJ,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1</statement>
 		<statement test="isNotEmpty('PASCODE')"><![CDATA[
 		and PASCODE = @PASCODE
 		]]></statement>
@@ -328,6 +344,9 @@
 		<statement test="isNotEmpty('itemq')"><![CDATA[
 		and itemq like @itemq
 		]]></statement>
+		<statement test="isNotEmpty('itemj')"><![CDATA[
+		and itemj like @itemj
+		]]></statement>
 		<statement test="isNotEmpty('itemms')"><![CDATA[
 		and itemm >= @itemms
 		]]></statement>
@@ -336,6 +355,7 @@
 		]]></statement>
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemj</parameter>
 		<parameter kind="3" type="LikeString">itemd</parameter>
 		<parameter kind="3" type="LikeString">itemq</parameter>
 		<parameter kind="3" type="String">itemms</parameter>

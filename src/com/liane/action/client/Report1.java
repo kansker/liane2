@@ -1,7 +1,6 @@
 package com.liane.action.client;
 
 import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Rectangle;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -18,9 +17,7 @@ import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.time.DateUtils;
 import org.apache.struts.util.DatePlus;
-import org.apache.struts.util.Param;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,7 +35,8 @@ public class Report1 extends EventAction {
 	private String table = "report1";
 	private String prefix = "cus_search1";
 
-	private InputStream pdfStream;	ByteArrayOutputStream baos = null;
+	private InputStream pdfStream;
+	ByteArrayOutputStream baos = null;
 
 	private String pdfFileName = "";
 	private String csvFileName = "";
@@ -60,16 +58,20 @@ public class Report1 extends EventAction {
 	}
 
 	public String view() {
-		this.createToken();
+		if (condition == null) {
+			condition = new WParam();
+		}
+		WParam userBean = this.getSessionWParam("UserBean");
+		if (userBean.getInt("power1") != 1) {
+			condition.addParameter("PASCODE", userBean.getString("userId"));
+		}
 		data = QueryAgent.query("q_" + table, condition);
-		if (data != null) {
-			data.addParameter("method", "view");
-			this.setSession(table, data);
+		if (data == null) {
 			return SUCCESS;
 		}
-		return "fail";
+		boolean r = genHtml(data);
+		return SUCCESS;
 	}
-
 
 	public String back() {
 		condition = this.getSessionWParam(prefix + "condition");
@@ -104,6 +106,7 @@ public class Report1 extends EventAction {
 					json.put("seq", dd.getInt("seq"));
 					json.put("itemE", dd.getString("itemE"));
 					json.put("itemD", dd.getString("itemD"));
+					json.put("itemG", dd.getString("itemG"));
 					json.put("itemC", dd.getString("itemC"));
 					json.put("itemF", dd.getString("itemF"));
 					json.put("itemH", dd.getString("itemH"));
@@ -145,9 +148,9 @@ public class Report1 extends EventAction {
 				boolean r = genHtml(data);
 				if (r) {
 					String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
-					html = "<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + html + "</body></html>";
-					FileUtils.write(new File(path + htmlName), html, "UTF-8");
-					xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
+					setHtml("<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + getHtml() + "</body></html>");
+					FileUtils.write(new File(path + htmlName), getHtml(), "UTF-8");
+					xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(getHtml().getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
 				}
 				if (i < list.size()) {
 					document.newPage();
@@ -223,9 +226,9 @@ public class Report1 extends EventAction {
 			XMLWorkerHelper xmlWorker = XMLWorkerHelper.getInstance();
 			boolean r = genHtml(data);
 			if (r) {
-				html = "<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + html + "</body></html>";
-				FileUtils.write(new File(path + htmlName), html, "UTF-8");
-				xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
+				setHtml("<html><head> <meta charset=\"UTF-8\"/></head><body style=\"font-family: mingliu\">" + getHtml() + "</body></html>");
+				FileUtils.write(new File(path + htmlName), getHtml(), "UTF-8");
+				xmlWorker.parseXHtml(writer, document, new ByteArrayInputStream(getHtml().getBytes("UTF-8")), null, Charset.forName("UTF-8"), fontImp);
 			}
 			document.close();
 		} catch (Exception e) {
@@ -258,7 +261,7 @@ public class Report1 extends EventAction {
 				template.process(rootMap, writer);
 				writer.flush();
 				StringBuffer sb = writer.getBuffer();
-				html = sb.toString();
+				setHtml(sb.toString());
 			} catch (IOException e) {
 				e.printStackTrace();
 				kplug.log.LogUtil.write("daily", e);
@@ -341,5 +344,13 @@ public class Report1 extends EventAction {
 
 	public String getPrefix() {
 		return prefix;
+	}
+
+	public String getHtml() {
+		return html;
+	}
+
+	public void setHtml(String html) {
+		this.html = html;
 	}
 }

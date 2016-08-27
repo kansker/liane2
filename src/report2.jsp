@@ -71,7 +71,7 @@
 		<td>
 			<table style="height: 92px;" border="0" align="left" cellpadding="1" cellspacing="1">
 				<tr>
-					<td width="60" align="center" height="22px"> 組織來源：</td>
+					<td width="80" align="center" height="22px"> 組織來源：</td>
 					<td align="left"> ${data.getString('itemq')} </td>
 				</tr>
 				<tr>

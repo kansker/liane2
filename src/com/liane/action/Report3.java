@@ -142,6 +142,10 @@ public class Report3 extends EventAction {
 					json.put("CHARTNO", dd.getString("CHARTNO"));
 					json.put("PASDATE", dd.getString("PASDATE"));
 					json.put("CHKDATA", dd.getString("CHKDATA"));
+					WParam tt = QueryAgent.query("CHKDATA", dd);
+					if (tt != null) {
+						json.put("CHKDATA", tt.getString("DIANAME"));
+					}
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

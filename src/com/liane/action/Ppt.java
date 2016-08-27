@@ -8,6 +8,7 @@ import kplug.util.FileUtil;
 import kplug.util.KeyUtil;
 import kplug.util.ParamUtil;
 import kplug.vo.WParam;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.struts2.ServletActionContext;
@@ -88,7 +89,11 @@ public class Ppt extends EventAction {
 				this.addCmd("$('#btnSave').show();");
 			}
 			if (upload != null) {
-				FileUtil.copy(upload.getAbsolutePath(), ConfigAgent.getConfigValue("ppt_dir") + nowData.getString("path"));
+				try {
+					FileUtils.copyFile(upload, new File(ConfigAgent.getConfigValue("ppt_dir") + nowData.getString("path")));
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 			nowData.addParameter("method", "update");
 			this.alert("提交成功");

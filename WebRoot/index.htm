@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=big5">
     <title>中山簡介</title>
-    <script type="text/javascript" src="<s:url value='/javascripts/jquery-1.11.2.min.js'/>"></script>
+    <script type="text/javascript" src="/javascripts/jquery-1.11.2.min.js"></script>
     <style type="text/css">
         <!--
         .style16 {
@@ -106,47 +106,52 @@
 </head>
 
 <body>
-<DIV align=center>
-    <TABLE id=table5 cellSpacing=10 cellPadding=0 width=748 align=center
-           bgColor=#FFFFFF border=0><!--DWLayoutTable-->
-        <TBODY>
-        <TR align="center" vAlign=middle>
-            <TD width="560" height="200" align="center" valign="top" bgColor=#FFFFFF>
-                <DIV align=center>
-                    <CENTER>
-                    </CENTER>
-                </DIV>
-                <CENTER>
+<div style="text-align: center">
+    <table cellSpacing="10" cellPadding="0" width="748" bgColor="#FFFFFF" border="0" style="margin: 0px auto;">
+        <tbody>
+        <tr align="center" vAlign=middle>
+            <td width="560" height="200" align="center" valign="top" bgColor=#FFFFFF>
+                <div id="plNews" style="text-align: center">
+                </div>
+                <center>
                     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="728" height="200" align="middle">
                         <param name="movie" value="liane4.swf">
                         <param name=quality value=high>
                         <embed src="liane4.swf" width="728" height="200" align="middle" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed>
                     </object>
-                </CENTER>
-            </TD>
-        </TR>
-        <TR align="center" vAlign=middle bgcolor="#FFFFDF">
-            <TD height="20" align="center" valign="middle" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="style30"
+                </center>
+            </td>
+        </tr>
+        <tr align="center" vAlign=middle bgcolor="#FFFFDF">
+            <td height="20" align="center" valign="middle" bordercolor="#CCCCCC" bgcolor="#FFFFFF" class="style30"
                 style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid; font-size: small; font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666;"><p>The most successful equipment for a successful surgeon is a pessimistic pathologist. </p>
-                <p class="style39"><u>John Rowan Wilson (1919- ; UK surgeon and novelist) </u></p></TD>
-        </TR>
-        <TR align="center" vAlign=middle bgcolor="#FFFFDF">
-            <TD height="10" align="left" valign="middle" bgcolor="#FFFFFF" class="style16"
-                style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><!--DWLayoutEmptyCell-->&nbsp;</TD>
-        </TR>
-        <TR align="center" vAlign=middle bgcolor="#FFFFDF">
-            <TD height="20" align="center" valign="middle" bordercolor="#FFFFFF" bgcolor="#FFFFFF" class="style16"
+                <p class="style39"><u>John Rowan Wilson (1919- ; UK surgeon and novelist) </u></p></td>
+        </tr>
+        <tr align="center" vAlign=middle bgcolor="#FFFFDF">
+            <td height="10" align="left" valign="middle" bgcolor="#FFFFFF" class="style16" style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        </tr>
+        <tr align="center" vAlign=middle bgcolor="#FFFFDF">
+            <td height="20" align="center" valign="middle" bordercolor="#FFFFFF" bgcolor="#FFFFFF" class="style16"
                 style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><p class="style27"><span class="style38">本網站內容版權屬聯醫病理中心所有 / Lian-e, Inc. Copyright (c) 2005 all rights reserved. <br>
             上班時間：週一至週五 上午8:30～下午17:30 / 地址：台北市仁愛路四段112巷9弄7號7樓 (原中山醫院病理科 )<br>
             　 電話： 886-02-27024782 / 傳真：886-02-27840201</span><br>
-            </p></TD>
-        </TR>
-        <TR align="center" vAlign=middle bgcolor="#FFFFDF">
-            <TD height="20" align="right" valign="middle" bgcolor="#FFFFFF" class="style16"
-                style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><p class="style29"><a href="index2.htm" class="style30">&gt;&gt;Enter</a></p></TD>
-        </TR>
-        </TBODY>
-    </TABLE>
-</DIV>
+            </p></td>
+        </tr>
+        <tr align="center" vAlign=middle bgcolor="#FFFFDF">
+            <td height="20" align="right" valign="middle" bgcolor="#FFFFFF" class="style16" style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><p class="style29"><a href="index2.htm" class="style30">&gt;&gt;Enter</a></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script language="javascript" type="text/javascript">
+    $(function () {
+        $('#plNews').load('marquee.action', {
+            index: 1,
+            r: new Date().getTime()
+        }, function () {
+        });
+    });
+</script>
 </body>
 </html>

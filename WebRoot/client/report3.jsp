@@ -27,12 +27,12 @@
 								             placeholder="姓名" size="10"/>
 							</div>
 							<div class="input-group" style="margin: 4px">
-								<div class="input-group-addon">病理號碼</div>
+								<div class="input-group-addon">病歷號碼</div>
 								<s:textfield cssClass="form-control" type="text"
 								             id="chartno"
 								             name="condition.map.chartno"
 								             value="%{condition.getString('chartno')}"
-								             placeholder="病理號碼" size="10"/>
+								             placeholder="病歷號碼" size="10"/>
 							</div>
 							<div class="input-group" style="margin: 4px">
 								<div class="input-group-addon">身分證號碼</div>
@@ -80,9 +80,10 @@
 						<tr>
 							<th data-field="PTNAME" data-formatter="nFormatter" data-events="operateEvents" data-align="center" data-sortable="true">姓名</th>
 							<th data-field="PASCODE" data-align="center" data-sortable="true">送檢單位</th>
-							<th data-field="CHARTNO" data-align="center" data-sortable="true">病理號碼</th>
+							<th data-field="CHARTNO" data-align="center" data-sortable="true">病歷號碼</th>
 							<th data-field="PASDATE" data-align="center" data-sortable="true">取樣日期</th>
 							<th data-field="CHKDATA" data-align="center" data-sortable="true">細胞病理診斷</th>
+							<th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents" data-align="left">功能</th>
 						</tr>
 						</thead>
 					</table>
@@ -97,7 +98,13 @@
 </form>
 
 <script type="text/javascript">
-
+	function operateFormatter(value, row, index) {
+		return [
+			'<a class="pdf ml10" href="javascript:void(0)" title="PDF" style="margin-left: 15px;">',
+			'<i class="glyphicon glyphicon-edit fa-lg"></i>PDF',
+			'</a>'
+		].join('');
+	}
 	function nFormatter(value, row, index) {
 		return [
 			'<a class="view ml10" href="javascript:void(0)" title="瀏覽" style="margin-left: 15px;">',
@@ -107,6 +114,10 @@
 	}
 	window.operateEvents = {
 		'click .view': function (e, value, row, index) {
+			showD('瀏覽', 'cus_search3_view.action?r=' + new Date().getTime() + '&condition.map.seq=' + row.seq, function () {
+			});
+		},
+		'click .pdf': function (e, value, row, index) {
 			document.form1.action = "cus_search3_pdf.action";
 			$('#seq').val(row.seq);
 			$('#kind').val("2");

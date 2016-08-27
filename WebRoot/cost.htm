@@ -1,423 +1,515 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>計費方式</title>
-<style type="text/css">
-<!--
-.style13 {font-size: 12px;
-	color: #004f54;
-	line-height: 20px;
-}
-.style16 {	font-size: 16px;
-	line-height: 20px;
-	color: #333333;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-}
-.style18 {
-	font-size: 18pt;
-	font-weight: bold;
-	color: #ff8a15;
-}
-a:visited {
-	color: #004F54;
-}
-a:hover {
-	color: #990000;
-}
-a:link {
-	color: #004F54;
-}
-a:active {
-	color: #990000;
-}
-.style21 {font-size: 12px;
-	line-height: 25px;
-	color: #333333;
-	text-decoration: none;
-	font-style: normal;
-	font-weight: normal;
-}
-.style24 {color: #FF0000}
-.style25 {font-size: 12px; line-height: 20px; color: #FF0000; text-decoration: none; font-style: normal; font-weight: normal; }
-.style28 {font-family: Arial, Helvetica, sans-serif}
-.style30 {font-size: 12px; color: #666666; line-height: 20px; }
--->
-</style>
-<script language="JavaScript" type="text/JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+    <meta http-equiv="Content-Type" content="text/html; charset=big5">
+    <title>計費方式</title>
+    <style type="text/css">
+        <!--
+        .style13 {
+            font-size: 12px;
+            color: #004f54;
+            line-height: 20px;
+        }
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
+        .style16 {
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+        }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+        .style18 {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #ff8a15;
+        }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
+        a:visited {
+            color: #004F54;
+        }
+
+        a:hover {
+            color: #990000;
+        }
+
+        a:link {
+            color: #004F54;
+        }
+
+        a:active {
+            color: #990000;
+        }
+
+        .style21 {
+            font-size: 12px;
+            line-height: 25px;
+            color: #333333;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .style24 {
+            color: #FF0000
+        }
+
+        .style25 {
+            font-size: 12px;
+            line-height: 20px;
+            color: #FF0000;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .style28 {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .style30 {
+            font-size: 12px;
+            color: #666666;
+            line-height: 20px;
+        }
+
+        -->
+    </style>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr;
+            for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+        //-->
+    </script>
 </head>
 
 <body onLoad="MM_preloadImages('/company/images/arrow_on.gif')">
 <DIV align=center>
-  <TABLE id=table5 cellSpacing=15 cellPadding=0 width=600 align=center 
-bgColor=#FFFFFF border=0><!--DWLayoutTable-->
-    <TBODY>
-      <TR align="center" vAlign=middle>
-        <TD height="15" bgColor=#FFFFFF 
-    style="BORDER-RIGHT: #bdbdbd 1px solid; BORDER-TOP: #bdbdbd 1px solid; BORDER-LEFT: #bdbdbd 1px solid; BORDER-BOTTOM: #bdbdbd 1px solid"><a href="index.htm"><img src="image/Lianlogo.gif" width="92" height="49" border="0"></a></TD>
-        <TD width="621" rowspan="2" valign="top" bgColor=#ffffff>
-          <TABLE id=table8 height=96 cellSpacing=0 cellPadding=0 width="587" 
-      bgColor=#bdbdbd border=0>
-            <TBODY>
-              <TR>
-                <TD width="587" height="96" align="left" valign="middle" background="image/cost.jpg" 
-            bgColor=#ffffff class="style18">　</TD>
-              </TR>
-            </TBODY>
-          </TABLE>          <DIV align=center>
-            <CENTER>
-              <TABLE id=table10 cellSpacing=0 cellPadding=0 width="100%" border=0>
-                <TBODY>
-                  <TR>
-                    <TD width="100%">　</TD>
-                  </TR>
-                </TBODY>
-              </TABLE>
-            </CENTER>
-          </DIV>          <CENTER>
-            <TABLE width="100%" border=1 align="left" cellPadding=1 
-      cellSpacing=2 borderColor=#CCCCCC bgcolor="#FFFFFF" id=table30 style="BORDER-COLLAPSE: collapse">
-              <TBODY>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <td 
-            height=10 colspan="3">
-                    <dl>
-                      <dt class="style13">第十九項 病理組織檢查Specimen Examination</dt>
-                      <dd class="style21">通則：一、申報費用時，應檢附經解剖病理專科醫師簽名與加註專科醫師證書字號之病理報告。 二、活體切片檢查如為委託他處檢查時，按表定點數申報。編號為25001C至25004C、 25024C至25025C者，包裝及郵寄費用得依表訂點數加計百分之十。</dd>
-                  </dl></td>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=15 align="center" bgcolor="#FFFFFF"><span class="style13">編 號</span></TD>
-                  <TD height="10" align="center" bgcolor="#FFFFFF" class="style13">診 療 項 目</TD>
-                  <TD height="15" align="center" valign="top" bgcolor="#FFFFFF" class="style13 style24">支付點數</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD width="9%" 
-            height=30 align="center" bgcolor="#FFFFFF"><p class="style21">25001C</p></TD>
-                  <TD width="80%" height="30" bgcolor="#FFFFFF" class="style13"><dl>
-                    <dt>&nbsp; 第一級外科病理，眼觀檢查<span class="style28">Surgical pathology Level I</span></dt>
-                  </dl></TD>
-                  <TD width="11%" height="30" align="center" valign="top" bgcolor="#FFFFFF" class="style25">266</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <td 
-            height=74 align="center" bgcolor="#FFFFFF" class="style21">25002C</td>
-                  <td bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp;<span class="style13"> 第二級外科病理，組織鏡檢確認<span class="style28">Surgical pathology Level Ⅱ</span></span></dt>
-                    <dd class="style21">註：附帶切除之闌尾、包皮 ( 包莖 )、疝氣囊、陰囊水腫、胃迷走神經切除、皮膚 ( 整形修復 )、交感神經結、睪丸 ( 閹割性睪丸切除 )、創傷性之指頭截肢、結紮之輸卵管、附帶切除之陰道壁、輸精管結紮。</dd>
-                  </dl>                    </td>
-                  <td align="center" valign="top" bgcolor="#FFFFFF" class="style25">816</td>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=158 align="center" bgcolor="#FFFFFF" class="style21">25003C</TD>
-                  <TD bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp; <span class="style13">第三級外科病理，一般性<span class="style28">Surgical pathology Level III</span></span></dt>
-                    <dd class="style21">註：人工流產、膿瘍、動脈瘤、肛門息肉、闌尾炎、粥狀動脈硬化、Bartholin氏囊腫、非病理性骨折之骨碎片、關節囊腫、腕部隧道症、軟骨刮削、膽脂瘤、結腸造口術、結膜切片 / 翼狀胔肉、雞眼、角膜、食道及小腸憩室病、<span class="style28">Dupuytren's contracture</span>、股骨頭 ( 非骨折性 )、纖維脂肪瘤、?管、包皮 ( 包皮炎，尖狀濕疣 )、膽囊、腱鞘囊腫、血腫、痔瘡、<span class="style28">Morgagni</span>囊、椎間盤突出、關節游離體、關節半月板、黏液囊腫、外傷性神經瘤、藏毛?管、鼻腔及鼻竇發炎性息肉、皮膚囊腫 / 皮膚息肉 / 皮膚清創術、軟組織清創術、脂肪瘤、精液囊腫、肌腱、睪丸附屬器官、血栓、口腔及鼻咽扁桃腺或腺樣組織、精索靜脈曲張、靜脈曲張、輸精管 ( 非結紮 )。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1014</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=432 align="center" bgcolor="#FFFFFF" class="style21">25004C</TD>
-                  <TD bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp; <span class="style13">第四級外科病理，複雜性<span class="style28">Surgical pathology Level IV</span></span></dt>
-                    <dd class="style21">註：自然流產、動脈切片、骨髓切片、外生骨疣、腦 / 腦膜 ( 非腫瘤 )、乳房切片( 不需<span class="style28">margin ) </span>如<span class="style28">fibrocystic change</span>、乳房縮小整形術、支氣管切片、子宮頸切片、結腸切片、十二指腸切片、子宮頸/子宮內膜息肉、結腸直腸息肉切除、尖性濕疣、皮纖維瘤、子宮內頸刮除術/切片、子宮內膜刮除術 / 切片、食道切片、創傷性之肢體截肢、輸卵管切片、股骨頭骨折、非創傷性之指頭截肢、牙齦 / 口腔黏膜切片、心臟瓣膜、血管瘤、皮內痣、關節切除置換、瘢瘤、腎臟切片、喉部切片、子宮肌瘤切除術、唇切片、經支氣管肺切片、淋巴結切片、肌肉切片、鼻黏膜切片、鼻咽或口咽切片、神經切片、牙源性囊腫、網膜切片、卵巢切除 ( 非腫瘤 )、卵巢切片、鼻竇切片、副甲狀腺切除、腹膜切片、腦下垂體腫瘤、胎盤 ( 非懷孕後三個月 )、肋膜 / 心包膜切片、子宮脫垂 ( 有或無輸卵管及卵巢 )、前列腺細針切片、攝護腺刮除、唾液腺切片、皮脂漏性角化病、皮膚-( 非囊腫/非息肉/非清創/非整形標本 )、小腸切片、軟組織 -( 非腫瘤/非脂肪瘤/ 非清創標本 )、脾臟、胃切片、胃/小腸息肉切除、滑液膜、睪丸- ( 非腫瘤 / 非切片 / 非閹割 )、甲狀腺舌管鰓裂囊腫、舌切片、扁桃腺切片、氣管切片、毛髮上皮瘤、輸卵管異位懷孕、輸尿管切片、尿道切片、膀胱切片、陰道切片、尋常疣、會陰切片。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1741</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=152 align="center" bgcolor="#FFFFFF" class="style21">25024C</TD>
-                  <TD bgcolor="#FFFFFF" class="style21"><dl>
-                    <dt class="style13">第五級外科病理，中度複雜性<span class="style28">Surgical pathology Level V</span><span class="style28"></span></dt>
-                    <dd>註：腎上腺切除、骨切片、病理性骨折之骨碎片、乳房腫瘤切除 ( 需要檢查<span class="style28">margin )</span>、乳房切除 ( 不含淋巴結 )、腦切片、腦 / 腦膜 ( 腫瘤 )、子宮頸圓錐狀切除、膽囊癌膽囊切除、非腫瘤的結腸切除、非創傷性之肢體截肢、眼摘除、腎臟部份或全部切除、喉部分及全部切除( 不含淋巴結 )、肝臟切片、肝臟部分切除、肺臟楔形切片、淋巴腺摘除、縱隔腔腫瘤、心肌切片、牙源性腫瘤、器官移植 ( 角膜除外 ) 、卵巢腫瘤、胰臟切片、胎盤 ( 懷孕後三個月 ) 、前列腺非根除性切除、唾液腺切除、前哨淋巴結切除、非腫瘤的小腸切除、軟組織切片或簡單切除 ( 非脂肪瘤 )、非腫瘤的胃切除、睪丸切片、胸腺腫瘤、甲狀腺切除、輸尿管切除、經尿道膀胱腫瘤切除、子宮切除/子宮肌瘤及非脫垂 ( 有或無輸卵管及卵巢 )。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">2778</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=116 align="center" bgcolor="#FFFFFF" class="style21">25025C</TD>
-                  <TD bgcolor="#FFFFFF" class="style21"><dl>
-                    <dt>&nbsp;<span class="style13"> 第六級外科病理，高度複雜性<span class="style28">Surgical pathology Level VI</span></span></dt>
-                    <dd>註：骨切除 ( 腫瘤 )、乳房切除 ( 含淋巴結 )、結腸切除 ( 腫瘤 )、食道部分及全部切除、截肢( 關節截斷 )、胎兒、喉部分及全部切除 ( 含淋巴結 )、肺葉切除、胰臟部份或全切除、前列腺根除性切除、小腸切除 ( 腫瘤 )、軟組織腫瘤廣泛性切除、胃部份或全部切除 ( 腫瘤 )、睪丸腫瘤、舌 / 扁桃腺腫瘤根除性切除、膀胱部分或全部切除、子宮切除 / 腫瘤性 ( 有或無輸卵管及卵巢 )、會陰全部或部分切除。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">4302</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=74 align="center" bgcolor="#FFFFFF" class="style21">15001C</TD>
-                  <TD align="left" bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp; <span class="style13">體液細胞檢查</span></dt>
-                    <dd class="style21"><span class="style28">Body fluid cytology</span>含痰 <span class="style28">(Sputum)</span>，尿 <span class="style28">(Urine)</span>，腹水<span class="style28">(Ascites)</span>，脊髓液 <span class="style28">(C.S.F)</span>，胸水<span class="style28">(Pleural Effusion)</span>，心包膜積水 <span class="style28">(Pericardial effusion)</span>，氣管刷取 <span class="style28">(bronchialbrushing) </span>及氣管沖洗<span class="style28">(bronchial washing)</span>等。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">480</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=74 align="center" bgcolor="#FFFFFF" class="style21">15007B</TD>
-                  <TD bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp;<span class="style13"> 穿刺細胞檢查</span></dt>
-                    <dd class="style21"><span class="style28">Needle aspiration cytology</span> 含甲狀腺 <span class="style28">(Thyroid)</span>，淋巴腺 <span class="style28">(Lymph node)</span>，乳房<span class="style28"> (Breast)</span>，肺臟<span class="style28">(Lung)</span>，縱膈腔 <span class="style28">(Mediastinum)</span>，肝臟<span class="style28"> (Liver)</span>，胰臟 <span class="style28">(Pancreas)</span>，腫瘤 <span class="style28">(Mass)</span> 穿刺及鼻 <span class="style28">(Nasal) </span>細胞檢查等。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">667</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=46 align="center" bgcolor="#FFFFFF" class="style21">15017C</TD>
-                  <TD bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp; <span class="style13">子宮頸或陰道抹片檢查</span></dt>
-                    <dd class="style21"><span class="style28">Pap's smear (Cytology)</span> 子宮頸或陰道抹片同一病人半年內限做一次</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">245</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
-                  <TD 
-            height=52 align="center" bgcolor="#FFFFFF" class="style21"><p>15021C</p>                  </TD>
-                  <TD bgcolor="#FFFFFF"><dl>
-                    <dt>&nbsp;<span class="style13"> 薄片細胞學檢查</span></dt>
-                    <dd class="style21"><span class="style28">Thin-prep cytology</span>經子宮頸抹片檢查發現<span class="style28">ASCUS</span>以上之情況，可實施檢查一次
-                    自96年1月起健保局停止給付，需自費。</dd>
-                  </dl></TD>
-                  <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1200</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <TD 
-            height=32 align="center" class="style21">33</TD>
-                  <TD class="style13"><span class="style13">婦科細胞學檢查(預防保健)每年限作一次</span></TD>
-                  <TD align="center" valign="top" class="style25">200</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <TD 
-            height=32 align="center" class="style21">25010B</TD>
-                  <TD><span class="style13">組織化學染色第一類<span class="style28">TB，Mucin</span></span></TD>
-                  <TD align="center" valign="top" class="style25">450</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <TD 
-            height=52 align="center" class="style21">25011B</TD>
-                  <TD class="style13">組織化學染色第二類<span class="style28">PAS,MASSON'S,SILVER,GIEMSA,GRAM'S STAIN,GMS,IRON,SUDDEN III,VVG,ORCEIN,AICIAN BLUE,WARTHY-STARRY</span></TD>
-                  <TD align="center" valign="top" class="style25">1200</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <TD 
-            height=52 align="center" class="style21">25012B</TD>
-                  <TD class="style13">免疫化學染色<span class="style28">CK,VIMENTIN,B-CELL,T-CELL,DESMIN,ACTIN,LCA,KAPPA,LAMDA,FACTOR-8,HMB-45,CHROMOGRAIN,PSA,NSE,AACT,CD-30,ER,PR,HER-2/NEU,NEUROFILAMENT,CEA,GFAP,S-100,P63</span></TD>
-                  <TD align="center" valign="top" class="style25">1354</TD>
-                </TR>
-                <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
-                  <TD 
-            height=100 align="center" class="style21">25006B</TD>
-                  <TD class="style13"><dl>
-                    <dt>冰凍切片檢查，</dt>
-                    <dd class="style21">註：1.含該一冷凍切片，製成石蠟切片。 2.同一病例限申報一次。3.同一病例冷凍切片後的剩餘標本(含後送的標本)得依上述外科病理，第一級至第六級的標準</dd>
-                    <dd class="style21">另行申報。</dd>
-                    </dl>                    
-                  </TD>
-                  <TD align="center" valign="top" class="style25">5618</TD>
-                </TR>
-              </TBODY>
-            </TABLE>
-        </CENTER></TD>
-      </TR>
-      <TR vAlign=top>
-        <TD 
-    width=114 height="1983" valign="top" bgColor=#FFFFFF 
-    style="BORDER-RIGHT: #bdbdbd 1px solid; BORDER-TOP: #bdbdbd 1px solid; BORDER-LEFT: #bdbdbd 1px solid; BORDER-BOTTOM: #bdbdbd 1px solid"><TABLE width="100%" 
-              border=0 align="center" cellPadding=0 cellSpacing=0 bgcolor="#FFFFFF" id=table2>
-          <!--DWLayoutTable-->
-            <TBODY>
-              <TR align="center" valign="middle" bgcolor="#FFFFFF">
-                <TD height="8" colspan="3"><FONT 
-                                color=#1032c6><IMG height=8 
-                                src="image/BLank3.gif" 
-                                width=111></FONT></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m1','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD width="13">　</TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD width="72" align="left" valign="middle"><a class=style13 
-                  href="index2.htm">中心簡介</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m2','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD><a href="member.htm"></a></TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="member.htm">組織架構</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m3','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD><a href="services.htm"></a></TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="services1.htm">服務內容</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m7','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD>　</TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="PPS.html"  >病理圖像</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m8','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD>　</TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="index.jsp">資料查詢</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m9','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD>　</TD>
-                <TD width=26><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="cost.htm">計費方式</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD width=26><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" 
-              width=10></TD>
-              </TR>
-              <TR 
-              onmouseover="MM_swapImage('m1','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'" 
-              onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
-                <TD>　</TD>
-                <TD><IMG id=m1 height=12 
-                  src="image/point04.gif" width=12 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="hotnews.htm">最新消息</a></TD>
-              </TR>
-              <TR>
-                <TD><IMG height=10 
-                  src="image/blank.gif" width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" 
-              width=10></TD>
-                <TD><IMG height=10 
-                  src="image/blank.gif" 
-              width=10></TD>
-              </TR>
-              <TR>
-                <TD><!--DWLayoutEmptyCell-->　</TD>
-                <TD><IMG id=m1 height=10 
-                  src="image/mail.jpg" width=14 
-                  name=m1></TD>
-                <TD align="left" valign="middle"><a class=style13 
-                  href="mailto:8704pp@pchome.com.tw">連絡我們</a></TD>
-              </TR>
-              <TR>
-                <TD><!--DWLayoutEmptyCell-->　</TD>
-                <TD><!--DWLayoutEmptyCell-->　</TD>
-                <TD><!--DWLayoutEmptyCell-->　</TD>
-              </TR>
-              <TR>
-                <TD colspan="3"><!--DWLayoutEmptyCell-->　</TD>
-              </TR>
-            </TBODY>
-        </TABLE>          
-          </TD>
-      </TR>
-      <TR align="center" vAlign=middle bgcolor="#FFFFDF">
-        <TD height="10" colspan="2" class="style16" 
-    style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><span class="style30">Tel: 886-02-27024782　 Fax: 886-02-27840201　 地址：台北市仁愛路四段112巷9弄7號7樓 (原中山醫院病理科 )<BR>
+    <TABLE id=table5 cellSpacing=15 cellPadding=0 width=600 align=center
+           bgColor=#FFFFFF border=0><!--DWLayoutTable-->
+        <TBODY>
+        <TR align="center" vAlign=middle>
+            <TD height="15" bgColor=#FFFFFF
+                style="BORDER-RIGHT: #bdbdbd 1px solid; BORDER-TOP: #bdbdbd 1px solid; BORDER-LEFT: #bdbdbd 1px solid; BORDER-BOTTOM: #bdbdbd 1px solid"><a href="index.htm"><img src="image/Lianlogo.gif" width="92" height="49" border="0"></a></TD>
+            <TD width="621" rowspan="2" valign="top" bgColor=#ffffff>
+                <TABLE id=table8 height=96 cellSpacing=0 cellPadding=0 width="587"
+                       bgColor=#bdbdbd border=0>
+                    <TBODY>
+                    <TR>
+                        <TD width="587" height="96" align="left" valign="middle" background="image/cost.jpg"
+                            bgColor=#ffffff class="style18">　
+                        </TD>
+                    </TR>
+                    </TBODY>
+                </TABLE>
+                <DIV align=center>
+                    <CENTER>
+                        <TABLE id=table10 cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TBODY>
+                            <TR>
+                                <TD width="100%">　</TD>
+                            </TR>
+                            </TBODY>
+                        </TABLE>
+                    </CENTER>
+                </DIV>
+                <CENTER>
+                    <TABLE width="100%" border=1 align="left" cellPadding=1
+                           cellSpacing=2 borderColor=#CCCCCC bgcolor="#FFFFFF" id=table30 style="BORDER-COLLAPSE: collapse">
+                        <TBODY>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <td
+                                    height=10 colspan="3">
+                                <dl>
+                                    <dt class="style13">第十九項 病理組織檢查Specimen Examination</dt>
+                                    <dd class="style21">通則：一、申報費用時，應檢附經解剖病理專科醫師簽名與加註專科醫師證書字號之病理報告。 二、活體切片檢查如為委託他處檢查時，按表定點數申報。編號為25001C至25004C、 25024C至25025C者，包裝及郵寄費用得依表訂點數加計百分之十。</dd>
+                                </dl>
+                            </td>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=15 align="center" bgcolor="#FFFFFF"><span class="style13">編 號</span></TD>
+                            <TD height="10" align="center" bgcolor="#FFFFFF" class="style13">診 療 項 目</TD>
+                            <TD height="15" align="center" valign="top" bgcolor="#FFFFFF" class="style13 style24">支付點數</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD width="9%"
+                                height=30 align="center" bgcolor="#FFFFFF"><p class="style21">25001C</p></TD>
+                            <TD width="80%" height="30" bgcolor="#FFFFFF" class="style13">
+                                <dl>
+                                    <dt>&nbsp; 第一級外科病理，眼觀檢查<span class="style28">Surgical pathology Level I</span></dt>
+                                </dl>
+                            </TD>
+                            <TD width="11%" height="30" align="center" valign="top" bgcolor="#FFFFFF" class="style25">266</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <td
+                                    height=74 align="center" bgcolor="#FFFFFF" class="style21">25002C
+                            </td>
+                            <td bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp;<span class="style13"> 第二級外科病理，組織鏡檢確認<span class="style28">Surgical pathology Level Ⅱ</span></span></dt>
+                                    <dd class="style21">註：附帶切除之闌尾、包皮 ( 包莖 )、疝氣囊、陰囊水腫、胃迷走神經切除、皮膚 ( 整形修復 )、交感神經結、睪丸 ( 閹割性睪丸切除 )、創傷性之指頭截肢、結紮之輸卵管、附帶切除之陰道壁、輸精管結紮。</dd>
+                                </dl>
+                            </td>
+                            <td align="center" valign="top" bgcolor="#FFFFFF" class="style25">816</td>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=158 align="center" bgcolor="#FFFFFF" class="style21">25003C
+                            </TD>
+                            <TD bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp; <span class="style13">第三級外科病理，一般性<span class="style28">Surgical pathology Level III</span></span></dt>
+                                    <dd class="style21">註：人工流產、膿瘍、動脈瘤、肛門息肉、闌尾炎、粥狀動脈硬化、Bartholin氏囊腫、非病理性骨折之骨碎片、關節囊腫、腕部隧道症、軟骨刮削、膽脂瘤、結腸造口術、結膜切片 / 翼狀胔肉、雞眼、角膜、食道及小腸憩室病、<span class="style28">Dupuytren's contracture</span>、股骨頭 ( 非骨折性 )、纖維脂肪瘤、?管、包皮 ( 包皮炎，尖狀濕疣 )、膽囊、腱鞘囊腫、血腫、痔瘡、<span class="style28">Morgagni</span>囊、椎間盤突出、關節游離體、關節半月板、黏液囊腫、外傷性神經瘤、藏毛?管、鼻腔及鼻竇發炎性息肉、皮膚囊腫 / 皮膚息肉 / 皮膚清創術、軟組織清創術、脂肪瘤、精液囊腫、肌腱、睪丸附屬器官、血栓、口腔及鼻咽扁桃腺或腺樣組織、精索靜脈曲張、靜脈曲張、輸精管 ( 非結紮 )。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1014</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=432 align="center" bgcolor="#FFFFFF" class="style21">25004C
+                            </TD>
+                            <TD bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp; <span class="style13">第四級外科病理，複雜性<span class="style28">Surgical pathology Level IV</span></span></dt>
+                                    <dd class="style21">註：自然流產、動脈切片、骨髓切片、外生骨疣、腦 / 腦膜 ( 非腫瘤 )、乳房切片( 不需<span class="style28">margin ) </span>如<span class="style28">fibrocystic change</span>、乳房縮小整形術、支氣管切片、子宮頸切片、結腸切片、十二指腸切片、子宮頸/子宮內膜息肉、結腸直腸息肉切除、尖性濕疣、皮纖維瘤、子宮內頸刮除術/切片、子宮內膜刮除術 / 切片、食道切片、創傷性之肢體截肢、輸卵管切片、股骨頭骨折、非創傷性之指頭截肢、牙齦 / 口腔黏膜切片、心臟瓣膜、血管瘤、皮內痣、關節切除置換、瘢瘤、腎臟切片、喉部切片、子宮肌瘤切除術、唇切片、經支氣管肺切片、淋巴結切片、肌肉切片、鼻黏膜切片、鼻咽或口咽切片、神經切片、牙源性囊腫、網膜切片、卵巢切除 ( 非腫瘤 )、卵巢切片、鼻竇切片、副甲狀腺切除、腹膜切片、腦下垂體腫瘤、胎盤 ( 非懷孕後三個月 )、肋膜 / 心包膜切片、子宮脫垂 ( 有或無輸卵管及卵巢 )、前列腺細針切片、攝護腺刮除、唾液腺切片、皮脂漏性角化病、皮膚-( 非囊腫/非息肉/非清創/非整形標本 )、小腸切片、軟組織 -( 非腫瘤/非脂肪瘤/ 非清創標本
+                                        )、脾臟、胃切片、胃/小腸息肉切除、滑液膜、睪丸- ( 非腫瘤 / 非切片 / 非閹割 )、甲狀腺舌管鰓裂囊腫、舌切片、扁桃腺切片、氣管切片、毛髮上皮瘤、輸卵管異位懷孕、輸尿管切片、尿道切片、膀胱切片、陰道切片、尋常疣、會陰切片。
+                                    </dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1741</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=152 align="center" bgcolor="#FFFFFF" class="style21">25024C
+                            </TD>
+                            <TD bgcolor="#FFFFFF" class="style21">
+                                <dl>
+                                    <dt class="style13">第五級外科病理，中度複雜性<span class="style28">Surgical pathology Level V</span><span class="style28"></span></dt>
+                                    <dd>註：腎上腺切除、骨切片、病理性骨折之骨碎片、乳房腫瘤切除 ( 需要檢查<span class="style28">margin )</span>、乳房切除 ( 不含淋巴結 )、腦切片、腦 / 腦膜 ( 腫瘤 )、子宮頸圓錐狀切除、膽囊癌膽囊切除、非腫瘤的結腸切除、非創傷性之肢體截肢、眼摘除、腎臟部份或全部切除、喉部分及全部切除( 不含淋巴結 )、肝臟切片、肝臟部分切除、肺臟楔形切片、淋巴腺摘除、縱隔腔腫瘤、心肌切片、牙源性腫瘤、器官移植 ( 角膜除外 ) 、卵巢腫瘤、胰臟切片、胎盤 ( 懷孕後三個月 ) 、前列腺非根除性切除、唾液腺切除、前哨淋巴結切除、非腫瘤的小腸切除、軟組織切片或簡單切除 ( 非脂肪瘤 )、非腫瘤的胃切除、睪丸切片、胸腺腫瘤、甲狀腺切除、輸尿管切除、經尿道膀胱腫瘤切除、子宮切除/子宮肌瘤及非脫垂 ( 有或無輸卵管及卵巢 )。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">2778</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=116 align="center" bgcolor="#FFFFFF" class="style21">25025C
+                            </TD>
+                            <TD bgcolor="#FFFFFF" class="style21">
+                                <dl>
+                                    <dt>&nbsp;<span class="style13"> 第六級外科病理，高度複雜性<span class="style28">Surgical pathology Level VI</span></span></dt>
+                                    <dd>註：骨切除 ( 腫瘤 )、乳房切除 ( 含淋巴結 )、結腸切除 ( 腫瘤 )、食道部分及全部切除、截肢( 關節截斷 )、胎兒、喉部分及全部切除 ( 含淋巴結 )、肺葉切除、胰臟部份或全切除、前列腺根除性切除、小腸切除 ( 腫瘤 )、軟組織腫瘤廣泛性切除、胃部份或全部切除 ( 腫瘤 )、睪丸腫瘤、舌 / 扁桃腺腫瘤根除性切除、膀胱部分或全部切除、子宮切除 / 腫瘤性 ( 有或無輸卵管及卵巢 )、會陰全部或部分切除。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">4302</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=74 align="center" bgcolor="#FFFFFF" class="style21">15001C
+                            </TD>
+                            <TD align="left" bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp; <span class="style13">體液細胞檢查</span></dt>
+                                    <dd class="style21"><span class="style28">Body fluid cytology</span>含痰 <span class="style28">(Sputum)</span>，尿 <span class="style28">(Urine)</span>，腹水<span class="style28">(Ascites)</span>，脊髓液 <span class="style28">(C.S.F)</span>，胸水<span class="style28">(Pleural Effusion)</span>，心包膜積水 <span class="style28">(Pericardial effusion)</span>，氣管刷取 <span class="style28">(bronchialbrushing) </span>及氣管沖洗<span class="style28">(bronchial washing)</span>等。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">480</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=74 align="center" bgcolor="#FFFFFF" class="style21">15007B
+                            </TD>
+                            <TD bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp;<span class="style13"> 穿刺細胞檢查</span></dt>
+                                    <dd class="style21"><span class="style28">Needle aspiration cytology</span> 含甲狀腺 <span class="style28">(Thyroid)</span>，淋巴腺 <span class="style28">(Lymph node)</span>，乳房<span class="style28"> (Breast)</span>，肺臟<span class="style28">(Lung)</span>，縱膈腔 <span class="style28">(Mediastinum)</span>，肝臟<span class="style28"> (Liver)</span>，胰臟 <span class="style28">(Pancreas)</span>，腫瘤 <span class="style28">(Mass)</span> 穿刺及鼻 <span class="style28">(Nasal) </span>細胞檢查等。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">667</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=46 align="center" bgcolor="#FFFFFF" class="style21">15017C
+                            </TD>
+                            <TD bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp; <span class="style13">子宮頸或陰道抹片檢查</span></dt>
+                                    <dd class="style21"><span class="style28">Pap's smear (Cytology)</span> 子宮頸或陰道抹片同一病人半年內限做一次</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">245</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFDF">
+                            <TD
+                                    height=52 align="center" bgcolor="#FFFFFF" class="style21"><p>15021C</p></TD>
+                            <TD bgcolor="#FFFFFF">
+                                <dl>
+                                    <dt>&nbsp;<span class="style13"> 薄片細胞學檢查</span></dt>
+                                    <dd class="style21"><span class="style28">Thin-prep cytology</span>經子宮頸抹片檢查發現<span class="style28">ASCUS</span>以上之情況，可實施檢查一次
+                                        自96年1月起健保局停止給付，需自費。
+                                    </dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" bgcolor="#FFFFFF" class="style25">1200</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <TD
+                                    height=32 align="center" class="style21">33
+                            </TD>
+                            <TD class="style13"><span class="style13">婦科細胞學檢查(預防保健)每年限作一次</span></TD>
+                            <TD align="center" valign="top" class="style25">200</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <TD
+                                    height=32 align="center" class="style21">25010B
+                            </TD>
+                            <TD><span class="style13">組織化學染色第一類<span class="style28">TB，Mucin</span></span></TD>
+                            <TD align="center" valign="top" class="style25">450</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <TD
+                                    height=52 align="center" class="style21">25011B
+                            </TD>
+                            <TD class="style13">組織化學染色第二類<span class="style28">PAS,MASSON'S,SILVER,GIEMSA,GRAM'S STAIN,GMS,IRON,SUDDEN III,VVG,ORCEIN,AICIAN BLUE,WARTHY-STARRY</span></TD>
+                            <TD align="center" valign="top" class="style25">1200</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <TD
+                                    height=52 align="center" class="style21">25012B
+                            </TD>
+                            <TD class="style13">免疫化學染色<span class="style28">CK,VIMENTIN,B-CELL,T-CELL,DESMIN,ACTIN,LCA,KAPPA,LAMDA,FACTOR-8,HMB-45,CHROMOGRAIN,PSA,NSE,AACT,CD-30,ER,PR,HER-2/NEU,NEUROFILAMENT,CEA,GFAP,S-100,P63</span></TD>
+                            <TD align="center" valign="top" class="style25">1354</TD>
+                        </TR>
+                        <TR align="left" valign="top" bordercolor="#CCCCCC" bgcolor="#FFFFFF">
+                            <TD
+                                    height=100 align="center" class="style21">25006B
+                            </TD>
+                            <TD class="style13">
+                                <dl>
+                                    <dt>冰凍切片檢查，</dt>
+                                    <dd class="style21">註：1.含該一冷凍切片，製成石蠟切片。 2.同一病例限申報一次。3.同一病例冷凍切片後的剩餘標本(含後送的標本)得依上述外科病理，第一級至第六級的標準</dd>
+                                    <dd class="style21">另行申報。</dd>
+                                </dl>
+                            </TD>
+                            <TD align="center" valign="top" class="style25">5618</TD>
+                        </TR>
+                        </TBODY>
+                    </TABLE>
+                </CENTER>
+            </TD>
+        </TR>
+        <TR vAlign=top>
+            <TD
+                    width=114 height="1983" valign="top" bgColor=#FFFFFF
+                    style="BORDER-RIGHT: #bdbdbd 1px solid; BORDER-TOP: #bdbdbd 1px solid; BORDER-LEFT: #bdbdbd 1px solid; BORDER-BOTTOM: #bdbdbd 1px solid">
+                <TABLE width="100%"
+                       border=0 align="center" cellPadding=0 cellSpacing=0 bgcolor="#FFFFFF" id=table2>
+                    <!--DWLayoutTable-->
+                    <TBODY>
+                    <TR align="center" valign="middle" bgcolor="#FFFFFF">
+                        <TD height="8" colspan="3"><FONT
+                                color=#1032c6><IMG height=8
+                                                   src="image/BLank3.gif"
+                                                   width=111></FONT></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m1','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD width="13">　</TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD width="72" align="left" valign="middle"><a class=style13
+                                                                       href="index2.htm">中心簡介</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m2','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD><a href="member.htm"></a></TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="member.htm">組織架構</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m3','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD><a href="services.htm"></a></TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="services1.htm">服務內容</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m7','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD>　</TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13 href="ppt.action">病理圖像</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m8','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD>　</TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="index.jsp">資料查詢</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m9','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD>　</TD>
+                        <TD width=26><IMG id=m1 height=12
+                                          src="image/point04.gif" width=12
+                                          name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="cost.htm">計費方式</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD width=26><IMG height=10
+                                          src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif"
+                                 width=10></TD>
+                    </TR>
+                    <TR
+                            onmouseover="MM_swapImage('m1','','/company/images/arrow_on.gif',1); this.style.backgroundColor='#ff8a15'"
+                            onmouseout="MM_swapImgRestore(); this.style.backgroundColor=''">
+                        <TD>　</TD>
+                        <TD><IMG id=m1 height=12
+                                 src="image/point04.gif" width=12
+                                 name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="hotnews.htm">最新消息</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><IMG height=10
+                                 src="image/blank.gif" width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif"
+                                 width=10></TD>
+                        <TD><IMG height=10
+                                 src="image/blank.gif"
+                                 width=10></TD>
+                    </TR>
+                    <TR>
+                        <TD><!--DWLayoutEmptyCell-->　</TD>
+                        <TD><IMG id=m1 height=10
+                                 src="image/mail.jpg" width=14
+                                 name=m1></TD>
+                        <TD align="left" valign="middle"><a class=style13
+                                                            href="mailto:8704pp@pchome.com.tw">連絡我們</a></TD>
+                    </TR>
+                    <TR>
+                        <TD><!--DWLayoutEmptyCell-->　</TD>
+                        <TD><!--DWLayoutEmptyCell-->　</TD>
+                        <TD><!--DWLayoutEmptyCell-->　</TD>
+                    </TR>
+                    <TR>
+                        <TD colspan="3"><!--DWLayoutEmptyCell-->　</TD>
+                    </TR>
+                    </TBODY>
+                </TABLE>
+            </TD>
+        </TR>
+        <TR align="center" vAlign=middle bgcolor="#FFFFDF">
+            <TD height="10" colspan="2" class="style16"
+                style="BORDER-RIGHT: #bdbdbd 0px solid; BORDER-TOP: #bdbdbd 0px solid; BORDER-LEFT: #bdbdbd 0px solid; BORDER-BOTTOM: #bdbdbd 0px solid"><span class="style30">Tel: 886-02-27024782　 Fax: 886-02-27840201　 地址：台北市仁愛路四段112巷9弄7號7樓 (原中山醫院病理科 )<BR>
   Lian-e, Inc. Copyright (c) 2005 all rights reserved. </span></TD>
-      </TR>
-    </TBODY>
-  </TABLE>
+        </TR>
+        </TBODY>
+    </TABLE>
 </DIV>
 </body>
 </html>

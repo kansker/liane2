@@ -61,14 +61,19 @@ public class Report2 extends EventAction {
 	}
 
 	public String view() {
-		this.createToken();
+		if (condition == null) {
+			condition = new WParam();
+		}
+		WParam userBean = this.getSessionWParam("UserBean");
+		if (userBean.getInt("power1") != 1) {
+			condition.addParameter("PASCODE", userBean.getString("userId"));
+		}
 		data = QueryAgent.query("q_" + table, condition);
-		if (data != null) {
-			data.addParameter("method", "view");
-			this.setSession(table, data);
+		if (data == null) {
 			return SUCCESS;
 		}
-		return "fail";
+		boolean r = genHtml(data);
+		return SUCCESS;
 	}
 
 	public String back() {
@@ -105,6 +110,7 @@ public class Report2 extends EventAction {
 					json.put("itemD", dd.getString("itemD"));
 					json.put("itemK", dd.getString("itemK"));
 					json.put("itemC", dd.getString("itemC"));
+					json.put("itemJ", dd.getString("itemJ"));
 					json.put("itemE", dd.getString("itemE"));
 					json.put("itemF", dd.getString("itemF"));
 					json.put("itemM", dd.getString("itemM"));
@@ -345,5 +351,13 @@ public class Report2 extends EventAction {
 
 	public String getPrefix() {
 		return prefix;
+	}
+
+	public String getHtml() {
+		return html;
+	}
+
+	public void setHtml(String html) {
+		this.html = html;
 	}
 }
