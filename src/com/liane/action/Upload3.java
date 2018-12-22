@@ -4,6 +4,7 @@ import kplug.action.EventAction;
 import kplug.db.DBAgent;
 import kplug.db.QueryAgent;
 import kplug.vo.WParam;
+import org.apache.commons.lang.StringUtils;
 import org.apache.struts.util.Param;
 
 import java.io.*;
@@ -20,10 +21,10 @@ public class Upload3 extends EventAction {
 			"CHKQUL", "CHKDIF", "CHKDIF2", "CHKINF", "CHKDATA", "JPATH", "SPATH", "PATH",
 			"CHKSURED", "CHKQTY", "FUN_TYPE", "HFLAG",
 			"PTTEL0", "ADDR", "ICD9_1", "ICD9_2", "ICD9_3", "CARDNO", "ULTOMY",
-			"X_RAY", "PAS_PUR", "SPL_TYPE", "CHK_WAY", "NATIONALIT", "CARD_NO"};
+			"X_RAY", "PAS_PUR", "SPL_TYPE", "CHK_WAY", "NATIONALIT", "CARD_NO", "TID"};
 	private static int[] item_num = {
 			10, 8, 10, 1, 4, 4, 1, 1, 10, 8, 10, 10, 8, 10, 1, 1, 1, 6, 2, 2, 2, 2, 8, 1, 1, 1,
-			10, 60, 5, 5, 5, 2, 1, 1, 1, 1, 1, 1, 4};
+			10, 60, 5, 5, 5, 2, 1, 1, 1, 1, 1, 1, 4, 20};
 	private File cvs;
 	private String cvsContentType;
 	private String cvsFileName;
@@ -51,6 +52,9 @@ public class Upload3 extends EventAction {
 			StringBuffer sb = new StringBuffer();
 			while ((s = br.readLine()) != null) {
 				int index = 0;
+				if (StringUtils.length(s) <= 10) {
+					continue;
+				}
 				WParam data = new WParam();
 
 				int start = 0;

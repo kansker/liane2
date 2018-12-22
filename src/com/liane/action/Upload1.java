@@ -32,7 +32,7 @@ public class Upload1 extends EventAction {
 	private static String[] item_key = {
 			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
 			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "PASCODE",
-			"itemP", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+			"itemP", "TID", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
 	private File cvs;
 	private String cvsContentType;
 	private String cvsFileName;
@@ -93,7 +93,7 @@ public class Upload1 extends EventAction {
 					if (index == 18)
 						break;
 				}
-				if (index == 17) {
+				if (index == 17 || index == 18) {
 					data.addParameter("status", "1");
 					if (data.getString("itemH").length() > 0) {
 						StringTokenizer st = new StringTokenizer(data.getString("itemH"), "/");

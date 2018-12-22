@@ -19,6 +19,7 @@ import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 import org.apache.struts.util.DatePlus;
 import org.apache.struts.util.Param;
 import org.apache.struts2.ServletActionContext;
@@ -48,7 +49,7 @@ public class Report2 extends EventAction {
 	private static String[] item_key = {
 			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
 			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO",
-			"itemP", "itemQ", "itemR", "itemS", "itemT", "itemU", "PASCODE", "itemV", "itemW",
+			"itemP", "itemQ", "itemR", "itemS", "itemT", "itemU", "PASCODE", "TID", "itemW",
 			"itemX", "itemY", "itemZ"};
 
 	public String execute() {
@@ -56,7 +57,8 @@ public class Report2 extends EventAction {
 		condition.add("offset", 0);
 		condition.add("limit", 10);
 		condition.addParameter("itemme", new java.util.Date());
-		condition.addParameter("itemms", condition.getTimeString("itemme", "yyyy/MM/01"));
+		condition.addParameter("itemms", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("itemms", condition.getTimeString("itemms", "yyyy/MM/dd"));
 		return SUCCESS;
 	}
 
@@ -104,6 +106,8 @@ public class Report2 extends EventAction {
 			JSONArray jlist = new JSONArray();
 			for (int i = 0; i < list.size(); i++) {
 				WParam dd = list.get(i);
+				if (dd.getString("itemG").length() > 7)
+					MaskUtil.setNotMask(dd, "itemG", 3, 6);
 				JSONObject json = new JSONObject();
 				try {
 					json.put("seq", dd.getInt("seq"));
@@ -115,6 +119,7 @@ public class Report2 extends EventAction {
 					json.put("itemF", dd.getString("itemF"));
 					json.put("itemM", dd.getString("itemM"));
 					json.put("itemQ", dd.getString("itemQ"));
+					json.put("itemG", dd.getString("itemG"));
 					json.put("status", CodeLoader.loadCodeValue("reportStatus", "v", "c", dd.getString("status")));
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -155,7 +160,7 @@ public class Report2 extends EventAction {
 //					data.addParameter("itemP", data.getTimeString("itemP", "MM/dd/yyyy"));
 //				}
 
-				for (int j = 0; j < 22; j++) {
+				for (int j = 0; j < 23; j++) {
 					if (j == 0)
 						sb.append("\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
 					else
@@ -180,7 +185,7 @@ public class Report2 extends EventAction {
 			String path = ConfigAgent.getConfigValue("pdf_dir");
 			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
 
-			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			Document document = new Document(new Rectangle(595, 842), 70f, 60f, 30f, 30f);
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
 			document.open();
 			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";
@@ -219,7 +224,7 @@ public class Report2 extends EventAction {
 			String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
 			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
 
-			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			Document document = new Document(new Rectangle(595, 842), 70f, 60f, 30f, 30f);
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
 			document.open();
 			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";
@@ -261,6 +266,10 @@ public class Report2 extends EventAction {
 				if (data != null) {
 					MaskUtil.setNotMask(data, "itemg", 3, 6);
 				}
+				data.add("itemU", StringUtils.replace(data.getString("itemU"), "<", "&lt;"));
+				data.add("itemU", StringUtils.replace(data.getString("itemU"), ">", "&gt;"));
+				data.add("itemT", StringUtils.replace(data.getString("itemT"), "<", "&lt;"));
+				data.add("itemT", StringUtils.replace(data.getString("itemT"), ">", "&gt;"));
 				Map<String, Object> rootMap = new HashMap<String, Object>();
 				rootMap.put("data", data);
 				rootMap.put("title", "");

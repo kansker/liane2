@@ -44,14 +44,14 @@
 								             value="%{condition.getString('itemg')}"
 								             placeholder="病歷號碼" size="10"/>
 							</div>
-							<div class="input-group" style="margin: 4px">
-								<div class="input-group-addon">病理號碼</div>
-								<s:textfield cssClass="form-control" type="text"
-								             id="itemc"
-								             name="condition.map.itemc"
-								             value="%{condition.getString('itemc')}"
-								             placeholder="病理號碼" size="10"/>
-							</div>
+							<%--<div class="input-group" style="margin: 4px">--%>
+							<%--<div class="input-group-addon">病理號碼</div>--%>
+							<%--<s:textfield cssClass="form-control" type="text"--%>
+							<%--id="itemc"--%>
+							<%--name="condition.map.itemc"--%>
+							<%--value="%{condition.getString('itemc')}"--%>
+							<%--placeholder="病理號碼" size="10"/>--%>
+							<%--</div>--%>
 							<div class="input-group" style="margin: 4px">
 								<div class="input-group-addon">組織來源</div>
 								<s:textfield id="iteml" cssClass="form-control" type="text"
@@ -76,7 +76,7 @@
 							</div>
 							<button type="button" id="refresh" class="btn btn-default">搜尋</button>
 							<button type="button" id="csv" class="btn btn-default">下載CSV</button>
-							<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>
+							<%--<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>--%>
 						</div>
 					</div>
 					<table
@@ -112,7 +112,7 @@
 		</div>
 	</div>
 </div>
-<form action="cus_search1_pdf.action" id="form1" name="form1" method="post" target="_blank">
+<form action="cus_search1_pdf.action" id="form1" name="form1" method="post">
 	<input type="hidden" id="seq" name="condition.map.seq" value=""/>
 	<input type="hidden" id="kind" name="condition.map.kind" value="1"/>
 </form>

@@ -91,7 +91,7 @@
 					<k:token/>
 					<table width="720" border="1" align="center" cellpadding="0" cellspacing="3" bordercolor="#6B96FA" bgcolor="#FFFFFF">
 						<tr align="center" valign="middle">
-							<td width="592" height="45" align="center" valign="middle" bordercolor="#FFFFFF" bgcolor="#6B96FA">
+							<td width="592" height="45" align="center" valign="middle" bordercolor="#FFFFFF">
 								<div align="center">
 									<table width="100%" height="28" border="0" cellpadding="0" cellspacing="0">
 										<tr>
@@ -100,7 +100,7 @@
 									</table>
 									<table width="100%" height="26" border="0" cellpadding="0" cellspacing="0">
 										<tr>
-											<th height="26" class="style61" style="text-align: center"><u><strong>病 理 組 織 檢 查 報 告 單</strong></u></th>
+											<th height="26" class="style61" style="text-align: center"><strong>病 理 組 織 檢 查 報 告 單</strong></th>
 										</tr>
 									</table>
 								</div>
@@ -320,7 +320,7 @@
 								<table width="100%" height="100%" align="left" cellpadding="3" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
 									<tr>
 										<td height="22" nowrap bgcolor="#FFFFCC" class="style13 style43 style34 style51" style="padding: 5px">
-											Microscopic finging：
+											Microscopic finding：
 										</td>
 									</tr>
 									<tr>
@@ -331,7 +331,7 @@
 											            value="%{data.map.itemu}" autocomplete="new-password"
 											            rows="12"
 											            cssStyle="width:100%"
-											            placeholder="Microscopic finging"
+											            placeholder="Microscopic finding"
 											/>
 										</td>
 									</tr>

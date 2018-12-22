@@ -32,6 +32,14 @@
 								             placeholder="姓名" size="10"/>
 							</div>
 							<div class="input-group" style="margin: 4px">
+								<div class="input-group-addon">身份證字號</div>
+								<s:textfield cssClass="form-control" type="text"
+								             id="itemg"
+								             name="condition.map.itemg"
+								             value="%{condition.getString('itemg')}"
+								             placeholder="身份證字號" size="10"/>
+							</div>
+							<div class="input-group" style="margin: 4px">
 								<div class="input-group-addon">病歷號碼</div>
 								<%--<k:select cssClass="form-control" id="sitemc"--%>
 								<%--name="condition.map.sitemc"--%>
@@ -44,19 +52,14 @@
 								             value="%{condition.getString('itemj')}"
 								             placeholder="病歷號碼" size="10"/>
 							</div>
-							<div class="input-group" style="margin: 4px">
-								<div class="input-group-addon">病理號碼</div>
-								<%--<k:select cssClass="form-control" id="sitemc"--%>
-								<%--name="condition.map.sitemc"--%>
-								<%--value="%{data.getString('sitemc')}"--%>
-								<%--code="condition2" param="condition"--%>
-								<%--listKey="map.v" listValue="map.c"/>--%>
-								<s:textfield cssClass="form-control" type="text"
-								             id="itemc"
-								             name="condition.map.itemc"
-								             value="%{condition.getString('itemc')}"
-								             placeholder="病理號碼" size="10"/>
-							</div>
+							<%--<div class="input-group" style="margin: 4px">--%>
+							<%--<div class="input-group-addon">病理號碼</div>--%>
+							<%--<s:textfield cssClass="form-control" type="text"--%>
+							<%--id="itemc"--%>
+							<%--name="condition.map.itemc"--%>
+							<%--value="%{condition.getString('itemc')}"--%>
+							<%--placeholder="病理號碼" size="10"/>--%>
+							<%--</div>--%>
 							<div class="input-group" style="margin: 4px">
 								<div class="input-group-addon">組織來源</div>
 								<s:textfield id="itemq" cssClass="form-control" type="text"
@@ -81,7 +84,7 @@
 							</div>
 							<button type="button" id="refresh" class="btn btn-default">搜尋</button>
 							<button type="button" id="csv" class="btn btn-default">下載CSV</button>
-							<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>
+							<%--<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>--%>
 						</div>
 					</div>
 					<table
@@ -101,6 +104,7 @@
 						<thead>
 						<tr>
 							<th data-field="itemD" data-formatter="nFormatter" data-events="operateEvents" data-align="center" data-sortable="true">姓名</th>
+							<th data-field="itemG" data-align="center" data-sortable="true">身份證字號</th>
 							<th data-field="itemK" data-align="center" data-sortable="true">送檢單位</th>
 							<th data-field="itemJ" data-align="center" data-sortable="true">病歷號碼</th>
 							<th data-field="itemC" data-align="center" data-sortable="true">病理號碼</th>
@@ -118,7 +122,7 @@
 		</div>
 	</div>
 </div>
-<form action="cus_search2_pdf.action" id="form1" name="form1" method="post" target="_blank">
+<form action="cus_search2_pdf.action" id="form1" name="form1" method="post">
 	<input type="hidden" id="seq" name="condition.map.seq" value=""/>
 	<input type="hidden" id="kind" name="condition.map.kind" value="1"/>
 </form>
@@ -189,6 +193,7 @@
 	function queryParams(params) {
 		params["condition.map.itemc"] = $('#itemc').val();
 		params["condition.map.itemj"] = $('#itemj').val();
+		params["condition.map.itemg"] = $('#itemg').val();
 		params["condition.map.itemd"] = $('#itemd').val();
 		params["condition.map.itemq"] = $('#itemq').val();
 		params["condition.map.itemms"] = $('#itemms').val();

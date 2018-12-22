@@ -7,6 +7,7 @@
 <title><%=kplug.db.ConfigAgent.getConfigValue("title")%>
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type="text/javascript" src="/javascripts/jquery-1.11.2.min.js"></script>
 <link href="css/admin_login.css" rel="stylesheet" type="text/css">
 </head>
 <body BGCOLOR="#FFFFFF" LINK="#330000" VLINK="#663300" ALINK="#CCCCCC" leftmargin="100" topmargin="50" marginwidth="100" marginheight="50">
@@ -15,6 +16,8 @@
 	<table WIDTH="58%" BORDER="1" align="center" CELLPADDING="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
 		<tr>
 			<td height="399" align="left" VALIGN=top bordercolor="#999999">
+				<div id="plNews" style="text-align: center;font-size: 16pt">
+				</div>
 				<table width=607 border=0 cellPadding=5 cellSpacing=0 bgcolor="#FFFFFF" id=table23>
 					<tbody>
 					<%
@@ -73,4 +76,13 @@
 	</P>
 </form>
 </body>
+<script language="javascript" type="text/javascript">
+	$(function () {
+		$('#plNews').load('marquee.action', {
+			index: 1,
+			r: new Date().getTime()
+		}, function () {
+		});
+	});
+</script>
 </html>

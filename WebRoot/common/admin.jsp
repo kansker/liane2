@@ -70,6 +70,19 @@
 						<li><a href="javascript:toPage('admin_report3.action?task=query');"><i class="fa fa-fw fa-paypal"></i>婦科抹片檢查報告單</a></li>
 					</ul>
 				</li>
+				<li><a href="javascript:;" data-toggle="collapse" data-target="#menu3"><i class="fa fa-fw fa-desktop"></i> 資料匯出 <i class="fa fa-fw fa-caret-down"></i></a>
+					<ul id="menu3" class="collapse">
+						<li><a href="javascript:toPage('admin_exp1.action?task=query');"><i class="fa fa-fw fa-desktop"></i>非婦科抹片檢查報告單</a></li>
+						<li><a href="javascript:toPage('admin_exp2.action?task=query');"><i class="fa fa-fw fa-paypal"></i>病理組織檢查報告單</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;" data-toggle="collapse" data-target="#menu4"><i class="fa fa-fw fa-desktop"></i> 資料刪除 <i class="fa fa-fw fa-caret-down"></i></a>
+					<ul id="menu4" class="collapse">
+						<li><a href="javascript:toPage('admin_del1.action?task=query');"><i class="fa fa-fw fa-desktop"></i>非婦科抹片檢查報告單</a></li>
+						<li><a href="javascript:toPage('admin_del2.action?task=query');"><i class="fa fa-fw fa-paypal"></i>病理組織檢查報告單</a></li>
+						<li><a href="javascript:toPage('admin_del3.action?task=query');"><i class="fa fa-fw fa-paypal"></i>婦科抹片檢查報告單</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->

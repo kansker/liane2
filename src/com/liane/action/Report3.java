@@ -6,6 +6,7 @@ import kplug.db.QueryAgent;
 import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +30,19 @@ public class Report3 extends EventAction {
 		condition.add("offset", 0);
 		condition.add("limit", 10);
 		condition.addParameter("pasdatee", new java.util.Date());
-		condition.addParameter("pasdates", condition.getTimeString("pasdatee", "yyyy/MM/01"));
+		condition.addParameter("pasdates", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("pasdates", condition.getTimeString("pasdates", "yyyy/MM/dd"));
+
+		return SUCCESS;
+	}
+
+	public String exp() {
+		condition = new WParam();
+		condition.add("offset", 0);
+		condition.add("limit", 10);
+		condition.addParameter("chkrece", new java.util.Date());
+		condition.addParameter("chkrecs", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("chkrecs", condition.getTimeString("chkrecs", "yyyy/MM/dd"));
 		return SUCCESS;
 	}
 
@@ -110,6 +123,27 @@ public class Report3 extends EventAction {
 		return "json";
 	}
 
+	public String delData() {
+		this.initUI();
+		if (condition == null || condition.isEmpty("chkrecs") || condition.isEmpty("chkrece")) {
+			this.alert("失敗");
+			return "json";
+		}
+		condition.addParameter("chkrecs", StringUtils.replace(condition.getString("chkrecs"), "/", ""));
+		condition.addParameter("chkrece", StringUtils.replace(condition.getString("chkrece"), "/", ""));
+		DBAgent agent = new DBAgent();
+		agent.startTransaction();
+		agent.executeUpdate("da_report3", condition);
+		boolean r = agent.endTransaction();
+		if (r) {
+			this.addCmd("refresh();");
+			this.alert("成功");
+		} else {
+			this.alert("失敗");
+		}
+		return "json";
+	}
+
 	public String back() {
 		condition = this.getSessionWParam(prefix + "condition");
 		return SUCCESS;
@@ -141,6 +175,49 @@ public class Report3 extends EventAction {
 					json.put("PASCODE", dd.getString("PASCODE"));
 					json.put("CHARTNO", dd.getString("CHARTNO"));
 					json.put("PASDATE", dd.getString("PASDATE"));
+					json.put("CHKDATA", dd.getString("CHKDATA"));
+					WParam tt = QueryAgent.query("CHKDATA", dd);
+					if (tt != null) {
+						json.put("CHKDATA", tt.getString("DIANAME"));
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				jlist.put(json);
+			}
+			jsonObj.put("rows", jlist);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return "json2";
+	}
+
+	public String expdatas() {
+		if (condition == null) {
+			condition = new WParam();
+		}
+		ParamUtil.set(condition, ServletActionContext.getRequest());
+		condition.addParameter("chkrecs", StringUtils.replace(condition.getString("chkrecs"), "/", ""));
+		condition.addParameter("chkrece", StringUtils.replace(condition.getString("chkrece"), "/", ""));
+		this.setSession(prefix + "condition", condition);
+		String order = condition.getString("sort");
+		if (StringUtils.isNotEmpty(order)) {
+			order = order + " " + condition.getString("order");
+		}
+		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, condition.getInt("offset"), condition.getInt("limit"), order);
+		try {
+			jsonObj = new JSONObject();
+			jsonObj.put("total", condition.getInt(QueryAgent.KEY_TOTAL_RECORD));
+			JSONArray jlist = new JSONArray();
+			for (int i = 0; i < list.size(); i++) {
+				WParam dd = list.get(i);
+				JSONObject json = new JSONObject();
+				try {
+					json.put("seq", dd.getInt("seq"));
+					json.put("PTNAME", dd.getString("PTNAME"));
+					json.put("PASCODE", dd.getString("PASCODE"));
+					json.put("CHARTNO", dd.getString("CHARTNO"));
+					json.put("CHKREC", dd.getString("CHKREC"));
 					json.put("CHKDATA", dd.getString("CHKDATA"));
 					WParam tt = QueryAgent.query("CHKDATA", dd);
 					if (tt != null) {

@@ -37,7 +37,22 @@
 	<script type="text/javascript" src="<s:url value='/ktag.action' />"></script>
 </head>
 <body>
-<tiles:insertAttribute name="body"/>
+<div id="pl_content">
+	<tiles:insertAttribute name="body"/>
+</div>
+<div class="container-fluid" id="dgDD" style="display: none">
+	<div class="modal-dialog" style="margin: 0;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="closeD();">X</button>
+				<h4 class="modal-title" id="dgLabel">
+				</h4>
+			</div>
+			<div class="modal-body" id="plDD" style="width: 100%">
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 <script type="text/javascript">
 	var callback;
@@ -56,6 +71,26 @@
 		if (dd != null) {
 			dd.close();
 		}
+	}
+	function showDCallback(data) {
+		callback(data);
+	}
+
+
+	var callback;
+	var dd;
+	function showD(title, url, cb) {
+		$('#dgLabel').html(title);
+		$('#plDD').html('<iframe id="ifDD" src="' + url + '" height="' + ($(window).height() - 200) + '" style="width:100%" scrolling="auto" frameborder="0"></iframe>');
+		$('#dgDD').show();
+		$('#dgDD .modal-dialog').css('width', '99%');
+		$('#pl_content').hide();
+		callback = cb;
+	}
+
+	function closeD() {
+		$('#pl_content').show();
+		$('#dgDD').hide();
 	}
 	function showDCallback(data) {
 		callback(data);

@@ -17,6 +17,7 @@ import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 import org.apache.struts.util.DatePlus;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONArray;
@@ -45,7 +46,7 @@ public class Report1 extends EventAction {
 	private static String[] item_key = {
 			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
 			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "PASCODE",
-			"itemP", "itemQ", "itemR", "itemS", "itemT", "itemU", "itemV", "itemW",
+			"itemP", "TID", "itemR", "itemS", "itemT", "itemU", "itemV", "itemW",
 			"itemX", "itemY", "itemZ"};
 
 	public String execute() {
@@ -53,7 +54,8 @@ public class Report1 extends EventAction {
 		condition.add("offset", 0);
 		condition.add("limit", 10);
 		condition.addParameter("itemhe", new java.util.Date());
-		condition.addParameter("itemhs", condition.getTimeString("itemhe", "yyyy/MM/01"));
+		condition.addParameter("itemhs", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("itemhs", condition.getTimeString("itemhs", "yyyy/MM/dd"));
 		return SUCCESS;
 	}
 
@@ -189,7 +191,7 @@ public class Report1 extends EventAction {
 					data.addParameter("itemJ", data.getTimeString("itemJ", "MM/dd/yyyy"));
 				}
 
-				for (int j = 0; j < 17; j++) {
+				for (int j = 0; j < 18; j++) {
 					if (j == 0) {
 						sb.append("\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
 					} else {
@@ -215,7 +217,7 @@ public class Report1 extends EventAction {
 			String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
 			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
 
-			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			Document document = new Document(new Rectangle(595, 842), 70f, 60f, 30f, 30f);
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
 			document.open();
 			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";

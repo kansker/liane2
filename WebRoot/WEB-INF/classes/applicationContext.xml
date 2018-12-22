@@ -4,26 +4,26 @@
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="org.gjt.mm.mysql.Driver"></property>
-		<!--<property name="url" value="jdbc:mysql://192.168.4.1:3306/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>-->
-		<property name="url" value="jdbc:mysql://192.168.0.101:3306/liane_test?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
-		<property name="username" value="photo"></property>
-		<property name="password" value="photo123"></property>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>
+		<!--<property name="url" value="jdbc:mysql://192.168.99.100:32768/liane?autoReload=true&amp;useUnicode=true&amp;characterEncoding=utf8"></property>-->
+		<property name="username" value="mt4"></property>
+		<property name="password" value="mt4mt4"></property>
 	</bean>
 	<bean id="dbLoader" class="kplug.db.DBLoader">
-		<property name="squenceTable" value="syssequence"/>
-		<property name="dbKind" value="mysql"/>
+		<property name="squenceTable" value="syssequence" />
+		<property name="dbKind" value="mysql" />
 		<property name="dataSourceMap">
 			<map>
 				<entry key="default">
-					<ref bean="dataSource"/>
+					<ref bean="dataSource" />
 				</entry>
 			</map>
 		</property>
 	</bean>
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-		<property name="host" value="kccs.com.tw"/><!-- SMTP server ip位置 -->
-		<property name="username" value="kccs"/><!-- email 帳號 -->
-		<property name="password" value="bmpkccs77"/><!-- email 密碼 -->
+		<property name="host" value="kccs.com.tw" /><!-- SMTP server ip位置 -->
+		<property name="username" value="kccs" /><!-- email 帳號 -->
+		<property name="password" value="bmpkccs77" /><!-- email 密碼 -->
 		<property name="javaMailProperties">
 			<props>
 				<prop key="mail.smtp.auth">true</prop>
@@ -31,8 +31,8 @@
 		</property>
 	</bean>
 	<bean id="mailMessage" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="xx@cc.gov.tw"/>
-		<property name="subject" value="信件標題"/>
+		<property name="from" value="xx@cc.gov.tw" />
+		<property name="subject" value="信件標題" />
 	</bean>
 	<bean id="initAgent" class="com.liane.InitAgent"></bean>
 	<bean id="scheduleAgent" class="kplug.schedule.ScheduleAgent" init-method="init">

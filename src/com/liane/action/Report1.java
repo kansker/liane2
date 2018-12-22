@@ -7,12 +7,16 @@ import kplug.db.QueryAgent;
 import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
+import org.apache.struts.util.DatePlus;
 import org.apache.struts2.ServletActionContext;
+import org.jfree.date.DateUtilities;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
@@ -24,13 +28,26 @@ public class Report1 extends EventAction {
 	private JSONObject jsonObj;
 	private String table = "report1";
 	private String prefix = "admin_report1";
+	private ByteArrayOutputStream baos = null;
+	private String csvFileName = "";
 
 	public String execute() {
 		condition = new WParam();
 		condition.add("offset", 0);
 		condition.add("limit", 10);
 		condition.addParameter("itemhe", new java.util.Date());
-		condition.addParameter("itemhs", condition.getTimeString("itemhe", "yyyy/MM/01"));
+		condition.addParameter("itemhs", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("itemhs", condition.getTimeString("itemhs", "yyyy/MM/dd"));
+		return SUCCESS;
+	}
+
+	public String exp() {
+		condition = new WParam();
+		condition.add("offset", 0);
+		condition.add("limit", 10);
+		condition.addParameter("itemie", new java.util.Date());
+		condition.addParameter("itemis", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("itemis", condition.getTimeString("itemis", "yyyy/MM/dd"));
 		return SUCCESS;
 	}
 
@@ -111,6 +128,26 @@ public class Report1 extends EventAction {
 		return "json";
 	}
 
+	public String delData() {
+		this.initUI();
+		if (condition == null || condition.isEmpty("itemis") || condition.isEmpty("itemie")) {
+			this.alert("失敗");
+			return "json";
+		}
+
+		DBAgent agent = new DBAgent();
+		agent.startTransaction();
+		agent.executeUpdate("da_report1", condition);
+		boolean r = agent.endTransaction();
+		if (r) {
+			this.addCmd("refresh();");
+			this.alert("成功");
+		} else {
+			this.alert("失敗");
+		}
+		return "json";
+	}
+
 	public String back() {
 		condition = this.getSessionWParam(prefix + "condition");
 		return SUCCESS;
@@ -153,6 +190,111 @@ public class Report1 extends EventAction {
 			e.printStackTrace();
 		}
 		return "json2";
+	}
+
+	public String expdatas() {
+		if (condition == null) {
+			condition = new WParam();
+		}
+		ParamUtil.set(condition, ServletActionContext.getRequest());
+		this.setSession(prefix + "condition", condition);
+		String order = condition.getString("sort");
+		if (StringUtils.isNotEmpty(order)) {
+			order = order + " " + condition.getString("order");
+		}
+		this.setSession("admin_exp1_csv_condition", condition);
+		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, condition.getInt("offset"), condition.getInt("limit"), order);
+		try {
+			jsonObj = new JSONObject();
+			jsonObj.put("total", condition.getInt(QueryAgent.KEY_TOTAL_RECORD));
+			JSONArray jlist = new JSONArray();
+			for (int i = 0; i < list.size(); i++) {
+				WParam dd = list.get(i);
+				JSONObject json = new JSONObject();
+				try {
+					json.put("seq", dd.getInt("seq"));
+					json.put("itemE", dd.getString("itemE"));
+					json.put("itemD", dd.getString("itemD"));
+					json.put("itemC", dd.getString("itemC"));
+					json.put("itemF", dd.getString("itemF"));
+					json.put("itemI", dd.getString("itemI"));
+					json.put("itemL", dd.getString("itemL"));
+					json.put("status", CodeLoader.loadCodeValue("reportStatus", "v", "c", dd.getString("status")));
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				jlist.put(json);
+			}
+			jsonObj.put("rows", jlist);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return "json2";
+	}
+
+	public String csv() {
+		condition = this.getSessionWParam("admin_exp1_csv_condition");
+		if (condition == null) {
+			return SUCCESS;
+		}
+		List<WParam> list = QueryAgent.queryList("qa_" + table, condition, 0, 10000, condition.getString("sort"));
+		try {
+			baos = new ByteArrayOutputStream();
+
+			csvFileName = "export" + DatePlus.getDateString("yyyyMMddHHmmss") + ".csv";
+			String[] item_key = {
+					"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
+					"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "PASCODE",
+					"itemP", "TID", "itemR", "itemS", "itemT", "itemU", "itemV", "itemW",
+					"itemX", "itemY", "itemZ"};
+
+			StringBuffer sb = new StringBuffer();
+			for (int i = 0; i < list.size(); i++) {
+				WParam data = list.get(i);
+				if (data.getString("itemH").length() > 0) {
+					data.addParameter("itemH", data.getTimestamp("itemH"));
+					data.addParameter("itemH", data.getTimeString("itemH", "MM/dd/yyyy"));
+				}
+				if (data.getString("itemI").length() > 0) {
+					data.addParameter("itemI", data.getTimestamp("itemI"));
+					data.addParameter("itemI", data.getTimeString("itemI", "MM/dd/yyyy"));
+				}
+				if (data.getString("itemJ").length() > 0) {
+					data.addParameter("itemJ", data.getTimestamp("itemJ"));
+					data.addParameter("itemJ", data.getTimeString("itemJ", "MM/dd/yyyy"));
+				}
+
+				for (int j = 0; j < 18; j++) {
+					if (j == 0) {
+						sb.append("\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
+					} else {
+						sb.append(",\"").append(data.getString(item_key[j]).replaceAll("\n", " ").replaceAll("\r", "")).append("\"");
+					}
+				}
+				sb.append("\n");
+			}
+			baos.write(sb.toString().getBytes());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return SUCCESS;
+	}
+
+	public InputStream getInputStream() {
+		try {
+			return new ByteArrayInputStream(baos.toByteArray());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public String getCsvFileName() {
+		try {
+			return new String(csvFileName.getBytes(), "ISO8859-1");
+		} catch (Exception ex) {
+			return csvFileName;
+		}
 	}
 
 	public WParam getData() {

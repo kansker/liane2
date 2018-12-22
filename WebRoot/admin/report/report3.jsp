@@ -26,12 +26,20 @@
 								             placeholder="姓名" size="10"/>
 							</div>
 							<div class="input-group" style="margin: 4px">
-								<div class="input-group-addon">病理號碼</div>
+								<div class="input-group-addon">病歷號碼</div>
 								<s:textfield cssClass="form-control" type="text"
 								             id="chartno"
 								             name="condition.map.chartno"
 								             value="%{condition.getString('chartno')}"
-								             placeholder="病理號碼" size="10"/>
+								             placeholder="病歷號碼" size="10"/>
+							</div>
+							<div class="input-group" style="margin: 4px">
+								<div class="input-group-addon">病理編號</div>
+								<s:textfield cssClass="form-control" type="text"
+								             id="chkno"
+								             name="condition.map.chkno"
+								             value="%{condition.getString('chkno')}"
+								             placeholder="病理編號" size="10"/>
 							</div>
 							<div class="input-group" style="margin: 4px">
 								<div class="input-group-addon">身分證號碼</div>
@@ -77,7 +85,7 @@
 						<tr>
 							<th data-field="PTNAME" data-align="center" data-sortable="true">姓名</th>
 							<th data-field="PASCODE" data-align="center" data-sortable="true">送檢單位</th>
-							<th data-field="CHARTNO" data-align="center" data-sortable="true">病理號碼</th>
+							<th data-field="CHARTNO" data-align="center" data-sortable="true">病歷號碼</th>
 							<th data-field="PASDATE" data-align="center" data-sortable="true">取樣日期</th>
 							<th data-field="CHKDATA" data-align="center" data-sortable="true">細胞病理診斷</th>
 							<th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents" data-align="left">功能</th>
@@ -154,6 +162,7 @@
 	function queryParams(params) {
 		params["condition.map.ptname"] = $('#ptname').val();
 		params["condition.map.chartno"] = $('#chartno').val();
+		params["condition.map.chkno"] = $('#chkno').val();
 		params["condition.map.ptid"] = $('#ptid').val();
 		params["condition.map.pasdates"] = $('#pasdates').val();
 		params["condition.map.pasdatee"] = $('#pasdatee').val();

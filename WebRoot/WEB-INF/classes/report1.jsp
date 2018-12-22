@@ -1,16 +1,14 @@
-<table width="100%" border="1" align="center" cellpadding="0" cellspacing="3" bordercolor="#6B96FA">
+<table style="border: 1px solid #6B96FA;border-spacing: 5px;border-collapse: separate;width: 600px;margin-left:auto;margin-right:auto;">
 	<tr>
 		<td height="45">
 			<table width="100%" height="28" border="0" cellpadding="0" cellspacing="0">
 				<tr>
-					<th height="28" style="text-align: center">
+					<th height="28" style="text-align: center;font-size: 14px">
 						${data.getString('itema')}
 					</th>
 				</tr>
-			</table>
-			<table width="100%" height="26" border="0" cellpadding="0" cellspacing="0">
 				<tr>
-					<th height="26" class="style61" style="text-align: center"><strong>非 婦 科 抹 片 檢 查 報 告 單</strong></th>
+					<th height="26" style="text-align: center;font-size: 14px"><strong>非 婦 科 抹 片 檢 查 報 告 單</strong></th>
 				</tr>
 			</table>
 		</td>
@@ -19,74 +17,74 @@
 		<td>
 			<table width="100%" border="0" cellpadding="0" cellspacing="0">
 				<tr>
-					<td height="42" align="right" valign="middle">收費件式：</td>
-					<td width="69" align="left" valign="middle">${data.getString('itemb')}</td>
-					<td width="83" align="right" valign="middle" style="font-weight: normal; text-decoration: none; color: #004f54;"> 病理號碼：</td>
-					<td width="80" align="left" valign="middle">${data.getString('itemc')}</td>
+					<td height="42" align="right" valign="middle" style="font-size: 12px">收費件式：</td>
+					<td width="69" align="left" valign="middle" style="font-size: 12px">${data.getString('itemb')}</td>
+					<td width="83" align="right" valign="middle" style="font-size: 12px"> 病理號碼：</td>
+					<td width="80" align="left" valign="middle" style="font-size: 12px">${data.getString('itemc')}</td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<table width="100%" border="1" align="center" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF">
+			<table width="100%" style="border: 1px solid #6B96FA;border-spacing: 1px;">
 				<tr>
-					<td width="100" align="center">送檢單位</td>
-					<td width="40" align="center">姓名</td>
-					<td width="40" align="center">年齡</td>
-					<td width="60" align="center">病歷號</td>
-					<td width="60" align="center">取樣日期</td>
-					<td width="60" align="center">收件日期</td>
-					<td width="60" align="center" style="font-weight: normal; text-decoration: none; color: #004f54;"> 報告日期</td>
-					<td width="60" align="center" style="font-weight: normal; text-decoration: none; color: #004f54;"> 報告醫師</td>
+					<td width="100" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">送檢單位</td>
+					<td width="40" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">姓名</td>
+					<td width="40" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">年齡</td>
+					<td width="60" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">病歷號</td>
+					<td width="60" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">取樣日期</td>
+					<td width="60" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC">收件日期</td>
+					<td width="60" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC"> 報告日期</td>
+					<td width="60" style="text-align: center;padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC"> 報告醫師</td>
 				</tr>
 				<tr>
-					<td height="60" align="center">${data.getString('itemd')}<br/></td>
-					<td align="center">${data.getString('iteme')}<br/></td>
-					<td align="center">${data.getString('itemf')}<br/></td>
-					<td align="center">${data.getString('itemg')}<br/></td>
-					<td align="center">${data.getString('itemh')}<br/></td>
-					<td align="center">${data.getString('itemi')}<br/></td>
-					<td align="center">${data.getString('itemj')}<br/></td>
-					<td width="60" align="center">${data.getString('itemk')}<br/></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<table style="height: 92px;" border="0" align="left" cellpadding="1" cellspacing="1">
-				<tr>
-					<td width="60" align="center" height="22px"> 組織來源：</td>
-					<td align="left"> ${data.getString('iteml')} </td>
-				</tr>
-				<tr>
-					<td align="center" height="22px"> History：</td>
-					<td align="left"> ${data.getString('itemm')} </td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px;height: 60px">${data.getString('itemd')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('iteme')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('itemf')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('itemg')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('itemh')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('itemi')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px">${data.getString('itemj')}<br/></td>
+					<td style="text-align: center;border: 1px solid #6B96FA;font-size: 12px;width: 60px">${data.getString('itemk')}<br/></td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<table width="100%" border="0" align="left" cellpadding="3" cellspacing="0">
+			<table width="100%" style="border: 1px solid #6B96FA;border-spacing: 1px;">
 				<tr>
-					<td width="87%" height="22"> Cytopathology Report：</td>
+					<td style="padding:4px;text-align: center;border: 1px solid #6B96FA;font-size: 12px;height: 22px;width: 100px"> 組織來源：</td>
+					<td style="padding:4px;text-align: left;border: 1px solid #6B96FA;font-size: 12px"> ${data.getString('iteml')} </td>
 				</tr>
 				<tr>
-					<td height="150" align="left" valign="top" style="padding: 5px"> ${data.getString('itemn')} </td>
+					<td style="padding:4px;text-align: center;border: 1px solid #6B96FA;font-size: 12px;height: 22px;width: 100px"> History：</td>
+					<td style="padding:4px;text-align: left;border: 1px solid #6B96FA;font-size: 12px"> ${data.getString('itemm')} </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" style="border: 1px solid #6B96FA;border-spacing: 1px;">
+				<tr>
+					<td style="padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC"> Cytopathology Report：</td>
+				</tr>
+				<tr>
+					<td height="150" align="left" valign="top" style="font-size: 12px;padding: 5px"> ${data.getString('itemn')} </td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr align="center" valign="middle">
 		<td>
-			<table width="100%" align="left" cellpadding="3" cellspacing="1">
+			<table width="100%" style="border: 1px solid #6B96FA;border-spacing: 1px;">
 				<tr>
-					<td height="22"> Mirco findings：</td>
+					<td style="padding:4px;border: 1px solid #6B96FA;font-size: 12px;background-color: #FFFFCC"> Mirco findings：</td>
 				</tr>
 				<tr>
-					<td height="150" valign="top"> ${data.getString('itemo')} </td>
+					<td height="150" valign="top" style="font-size: 12px;padding: 5px"> ${data.getString('itemo')} </td>
 				</tr>
 			</table>
 		</td>

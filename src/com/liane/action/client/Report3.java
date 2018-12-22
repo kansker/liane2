@@ -19,6 +19,7 @@ import kplug.util.ParamUtil;
 import kplug.vo.WParam;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
 import org.apache.struts.util.DatePlus;
 import org.apache.struts2.ServletActionContext;
 import org.json.JSONArray;
@@ -50,7 +51,8 @@ public class Report3 extends EventAction {
 		condition.add("offset", 0);
 		condition.add("limit", 10);
 		condition.addParameter("pasdatee", new java.util.Date());
-		condition.addParameter("pasdates", condition.getTimeString("pasdatee", "yyyy/MM/01"));
+		condition.addParameter("pasdates", DateUtils.addMonths(new java.util.Date(), -3));
+		condition.addParameter("pasdates", condition.getTimeString("pasdates", "yyyy/MM/dd"));
 		return SUCCESS;
 	}
 
@@ -134,7 +136,7 @@ public class Report3 extends EventAction {
 			String path = ConfigAgent.getConfigValue("pdf_dir");
 			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
 
-			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			Document document = new Document(new Rectangle(595, 842), 70f, 60f, 30f, 30f);
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
 			document.open();
 			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";
@@ -173,7 +175,7 @@ public class Report3 extends EventAction {
 			String htmlName = DatePlus.getDateString("yyyyMMddHHmmssSSS") + ".html";
 			pdfFileName = DatePlus.getDateString("yyyyMMddHHmmss") + ".pdf";
 
-			Document document = new Document(new Rectangle(595, 842), 15f, 15f, 30f, 30f);
+			Document document = new Document(new Rectangle(595, 842), 70f, 60f, 30f, 30f);
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path + pdfFileName));
 			document.open();
 			String fontPath = ConfigAgent.getConfigValue("pdf_dir") + "mingliu.ttc";

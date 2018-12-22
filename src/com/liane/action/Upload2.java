@@ -16,9 +16,9 @@ public class Upload2 extends EventAction {
 	private WParam condition;
 	private String prefix = "admin_upload2";
 	private static String[] item_key = {
-			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",
-			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "itemP",
-			"itemQ", "itemR", "itemS", "itemT", "itemU", "PASCODE", "itemV", "itemW",
+			"itemA", "itemB", "itemC", "itemD", "itemE", "itemF", "itemG", "itemH",//8
+			"itemI", "itemJ", "itemK", "itemL", "itemM", "itemN", "itemO", "itemP",//16
+			"itemQ", "itemR", "itemS", "itemT", "itemU", "PASCODE", "TID", "itemW",
 			"itemX", "itemY", "itemZ"};
 	private File cvs;
 	private String cvsContentType;
@@ -79,7 +79,7 @@ public class Upload2 extends EventAction {
 					if (index == 23)
 						break;
 				}
-				if (index == 22) {
+				if (index == 22 || index == 23) {
 					data.addParameter("status", "1");
 					if (data.getString("itemM").length() > 0) {
 						StringTokenizer st = new StringTokenizer(data.getString("itemM"), "/");

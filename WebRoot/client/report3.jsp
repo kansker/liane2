@@ -59,7 +59,7 @@
 							</div>
 							<button type="button" id="refresh" class="btn btn-default">搜尋</button>
 							<%--<button type="button" id="csv" class="btn btn-default">下載CSV</button>--%>
-							<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>
+							<%--<button type="button" id="pdf" class="btn btn-default">下載此頁PDF</button>--%>
 						</div>
 					</div>
 					<table
@@ -92,7 +92,7 @@
 		</div>
 	</div>
 </div>
-<form action="cus_search3_pdf.action" id="form1" name="form1" method="post" target="_blank">
+<form action="cus_search3_pdf.action" id="form1" name="form1" method="post">
 	<input type="hidden" id="seq" name="condition.map.seq" value=""/>
 	<input type="hidden" id="kind" name="condition.map.kind" value="1"/>
 </form>

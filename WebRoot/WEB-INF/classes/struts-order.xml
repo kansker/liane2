@@ -32,6 +32,40 @@
 		</action>
 		<action name="admin_report1_datas" class="com.liane.action.Report1" method="datas"/>
 
+		<action name="admin_exp1" class="com.liane.action.Report1" method="exp">
+			<result name="success" type="content">
+				<param name="location">/admin/report/exp1.jsp</param>
+			</result>
+		</action>
+		<action name="admin_exp1_datas" class="com.liane.action.Report1" method="expdatas"/>
+		<action name="admin_exp1_csv" class="com.liane.action.Report1" method="csv">
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputname">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${csvFileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+		<action name="admin_del1" class="com.liane.action.Report1" method="exp">
+			<result name="success" type="content">
+				<param name="location">/admin/report/del1.jsp</param>
+			</result>
+		</action>
+		<action name="admin_del2" class="com.liane.action.Report2" method="exp">
+			<result name="success" type="content">
+				<param name="location">/admin/report/del2.jsp</param>
+			</result>
+		</action>
+		<action name="admin_del3" class="com.liane.action.Report3" method="exp">
+			<result name="success" type="content">
+				<param name="location">/admin/report/del3.jsp</param>
+			</result>
+		</action>
+		<action name="admin_del1_deldata" class="com.liane.action.Report1" method="delData"/>
+		<action name="admin_del2_deldata" class="com.liane.action.Report2" method="delData"/>
+		<action name="admin_del3_deldata" class="com.liane.action.Report3" method="delData"/>
+
+		<action name="admin_exp3_datas" class="com.liane.action.Report3" method="expdatas"/>
 
 		<action name="admin_report2" class="com.liane.action.Report2">
 			<result name="success" type="content">
@@ -60,6 +94,22 @@
 		<action name="admin_report2_remove" class="com.liane.action.Report2" method="remove">
 		</action>
 		<action name="admin_report2_datas" class="com.liane.action.Report2" method="datas"/>
+
+
+		<action name="admin_exp2" class="com.liane.action.Report2" method="exp">
+			<result name="success" type="content">
+				<param name="location">/admin/report/exp2.jsp</param>
+			</result>
+		</action>
+		<action name="admin_exp2_datas" class="com.liane.action.Report2" method="expdatas"/>
+		<action name="admin_exp2_csv" class="com.liane.action.Report2" method="csv">
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputname">inputStream</param>
+				<param name="contentDisposition">attachment;filename="${csvFileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
 
 		<action name="admin_report3" class="com.liane.action.Report3">
 			<result name="success" type="content">

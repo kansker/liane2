@@ -80,7 +80,7 @@
 		<parameter type="String">EXACODE</parameter>
 	</dao>
 	<dao name="add_report1">
-		<statement>insert into report1(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,itemJ,itemK,itemL,itemM,itemN,itemO,PASCODE,itemP,importDate,status,userId) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+		<statement><![CDATA[insert into report1(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,itemJ,itemK,itemL,itemM,itemN,itemO,PASCODE,itemP,importDate,status,userId,tid) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]]></statement>
 		<parameter type="String">itemA</parameter>
 		<parameter type="String">itemB</parameter>
 		<parameter type="String">itemC</parameter>
@@ -101,12 +101,13 @@
 		<parameter type="Timestamp">now()</parameter>
 		<parameter type="String">status</parameter>
 		<parameter type="String">userId</parameter>
+		<parameter type="String">tid</parameter>
 	</dao>
 	<dao name="update_report1">
-		<statement>update report1 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,
+		<statement><![CDATA[update report1 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,
 			itemH=?,itemI=?,itemJ=?,itemK=?,itemL=?,itemM=?,itemN=?,itemO=?,PASCODE=?,itemP=?,
-			status=?,userId=? where itemC=?
-		</statement>
+			status=?,userId=?,tid=? where itemC=?
+		]]></statement>
 		<parameter type="String">itemA</parameter>
 		<parameter type="String">itemB</parameter>
 		<parameter type="String">itemD</parameter>
@@ -125,13 +126,14 @@
 		<parameter type="String">itemP</parameter>
 		<parameter type="String">status</parameter>
 		<parameter type="String">userId</parameter>
+		<parameter type="String">tid</parameter>
 		<parameter type="String">itemC</parameter>
 	</dao>
 	<dao name="add_report2">
-		<statement>insert into report2(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,
+		<statement><![CDATA[insert into report2(itemA,itemB,itemC,itemD,itemE,itemF,itemG,itemH,itemI,
 			itemJ,itemK,itemL,itemM,itemN,itemO,itemP,itemQ,itemR,itemS,itemT,itemU,
-			PASCODE,importDate,status,userId) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-		</statement>
+			PASCODE,importDate,status,userId,tid) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		]]></statement>
 		<parameter type="String">itemA</parameter>
 		<parameter type="String">itemB</parameter>
 		<parameter type="String">itemC</parameter>
@@ -157,9 +159,12 @@
 		<parameter type="Timestamp">now()</parameter>
 		<parameter type="String">status</parameter>
 		<parameter type="String">userId</parameter>
+		<parameter type="String">tid</parameter>
 	</dao>
 	<dao name="update_report2">
-		<statement>update report2 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,itemH=?,itemI=?,itemJ=?,itemK=?,itemL=?,itemM=?,itemN=?,itemO=?,itemP=?,itemQ=?,itemR=?,itemS=?,itemT=?,itemU=?,PASCODE=?,importDate=?,status=?,userId=? where itemC=?</statement>
+		<statement><![CDATA[update report2 set itemA=?,itemB=?,itemD=?,itemE=?,itemF=?,itemG=?,itemH=?,itemI=?,itemJ=?,itemK=?,
+		itemL=?,itemM=?,itemN=?,itemO=?,itemP=?,itemQ=?,itemR=?,itemS=?,itemT=?,itemU=?,PASCODE=?,importDate=?,status=?,userId=?,tid=? where itemC=?
+		]]></statement>
 		<parameter type="String">itemA</parameter>
 		<parameter type="String">itemB</parameter>
 		<parameter type="String">itemD</parameter>
@@ -184,10 +189,11 @@
 		<parameter type="Timestamp">now()</parameter>
 		<parameter type="String">status</parameter>
 		<parameter type="String">userId</parameter>
+		<parameter type="String">tid</parameter>
 		<parameter type="String">itemC</parameter>
 	</dao>
 	<dao name="add_report3">
-		<statement>insert into report3(PTNAME,PTBIRTH,PTID,PTEDUCAT,ADDCODEA,ADDCODEB,PTSUPPER,LASTCHKD,CHARTNO,PASDATE,PASCODE,CHKCODE,CHKREC,CHKNO,CHKQUL,CHKDIF,CHKDIF2,CHKINF,CHKDATA,JPATH,SPATH,PATH,CHKSURED,CHKQTY,FUN_TYPE,HFLAG,PTTEL,ADDR,ICD9_1,ICD9_2,ICD9_3,CARDNO,ULTOMY,X_RAY,PAS_PUR,SPL_TYPE,CHK_WAY,NATIONALIT,CARD_NO,importDate,status) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)</statement>
+		<statement><![CDATA[insert into report3(PTNAME,PTBIRTH,PTID,PTEDUCAT,ADDCODEA,ADDCODEB,PTSUPPER,LASTCHKD,CHARTNO,PASDATE,PASCODE,CHKCODE,CHKREC,CHKNO,CHKQUL,CHKDIF,CHKDIF2,CHKINF,CHKDATA,JPATH,SPATH,PATH,CHKSURED,CHKQTY,FUN_TYPE,HFLAG,PTTEL,ADDR,ICD9_1,ICD9_2,ICD9_3,CARDNO,ULTOMY,X_RAY,PAS_PUR,SPL_TYPE,CHK_WAY,NATIONALIT,CARD_NO,importDate,status,tid) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]]></statement>
 		<parameter type="String">PTNAME</parameter>
 		<parameter type="String">PTBIRTH</parameter>
 		<parameter type="String">PTID</parameter>
@@ -229,9 +235,15 @@
 		<parameter type="String">CARD_NO</parameter>
 		<parameter type="Timestamp">now()</parameter>
 		<parameter type="String">status</parameter>
+		<parameter type="String">tid</parameter>
 	</dao>
 	<dao name="update_report3">
-		<statement>update report3 set PTNAME=?,PTBIRTH=?,PTID=?,PTEDUCAT=?,ADDCODEA=?,ADDCODEB=?,PTSUPPER=?,LASTCHKD=?,CHARTNO=?,PASDATE=?,PASCODE=?,CHKCODE=?,CHKREC=?,CHKNO=?,CHKQUL=?,CHKDIF=?,CHKDIF2=?,CHKINF=?,CHKDATA=?,JPATH=?,SPATH=?,PATH=?,CHKSURED=?,CHKQTY=?,FUN_TYPE=?,HFLAG=?,PTTEL=?,ADDR=?,ICD9_1=?,ICD9_2=?,ICD9_3=?,CARDNO=?,ULTOMY=?,X_RAY=?,PAS_PUR=?,SPL_TYPE=?,CHK_WAY=?,NATIONALIT=?,CARD_NO=?,importDate=?,status=? where CHKNO=?</statement>
+		<statement><![CDATA[update report3 set PTNAME=?,PTBIRTH=?,PTID=?,PTEDUCAT=?,ADDCODEA=?,ADDCODEB=?,PTSUPPER=?,
+		LASTCHKD=?,CHARTNO=?,PASDATE=?,PASCODE=?,CHKCODE=?,CHKREC=?,CHKNO=?,CHKQUL=?,CHKDIF=?,CHKDIF2=?,CHKINF=?,
+		CHKDATA=?,JPATH=?,SPATH=?,PATH=?,CHKSURED=?,CHKQTY=?,FUN_TYPE=?,HFLAG=?,PTTEL=?,ADDR=?,
+		ICD9_1=?,ICD9_2=?,ICD9_3=?,CARDNO=?,ULTOMY=?,X_RAY=?,PAS_PUR=?,SPL_TYPE=?,CHK_WAY=?,NATIONALIT=?,CARD_NO=?,
+		importDate=?,status=?,tid=?
+		where CHKNO=?]]></statement>
 		<parameter type="String">PTNAME</parameter>
 		<parameter type="String">PTBIRTH</parameter>
 		<parameter type="String">PTID</parameter>
@@ -273,6 +285,7 @@
 		<parameter type="String">CARD_NO</parameter>
 		<parameter type="Timestamp">now()</parameter>
 		<parameter type="String">status</parameter>
+		<parameter type="String">tid</parameter>
 		<parameter type="String">CHKNO</parameter>
 	</dao>
 	<dao name="q_report1">
@@ -322,6 +335,12 @@
 		<statement test="isNotEmpty('itemhe')"><![CDATA[
 		and itemh <= @itemhe
 		]]></statement>
+		<statement test="isNotEmpty('itemis')"><![CDATA[
+		and itemi >= @itemis
+		]]></statement>
+		<statement test="isNotEmpty('itemie')"><![CDATA[
+		and itemi <= @itemie
+		]]></statement>
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">iteme</parameter>
 		<parameter kind="3" type="LikeString">itemc</parameter>
@@ -329,14 +348,19 @@
 		<parameter kind="3" type="LikeString">iteml</parameter>
 		<parameter kind="3" type="String">itemhs</parameter>
 		<parameter kind="3" type="String">itemhe</parameter>
+		<parameter kind="3" type="String">itemis</parameter>
+		<parameter kind="3" type="String">itemie</parameter>
 	</dao>
 	<dao name="qa_report2">
-		<statement>select seq,itemD,itemC,itemJ,itemE,itemF,itemM,itemK,itemQ,status from report2 where 1=1</statement>
+		<statement>select seq,itemD,itemC,itemJ,itemE,itemF,itemG,itemN,itemM,itemK,itemQ,status from report2 where 1=1</statement>
 		<statement test="isNotEmpty('PASCODE')"><![CDATA[
 		and PASCODE = @PASCODE
 		]]></statement>
 		<statement test="isNotEmpty('itemc')"><![CDATA[
 		and itemc like @itemc
+		]]></statement>
+		<statement test="isNotEmpty('itemg')"><![CDATA[
+		and itemg like @itemg
 		]]></statement>
 		<statement test="isNotEmpty('itemd')"><![CDATA[
 		and itemd like @itemd
@@ -353,13 +377,22 @@
 		<statement test="isNotEmpty('itemme')"><![CDATA[
 		and itemm <= @itemme
 		]]></statement>
+		<statement test="isNotEmpty('itemns')"><![CDATA[
+		and itemn >= @itemns
+		]]></statement>
+		<statement test="isNotEmpty('itemne')"><![CDATA[
+		and itemn <= @itemne
+		]]></statement>
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemg</parameter>
 		<parameter kind="3" type="LikeString">itemj</parameter>
 		<parameter kind="3" type="LikeString">itemd</parameter>
 		<parameter kind="3" type="LikeString">itemq</parameter>
 		<parameter kind="3" type="String">itemms</parameter>
 		<parameter kind="3" type="String">itemme</parameter>
+		<parameter kind="3" type="String">itemns</parameter>
+		<parameter kind="3" type="String">itemne</parameter>
 	</dao>
 	<dao name="export_report2">
 		<statement>select * from report2 where 1=1</statement>
@@ -369,11 +402,17 @@
 		<statement test="isNotEmpty('itemc')"><![CDATA[
 		and itemc like @itemc
 		]]></statement>
+		<statement test="isNotEmpty('itemg')"><![CDATA[
+		and itemg like @itemg
+		]]></statement>
 		<statement test="isNotEmpty('itemd')"><![CDATA[
 		and itemd like @itemd
 		]]></statement>
 		<statement test="isNotEmpty('itemq')"><![CDATA[
 		and itemq like @itemq
+		]]></statement>
+		<statement test="isNotEmpty('itemj')"><![CDATA[
+		and itemj like @itemj
 		]]></statement>
 		<statement test="isNotEmpty('itemms')"><![CDATA[
 		and itemm >= @itemms
@@ -381,13 +420,23 @@
 		<statement test="isNotEmpty('itemme')"><![CDATA[
 		and itemm <= @itemme
 		]]></statement>
+		<statement test="isNotEmpty('itemns')"><![CDATA[
+		and itemn >= @itemns
+		]]></statement>
+		<statement test="isNotEmpty('itemne')"><![CDATA[
+		and itemn <= @itemne
+		]]></statement>
 		<statement>limit 0,1000</statement>
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">itemc</parameter>
+		<parameter kind="3" type="LikeString">itemg</parameter>
+		<parameter kind="3" type="LikeString">itemj</parameter>
 		<parameter kind="3" type="LikeString">itemd</parameter>
 		<parameter kind="3" type="LikeString">itemq</parameter>
 		<parameter kind="3" type="String">itemms</parameter>
 		<parameter kind="3" type="String">itemme</parameter>
+		<parameter kind="3" type="String">itemns</parameter>
+		<parameter kind="3" type="String">itemne</parameter>
 	</dao>
 	<dao name="qa_report3">
 		<statement>select * from report3 where 1=1</statement>
@@ -400,6 +449,9 @@
 		<statement test="isNotEmpty('chartno')"><![CDATA[
 		and chartno like @chartno
 		]]></statement>
+		<statement test="isNotEmpty('chkno')"><![CDATA[
+		and chkno like @chkno
+		]]></statement>
 		<statement test="isNotEmpty('ptid')"><![CDATA[
 		and ptid like @ptid
 		]]></statement>
@@ -409,20 +461,50 @@
 		<statement test="isNotEmpty('pasdatee')"><![CDATA[
 		and pasdate <= @pasdatee
 		]]></statement>
+		<statement test="isNotEmpty('chkrecs')"><![CDATA[
+		and chkrec >= @chkrecs
+		]]></statement>
+		<statement test="isNotEmpty('chkrece')"><![CDATA[
+		and chkrec <= @chkrece
+		]]></statement>
 		<parameter kind="3" type="String">PASCODE</parameter>
 		<parameter kind="3" type="LikeString">ptname</parameter>
 		<parameter kind="3" type="LikeString">chartno</parameter>
+		<parameter kind="3" type="LikeString">chkno</parameter>
 		<parameter kind="3" type="LikeString">ptid</parameter>
 		<parameter kind="3" type="String">pasdates</parameter>
 		<parameter kind="3" type="String">pasdatee</parameter>
+		<parameter kind="3" type="String">chkrecs</parameter>
+		<parameter kind="3" type="String">chkrece</parameter>
+	</dao>
+	<dao name="da_report1">
+		<statement><![CDATA[delete from report1
+			where itemi >= ? and itemi <= ?
+		]]></statement>
+		<parameter type="String">itemis</parameter>
+		<parameter type="String">itemie</parameter>
 	</dao>
 	<dao name="del_report1">
 		<statement>delete from report1 where seq=?</statement>
 		<parameter type="long">seq</parameter>
 	</dao>
+	<dao name="da_report2">
+		<statement><![CDATA[delete from report2
+			where itemn >= ? and itemn <= ?
+		]]></statement>
+		<parameter type="String">itemns</parameter>
+		<parameter type="String">itemne</parameter>
+	</dao>
 	<dao name="del_report2">
 		<statement>delete from report2 where seq=?</statement>
 		<parameter type="long">seq</parameter>
+	</dao>
+	<dao name="da_report3">
+		<statement><![CDATA[delete from report3
+			where chkrec >= ? and chkrec <= ?
+		]]></statement>
+		<parameter type="String">chkrecs</parameter>
+		<parameter type="String">chkrece</parameter>
 	</dao>
 	<dao name="del_report3">
 		<statement>delete from report3 where seq=?</statement>

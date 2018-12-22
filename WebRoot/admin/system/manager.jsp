@@ -41,8 +41,8 @@
                             >
                         <thead>
                         <tr>
-                            <th data-field="userId" data-align="center" data-sortable="true">名稱</th>
-                            <th data-field="userName" data-align="center" data-sortable="true">帳號</th>
+                            <th data-field="userName" data-align="center" data-sortable="true">名稱</th>
+                            <th data-field="userId" data-align="center" data-sortable="true">帳號</th>
                             <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents" data-align="left">功能</th>
                         </tr>
                         </thead>
