@@ -1,19 +1,10 @@
 package com.liane.util;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.util.zip.Adler32;
-import java.util.zip.CheckedOutputStream;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
-
 import kplug.log.LogUtil;
+import kplug.util.FileUtil;
 
-import org.apache.struts.util.FileUtil;
+import java.io.*;
+import java.util.zip.*;
 
 public class ZipUtil {
 	static final int BUFFER = 2048;

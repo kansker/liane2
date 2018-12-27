@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" xsi:schemaLocation="
-    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="org.gjt.mm.mysql.Driver"></property>
@@ -19,20 +19,6 @@
 				</entry>
 			</map>
 		</property>
-	</bean>
-	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-		<property name="host" value="kccs.com.tw" /><!-- SMTP server ip位置 -->
-		<property name="username" value="kccs" /><!-- email 帳號 -->
-		<property name="password" value="bmpkccs77" /><!-- email 密碼 -->
-		<property name="javaMailProperties">
-			<props>
-				<prop key="mail.smtp.auth">true</prop>
-			</props>
-		</property>
-	</bean>
-	<bean id="mailMessage" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="xx@cc.gov.tw" />
-		<property name="subject" value="信件標題" />
 	</bean>
 	<bean id="initAgent" class="com.liane.InitAgent"></bean>
 	<bean id="scheduleAgent" class="kplug.schedule.ScheduleAgent" init-method="init">

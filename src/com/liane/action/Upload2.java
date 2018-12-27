@@ -4,7 +4,6 @@ import kplug.action.EventAction;
 import kplug.db.DBAgent;
 import kplug.db.QueryAgent;
 import kplug.vo.WParam;
-import org.apache.struts.util.Param;
 
 import java.io.*;
 import java.util.ArrayList;

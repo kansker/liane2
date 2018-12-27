@@ -3,10 +3,10 @@
 	<display-name>liane</display-name>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/classes/applicationContext*.xml</param-value>
+		<param-value>/WEB-INF/classes/applicationContext.xml</param-value>
 	</context-param>
 	<listener>
-		<listener-class>org.apache.tiles.web.startup.TilesListener</listener-class>
+		<listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
 	</listener>
 	<filter>
 		<filter-name>struts2</filter-name>
@@ -27,6 +27,14 @@
 		<servlet-class>org.quartz.ee.servlet.QuartzInitializerServlet</servlet-class>
 		<init-param>
 			<param-name>shutdown-on-unload</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>wait-on-shutdown</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>start-scheduler-on-load</param-name>
 			<param-value>true</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
