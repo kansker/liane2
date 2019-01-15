@@ -83,8 +83,9 @@
 					>
 						<thead>
 						<tr>
-							<th data-field="PTNAME" data-align="center" data-sortable="true">姓名</th>
+							<th data-field="PTNAME" data-align="center" data-events="operateEvents" data-sortable="true" data-formatter="nFormatter">姓名</th>
 							<th data-field="PASCODE" data-align="center" data-sortable="true">送檢單位</th>
+							<th data-field="CHKNO" data-align="center" data-sortable="true">病理編號</th>
 							<th data-field="CHARTNO" data-align="center" data-sortable="true">病歷號碼</th>
 							<th data-field="PASDATE" data-align="center" data-sortable="true">取樣日期</th>
 							<th data-field="CHKDATA" data-align="center" data-sortable="true">細胞病理診斷</th>
@@ -107,6 +108,7 @@
 			'</a>'
 		].join('');
 	}
+
 	function operateFormatter(value, row, index) {
 		return [
 			'<a class="remove ml10" href="javascript:void(0)" title="刪除 " style="margin-left: 15px;">',
@@ -114,6 +116,7 @@
 			'</a>'
 		].join('');
 	}
+
 	window.operateEvents = {
 		'click .update': function (e, value, row, index) {
 			window.location.href = '<s:property value="prefix"/>_update.action?condition.map.seq=' + row.seq + '&r=' + getKTagRandom();
@@ -129,7 +132,7 @@
 			con["r"] = getKTagRandom();
 			con["condition.map.seq"] = row.seq;
 			jQuery.post(
-					'<s:property value="prefix"/>_remove.action', con, handleKTagResponse, "json"
+				'<s:property value="prefix"/>_remove.action', con, handleKTagResponse, "json"
 			);
 		}
 	};

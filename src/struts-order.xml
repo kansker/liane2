@@ -124,9 +124,7 @@
 			<result name="fail" type="redirect">/admin_report3.action</result>
 		</action>
 		<action name="admin_report3_view" class="com.liane.action.Report3" method="view">
-			<result name="success" type="content">
-				<param name="location">/admin/report/report3_content.jsp</param>
-			</result>
+			<result name="success" type="content">/admin/report/report3_content.jsp</result>
 		</action>
 		<action name="admin_report3_update" class="com.liane.action.Report3" method="update">
 			<result name="success" type="content">

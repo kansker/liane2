@@ -5,16 +5,16 @@
 <struts>
 	<package name="cus" extends="front-default" namespace="/">
 		<action name="ppt" class="com.liane.action.client.Ppt">
-			<interceptor-ref name="defaultStack2"/>
+			<interceptor-ref name="defaultStack2" />
 			<result name="success">
 				<param name="location">/ppt.jsp</param>
 			</result>
 		</action>
 		<action name="ppt_datas" class="com.liane.action.client.Ppt" method="datas">
-			<interceptor-ref name="defaultStack2"/>
+			<interceptor-ref name="defaultStack2" />
 		</action>
 		<action name="ppt_dwn" class="com.liane.action.client.Ppt" method="execute2">
-			<interceptor-ref name="defaultStack2"/>
+			<interceptor-ref name="defaultStack2" />
 			<result type="stream">
 				<param name="inputName">ppt</param>
 				<param name="contentType">${contentType}</param>
@@ -23,46 +23,46 @@
 		</action>
 
 		<action name="marquee" class="com.liane.action.client.Marquee">
-			<interceptor-ref name="defaultStack2"/>
+			<interceptor-ref name="defaultStack2" />
 			<result name="success" type="content">
 				<param name="location">/client/marquee.jsp</param>
 			</result>
 		</action>
 		<action name="cus_welcome" class="com.liane.action.Customer">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/welcome.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search1_main" class="com.liane.action.client.Report1" method="execute">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/report1.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search2_main" class="com.liane.action.client.Report2" method="execute">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/report2.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search3_main" class="com.liane.action.client.Report3" method="execute">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/report3.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search1_datas" class="com.liane.action.client.Report1" method="datas">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 		</action>
 		<action name="cus_search2_datas" class="com.liane.action.client.Report2" method="datas">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 		</action>
 		<action name="cus_search3_datas" class="com.liane.action.client.Report3" method="datas">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 		</action>
 		<action name="cus_search1_pdf" class="com.liane.action.client.Report1" method="pdf">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -70,7 +70,7 @@
 			</result>
 		</action>
 		<action name="cus_search1_pdfs" class="com.liane.action.client.Report1" method="pdfs">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -78,7 +78,7 @@
 			</result>
 		</action>
 		<action name="cus_search1_csv" class="com.liane.action.client.Report1" method="csv">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">text/plain</param>
 				<param name="inputname">inputStream</param>
@@ -87,7 +87,7 @@
 			</result>
 		</action>
 		<action name="cus_search2_pdf" class="com.liane.action.client.Report2" method="pdf">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -95,7 +95,7 @@
 			</result>
 		</action>
 		<action name="cus_search2_pdfs" class="com.liane.action.client.Report2" method="pdfs">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -103,7 +103,7 @@
 			</result>
 		</action>
 		<action name="cus_search2_csv" class="com.liane.action.client.Report2" method="csv">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">text/plain</param>
 				<param name="inputname">inputStream</param>
@@ -112,7 +112,7 @@
 			</result>
 		</action>
 		<action name="cus_search3_pdf" class="com.liane.action.client.Report3" method="pdf">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -120,7 +120,7 @@
 			</result>
 		</action>
 		<action name="cus_search3_pdfs" class="com.liane.action.client.Report3" method="pdfs">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">application/pdf</param>
 				<param name="inputName">pdfStream</param>
@@ -128,7 +128,7 @@
 			</result>
 		</action>
 		<action name="cus_search3_csv" class="com.liane.action.client.Report3" method="csv">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="stream">
 				<param name="contentType">text/plain</param>
 				<param name="inputname">inputStream</param>
@@ -137,31 +137,29 @@
 			</result>
 		</action>
 		<action name="cus_search1_view" class="com.liane.action.client.Report1" method="view">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/report1_content.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search2_view" class="com.liane.action.client.Report2" method="view">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/report1_content.jsp</param>
 			</result>
 		</action>
 		<action name="cus_search3_view" class="com.liane.action.client.Report3" method="view">
-			<interceptor-ref name="defaultStackA"/>
-			<result name="success" type="content">
-				<param name="location">/client/report1_content.jsp</param>
-			</result>
+			<interceptor-ref name="defaultStackA" />
+			<result name="success" type="content">/client/report1_content.jsp</result>
 		</action>
 		<action name="cus_user" class="com.liane.action.client.User" method="execute">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 			<result name="success" type="content">
 				<param name="location">/client/user.jsp</param>
 			</result>
 		</action>
 		<action name="cus_user_save" class="com.liane.action.client.User" method="save">
-			<interceptor-ref name="defaultStackA"/>
+			<interceptor-ref name="defaultStackA" />
 		</action>
 	</package>
 </struts>
